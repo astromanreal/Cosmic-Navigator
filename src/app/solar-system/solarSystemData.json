@@ -1,0 +1,67 @@
+[
+  {
+    "id": "sun",
+    "name": "The Sun",
+    "description": "Our solar system’s star. The source of energy and light."
+  },
+  {
+    "id": "mercury",
+    "name": "Mercury",
+    "description": "The smallest and innermost planet in the Solar System."
+  },
+  {
+    "id": "venus",
+    "name": "Venus",
+    "description": "A scorching planet shrouded in thick, toxic atmosphere."
+  },
+  {
+    "id": "earth",
+    "name": "Earth",
+    "description": "Our home. The third planet from the Sun."
+  },
+  {
+    "id": "mars",
+    "name": "Mars",
+    "description": "The red planet and a target for future colonization."
+  },
+  {
+    "id": "asteroid_belt",
+    "name": "Asteroid Belt",
+    "description": "A region of rocky objects located between Mars and Jupiter, home to many asteroids."
+  },
+  {
+    "id": "jupiter",
+    "name": "Jupiter",
+    "description": "A gas giant and the largest planet in our solar system."
+  },
+  {
+    "id": "saturn",
+    "name": "Saturn",
+    "description": "Known for its beautiful rings."
+  },
+  {
+    "id": "uranus",
+    "name": "Uranus",
+    "description": "An ice giant with a unique axial tilt."
+  },
+  {
+    "id": "neptune",
+    "name": "Neptune",
+    "description": "The farthest known major planet from the Sun."
+  },
+  {
+    "id": "pluto",
+    "name": "Pluto & Dwarf Planets",
+    "description": "Dwarf planets and icy objects in the outer solar system."
+  },
+  {
+    "id": "kuiper_belt",
+    "name": "Kuiper Belt",
+    "description": "A vast region beyond Neptune, populated by icy bodies and dwarf planets, including Pluto."
+  },
+  {
+    "id": "asteroids",
+    "name": "Asteroids, Comets & Meteors",
+    "description": "Rocky fragments, icy bodies, and cosmic debris."
+  }
+]

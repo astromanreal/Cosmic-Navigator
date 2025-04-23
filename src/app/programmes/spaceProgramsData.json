@@ -1,0 +1,125 @@
+
+[
+  {
+    "program": "Mercury",
+    "country": "USA",
+    "startDate": "1958-10-07",
+    "firstCrewedFlight": "1961-05-05",
+    "endDate": "1963-05-16",
+    "crewedMissionsLaunched": 6,
+    "notes": "First U.S. human spaceflight program",
+    "ongoing": false
+  },
+  {
+    "program": "Gemini",
+    "country": "USA",
+    "startDate": "1964-01-03",
+    "firstCrewedFlight": "1965-03-23",
+    "endDate": "1966-11-11",
+    "crewedMissionsLaunched": 10,
+    "notes": "Bridge between Mercury and Apollo",
+    "ongoing": false
+  },
+  {
+    "program": "Apollo",
+    "country": "USA",
+    "startDate": "1967-01-27",
+    "firstCrewedFlight": "1968-10-11",
+    "endDate": "1972-12-19",
+    "crewedMissionsLaunched": 11,
+    "notes": "Lunar landing program",
+    "ongoing": false
+  },
+  {
+    "program": "Skylab",
+    "country": "USA",
+    "startDate": "1969-01-01",
+    "firstCrewedFlight": "1973-05-25",
+    "endDate": "1974-02-08",
+    "crewedMissionsLaunched": 3,
+    "notes": "First U.S. space station",
+    "ongoing": false
+  },
+  {
+    "program": "Space Shuttle",
+    "country": "USA",
+    "startDate": "1972-01-05",
+    "firstCrewedFlight": "1981-04-12",
+    "endDate": "2011-07-21",
+    "crewedMissionsLaunched": 135,
+    "notes": "Reusable spacecraft",
+    "ongoing": false
+  },
+  {
+    "program": "International Space Station",
+    "country": "International",
+    "startDate": "1998-11-20",
+    "firstCrewedFlight": "2000-11-02",
+    "endDate": "Ongoing",
+    "crewedMissionsLaunched": 68,
+    "notes": "Multinational orbital station",
+    "ongoing": true
+  },
+  {
+    "program": "Commercial Crew Program",
+    "country": "USA",
+    "startDate": "2010-02-01",
+    "firstCrewedFlight": "2020-05-30",
+    "endDate": "Ongoing",
+    "crewedMissionsLaunched": 9,
+    "notes": "Private companies providing crewed flights to the ISS",
+    "ongoing": true
+  },
+  {
+    "program": "Artemis",
+    "country": "USA",
+    "startDate": "2017-12-11",
+    "firstCrewedFlight": "TBD",
+    "endDate": "Ongoing",
+    "crewedMissionsLaunched": 0,
+    "notes": "Planned return to the Moon",
+    "ongoing": true
+  },
+  {
+    "program": "Gaganyaan",
+    "country": "India",
+    "startDate": "2007",
+    "firstCrewedFlight": "TBD",
+    "endDate": "Ongoing",
+    "crewedMissionsLaunched": 0,
+    "notes": "Indian crewed orbital spacecraft",
+    "ongoing": true
+  },
+  {
+    "program": "Shenzhou",
+    "country": "China",
+    "startDate": "1992",
+    "firstCrewedFlight": "2003-10-15",
+    "endDate": "Ongoing",
+    "crewedMissionsLaunched": 7,
+    "notes": "Chinese human spaceflight program",
+    "ongoing": true
+  },
+  {
+    "program": "Soyuz",
+    "country": "Russia",
+    "startDate": "1967-11-28",
+    "firstCrewedFlight": "1968-10-25",
+    "endDate": "Ongoing",
+    "crewedMissionsLaunched": 149,
+    "notes": "Soviet/Russian human spaceflight program",
+    "ongoing": true
+  },
+    {
+    "program": "Ariane",
+    "country": "ESA",
+    "startDate": "1973",
+    "firstCrewedFlight": "N/A",
+    "endDate": "Ongoing",
+    "crewedMissionsLaunched": 0,
+    "notes": "Series of European launcher vehicles",
+    "ongoing": true
+  }
+]
+    
+    

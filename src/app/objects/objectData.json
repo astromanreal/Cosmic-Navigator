@@ -1,0 +1,355 @@
+
+[
+  {
+    "id": "black-holes",
+    "name": "Black Holes",
+    "description": "Explore the mysteries of black holes and their impact on the cosmos.",
+    "content": "Black holes are regions of spacetime exhibiting such strong gravitational effects that nothing—not even particles and electromagnetic radiation such as light—can escape from inside it. The theory of general relativity predicts that a sufficiently compact mass can deform spacetime to form a black hole. The boundary of the region from which no escape is possible is called the event horizon. Although crossing the event horizon has enormous effect on the fate of the object crossing it, it appears to have no locally detectable features.",
+    "category": "Astrophysics",
+    "difficulty": "Intermediate",
+    "status": "Established",
+    "relatedTopics": ["gravity", "supernovae"],
+    "articles": [
+      {
+        "title": "Journey Into Darkness: Understanding the Phenomenon of Black Holes",
+        "description": "Dive deep into the enigmatic world of black holes—cosmic giants that defy our understanding of physics. Discover how they form, what lies beyond the event horizon, and why these celestial objects are crucial to decoding the universe."
+      },
+      {
+        "title": "The Event Horizon Explained: A One-Way Door to the Unknown",
+        "description": "Learn what the event horizon really is and why it's the defining boundary of a black hole. This article explores what happens when matter crosses this cosmic line of no return."
+      },
+      {
+        "title": "Can We See the Invisible? Imaging a Black Hole",
+        "description": "Uncover how astronomers captured the first image of a black hole using the Event Horizon Telescope, and what this groundbreaking achievement tells us about our universe."
+      },
+      {
+        "title": "Spaghettification: What Happens If You Fall Into a Black Hole?",
+        "description": "Get ready for a wild ride as we explain the concept of spaghettification—what you’d experience if you ever fell into a black hole, according to physics."
+      },
+      {
+        "title": "Hawking Radiation: Do Black Holes Really Evaporate?",
+        "description": "Explore Stephen Hawking’s revolutionary idea that black holes can emit radiation and gradually lose mass over time—challenging everything we thought we knew."
+      }
+    ]
+  },  
+  {
+    "id": "galaxies",
+    "name": "Galaxies",
+    "description": "Explore the different types of galaxies and their formation.",
+    "content": "Galaxies are vast collections of stars, stellar remnants, interstellar gas, dust, and dark matter, all bound together by gravity. They range in size from dwarfs with just a few million stars to giants with trillions. Galaxies are organized into a hierarchy of larger structures, called groups, clusters, and superclusters.",
+    "category": "Astrophysics",
+    "difficulty": "Beginner",
+    "status": "Established",
+    "relatedTopics": ["stars", "nebulae"],
+    "articles": [
+      {
+        "title": "What Are Galaxies? A Beginner’s Guide to Cosmic Cities",
+        "description": "Take your first steps into the universe by understanding what galaxies are, how they form, and why they matter in the grand architecture of the cosmos."
+      },
+      {
+        "title": "Spiral, Elliptical, and Irregular: Types of Galaxies Explained",
+        "description": "Learn how astronomers classify galaxies based on their shape and structure, and what these forms reveal about their history and evolution."
+      },
+      {
+        "title": "Our Home in the Universe: The Milky Way Galaxy",
+        "description": "Discover fascinating facts about the Milky Way—our galactic neighborhood—its size, structure, and how we fit into the bigger picture."
+      },
+      {
+        "title": "Galactic Collisions: When Galaxies Crash and Merge",
+        "description": "Explore how galactic collisions reshape the cosmos, creating bursts of star formation and leading to the birth of new galactic forms."
+      },
+      {
+        "title": "The Role of Dark Matter in Galaxies",
+        "description": "Unveil the hidden force holding galaxies together—dark matter. Learn how it shapes galaxies and the mystery it continues to pose for scientists."
+      }
+    ]
+  },
+  {
+    "id": "galaxies",
+    "name": "Galaxies",
+    "description": "Explore the different types of galaxies and their formation.",
+    "content": "Galaxies are vast collections of stars, stellar remnants, interstellar gas, dust, and dark matter, all bound together by gravity. They range in size from dwarfs with just a few million stars to giants with trillions. Galaxies are organized into a hierarchy of larger structures, called groups, clusters, and superclusters.",
+    "category": "Astrophysics",
+    "difficulty": "Beginner",
+    "status": "Established",
+    "relatedTopics": ["stars", "nebulae"],
+    "articles": [
+      {
+        "title": "What Are Galaxies? A Beginner’s Guide to Cosmic Cities",
+        "description": "Take your first steps into the universe by understanding what galaxies are, how they form, and why they matter in the grand architecture of the cosmos."
+      },
+      {
+        "title": "Spiral, Elliptical, and Irregular: Types of Galaxies Explained",
+        "description": "Learn how astronomers classify galaxies based on their shape and structure, and what these forms reveal about their history and evolution."
+      },
+      {
+        "title": "Our Home in the Universe: The Milky Way Galaxy",
+        "description": "Discover fascinating facts about the Milky Way—our galactic neighborhood—its size, structure, and how we fit into the bigger picture."
+      },
+      {
+        "title": "Galactic Collisions: When Galaxies Crash and Merge",
+        "description": "Explore how galactic collisions reshape the cosmos, creating bursts of star formation and leading to the birth of new galactic forms."
+      },
+      {
+        "title": "The Role of Dark Matter in Galaxies",
+        "description": "Unveil the hidden force holding galaxies together—dark matter. Learn how it shapes galaxies and the mystery it continues to pose for scientists."
+      }
+    ]
+  },
+  {
+    "id": "interstellar-medium",
+    "name": "Interstellar Medium",
+    "description": "Learn about the matter and radiation that exist between stars.",
+    "content": "The interstellar medium (ISM) is the matter and radiation that exist in the space between star systems in a galaxy. It includes gas in ionic, atomic, and molecular form, as well as dust and cosmic rays. The ISM plays a crucial role in the formation of stars and the cycling of matter in galaxies.",
+    "category": "Astrophysics",
+    "difficulty": "Intermediate",
+    "status": "Established",
+    "relatedTopics": ["nebulae", "stars"],
+    "articles": [
+      {
+        "title": "What is the Interstellar Medium? A Deep Dive Into the Space Between Stars",
+        "description": "Discover the hidden contents of the vast space between stars—from glowing gases to cosmic dust—and learn how it fuels star formation and galactic evolution."
+      },
+      {
+        "title": "The Life Cycle of Matter: How the ISM Feeds Stars and Recycles Galaxies",
+        "description": "Explore how the interstellar medium acts as both a cradle and a grave for stellar material, constantly renewing the galaxy's building blocks."
+      },
+      {
+        "title": "Clouds in Space: The Role of Molecular Clouds in Star Birth",
+        "description": "Molecular clouds are dense, cold regions of the ISM where stars are born. Learn how these cosmic nurseries work and how astronomers study them."
+      },
+      {
+        "title": "Dust in the Wind: The Mysterious Role of Interstellar Dust",
+        "description": "Interstellar dust may be tiny, but it has a huge impact on astronomy. Discover how it shapes what we see—and don't see—in space."
+      },
+      {
+        "title": "Listening to the Cosmos: How We Observe the Interstellar Medium",
+        "description": "From radio waves to infrared light, learn about the tools and techniques scientists use to study the ISM and unlock the secrets of the galaxy."
+      }
+    ]
+  },
+  {
+    "id": "gamma-ray-bursts",
+    "name": "Gamma-Ray Bursts",
+    "description": "Uncover the secrets of these powerful cosmic explosions.",
+    "content": "Gamma-ray bursts (GRBs) are the most luminous electromagnetic events known to occur in the universe. They are characterized by intense bursts of gamma rays, which are the most energetic form of light. GRBs are associated with the collapse of massive stars and the merger of neutron stars.",
+    "category": "Astrophysics",
+    "difficulty": "Intermediate",
+    "status": "Observed",
+    "relatedTopics": ["supernovae", "black-holes"],
+    "articles": [
+      {
+        "title": "Gamma-Ray Bursts: The Brightest Explosions in the Universe",
+        "description": "Explore the extraordinary phenomenon of gamma-ray bursts—cosmic flashes so powerful they outshine entire galaxies for brief moments."
+      },
+      {
+        "title": "What Causes Gamma-Ray Bursts? Death of Stars and Violent Mergers",
+        "description": "Unravel the origins of GRBs, from the explosive collapse of massive stars to the cataclysmic collisions of neutron stars."
+      },
+      {
+        "title": "Short vs. Long GRBs: Understanding the Two Main Types",
+        "description": "Dive into the classification of gamma-ray bursts and learn what differentiates short bursts from their longer counterparts—and why it matters."
+      },
+      {
+        "title": "Catching Cosmic Fireworks: How We Detect Gamma-Ray Bursts",
+        "description": "Discover how space telescopes like Swift and Fermi detect and analyze GRBs in real time, helping scientists unlock the secrets of the universe."
+      },
+      {
+        "title": "Do Gamma-Ray Bursts Threaten Earth?",
+        "description": "Could a nearby gamma-ray burst pose a danger to our planet? Learn about the risks, realities, and the science behind this high-energy threat."
+      }
+    ]
+  },
+  {
+    "id": "nebulae",
+    "name": "Nebulae",
+    "description": "Witness the beauty of nebulae, stellar nurseries, and cosmic clouds.",
+    "content": "Nebulae are vast clouds of gas and dust in space. They are often sites of star formation, where gravity causes the gas and dust to collapse and form new stars. Nebulae are also the remnants of dying stars, such as planetary nebulae and supernova remnants.",
+    "category": "Astrophysics",
+    "difficulty": "Beginner",
+    "status": "Observed",
+    "relatedTopics": ["stars", "interstellar-medium"],
+    "articles": [
+      {
+        "title": "What Are Nebulae? A Glimpse into Cosmic Clouds",
+        "description": "Dive into the colorful and mysterious world of nebulae—vast clouds of gas and dust that both give birth to stars and mark their spectacular ends."
+      },
+      {
+        "title": "Stellar Nurseries: Where Stars Are Born",
+        "description": "Learn how certain nebulae, like the Orion Nebula, serve as stellar nurseries where gravity pulls gas and dust together to create new stars."
+      },
+      {
+        "title": "The Death of Stars: Nebulae as Cosmic Remnants",
+        "description": "Explore how dying stars leave behind stunning nebulae, from the elegant shapes of planetary nebulae to the chaotic aftermath of supernova explosions."
+      },
+      {
+        "title": "Types of Nebulae: Emission, Reflection, Dark, and More",
+        "description": "Discover the different types of nebulae and how their appearances vary based on how they interact with nearby stars and light."
+      },
+      {
+        "title": "The Art of the Cosmos: Why Nebulae Are So Colorful",
+        "description": "Uncover the science behind the brilliant colors captured in nebula images and how astronomers use different wavelengths to reveal their secrets."
+      }
+    ]
+  },
+  {
+    "id": "planets-beyond",
+    "name": "Planets Beyond the Solar System",
+    "description": "Discover the exoplanets that orbit distant stars.",
+    "content": "Exoplanets are planets that orbit stars other than the Sun. They are found using a variety of techniques, such as the transit method and the radial velocity method. Exoplanets exhibit a wide range of properties, including rocky planets, gas giants, and ice giants.",
+    "category": "Astronomy",
+    "difficulty": "Intermediate",
+    "status": "Observed",
+    "relatedTopics": ["stars", "habitable-zones"],
+    "articles": [
+      {
+        "title": "What Are Exoplanets? A New Frontier in Astronomy",
+        "description": "Take a journey into the cosmos to learn what exoplanets are, how they’re discovered, and why they’re reshaping our understanding of planetary systems."
+      },
+      {
+        "title": "Methods of Discovery: How Scientists Detect Distant Worlds",
+        "description": "Explore the innovative techniques used to detect exoplanets, from the subtle dimming of a star to the wobble in its motion."
+      },
+      {
+        "title": "Types of Exoplanets: From Super-Earths to Hot Jupiters",
+        "description": "Dive into the diversity of alien worlds—some rocky like Earth, others massive and gaseous, orbiting perilously close to their stars."
+      },
+      {
+        "title": "The Hunt for Life: Exoplanets in the Habitable Zone",
+        "description": "Discover what makes a planet potentially habitable and how scientists search for worlds where life as we know it could exist."
+      },
+      {
+        "title": "TESS and Kepler: Space Telescopes Changing the Game",
+        "description": "Learn how space missions like TESS and Kepler have revolutionized exoplanet science, uncovering thousands of planets and expanding the catalog daily."
+      }
+    ]
+  },  
+  {
+    "id": "stars",
+    "name": "Stars",
+    "description": "Study the life cycle of stars, from birth to death.",
+    "content": "Stars are massive, luminous spheres of plasma held together by their own gravity. They generate energy through nuclear fusion in their cores, converting hydrogen into helium and heavier elements. Stars come in a variety of types, including main sequence stars, red giants, and white dwarfs.",
+    "category": "Astrophysics",
+    "difficulty": "Beginner",
+    "status": "Established",
+    "relatedTopics": ["nebulae", "supernovae"],
+    "articles": [
+      {
+        "title": "How Stars Are Born: From Clouds of Gas to Glowing Spheres",
+        "description": "Learn how stars emerge from dense regions of nebulae, forming under the influence of gravity and igniting through nuclear fusion."
+      },
+      {
+        "title": "Types of Stars: A Guide to the Cosmic Zoo",
+        "description": "Explore the different types of stars—main sequence, red giants, white dwarfs, and more—and what makes each one unique."
+      },
+      {
+        "title": "A Star's Life Cycle: From Birth to Supernova or Fade Away",
+        "description": "Follow the epic journey of a star, from its formation in a nebula to its dramatic end as a white dwarf, neutron star, or black hole."
+      },
+      {
+        "title": "What Makes Stars Shine? The Science of Nuclear Fusion",
+        "description": "Delve into the core of a star to understand how nuclear fusion powers their light and drives the creation of elements."
+      },
+      {
+        "title": "Measuring Starlight: How We Learn About Stars from Afar",
+        "description": "Discover how astronomers use light—its color, intensity, and spectrum—to determine the size, temperature, and composition of stars."
+      }
+    ]
+  },  
+  {
+    "id": "supernovae",
+    "name": "Supernovae",
+    "description": "Investigate the explosive demise of stars and their role in the universe.",
+    "content": "Supernovae are among the most energetic events in the universe, marking the explosive death of a star. They are responsible for the creation and dispersal of heavy elements into the interstellar medium. Supernovae can leave behind neutron stars or black holes.",
+    "category": "Astrophysics",
+    "difficulty": "Intermediate",
+    "status": "Observed",
+    "relatedTopics": ["stars", "neutron-stars", "black-holes"],
+    "articles": [
+      {
+        "title": "What Is a Supernova? Understanding Stellar Explosions",
+        "description": "Discover how supernovae signal the death of massive stars and play a crucial role in spreading the elements necessary for life across the universe."
+      },
+      {
+        "title": "The Types of Supernovae: Core Collapse vs. Thermonuclear",
+        "description": "Explore the two main types of supernovae, how they differ, and the fascinating processes that lead to these cataclysmic blasts."
+      },
+      {
+        "title": "After the Bang: What Supernovae Leave Behind",
+        "description": "Learn about the cosmic remnants of supernovae—neutron stars, pulsars, and black holes—and their lasting impact on the cosmos."
+      },
+      {
+        "title": "Supernovae and the Birth of Elements",
+        "description": "Find out how supernovae forge and disperse heavy elements like iron and gold, seeding future generations of stars and planets."
+      },
+      {
+        "title": "Detecting Supernovae: How We Witness Stellar Deaths from Afar",
+        "description": "From telescopes on Earth to space-based observatories, see how astronomers catch and study these brilliant explosions across the sky."
+      }
+    ]
+  },  
+  {
+    "id": "types-of-stars",
+    "name": "Types of Stars",
+    "description": "Explore the different classifications and characteristics of stars.",
+    "content": "Stars are classified based on their temperature, luminosity, and spectral characteristics. The main types of stars include O, B, A, F, G, K, and M stars, as well as white dwarfs, neutron stars, and black holes. Each type of star has unique properties and evolutionary paths.",
+    "category": "Astrophysics",
+    "difficulty": "Beginner",
+    "status": "Established",
+    "relatedTopics": ["stars"],
+    "articles": [
+      {
+        "title": "How Do We Classify Stars? An Introduction to Stellar Types",
+        "description": "Learn about the classification system of stars, from O-type stars to M-type stars, and understand how astronomers use temperature and luminosity to categorize them."
+      },
+      {
+        "title": "The O-M Classification: Understanding Stellar Spectral Types",
+        "description": "Dive into the spectral classification of stars, explaining the unique characteristics of each class, including O, B, A, F, G, K, and M."
+      },
+      {
+        "title": "White Dwarfs, Neutron Stars, and Black Holes: The End of a Star’s Life",
+        "description": "Explore the remnants of stars after their deaths, including white dwarfs, neutron stars, and black holes, and how these objects shape our understanding of stellar evolution."
+      },
+      {
+        "title": "The Hertzsprung-Russell Diagram: A Stellar Roadmap",
+        "description": "Discover the Hertzsprung-Russell diagram and how it maps the relationship between the luminosity, temperature, and size of stars across different types."
+      },
+      {
+        "title": "From Birth to Death: How Stars Evolve Based on Their Type",
+        "description": "Follow the journey of stars from their birth in nebulae to their explosive deaths as supernovae or quiet fades into white dwarfs, neutron stars, or black holes."
+      }
+    ]
+  },  
+  {
+    "id": "types-of-planets",
+    "name": "Types of Planets",
+    "description": "Discover the diverse categories and properties of planets in our universe.",
+    "content": "Planets are classified based on their composition, size, and orbital characteristics. The main types of planets include rocky planets, gas giants, and ice giants. Exoplanets exhibit a wide range of properties, from hot Jupiters to super-Earths.",
+    "category": "Astronomy",
+    "difficulty": "Beginner",
+    "status": "Observed",
+    "relatedTopics": ["exoplanets"],
+    "articles": [
+      {
+        "title": "The Three Main Types of Planets: Rocky, Gas, and Ice",
+        "description": "Learn about the different types of planets found in our solar system and beyond, including rocky planets, gas giants, and ice giants, and how they differ in composition and structure."
+      },
+      {
+        "title": "Rocky Planets vs. Gas Giants: What’s the Difference?",
+        "description": "Dive into the characteristics that define rocky planets like Earth and Venus, and compare them to gas giants like Jupiter and Saturn."
+      },
+      {
+        "title": "Exoplanets: Discovering New Types of Planets in Distant Systems",
+        "description": "Explore the wide variety of exoplanets found orbiting stars outside our solar system, from the scorching hot Jupiters to the Earth-like super-Earths."
+      },
+      {
+        "title": "Hot Jupiters: The Strange Worlds of Close-Orbiting Gas Giants",
+        "description": "Uncover the mysteries of hot Jupiters—gas giants that orbit extremely close to their stars and experience extreme temperatures and intense radiation."
+      },
+      {
+        "title": "Super-Earths: Planets Bigger Than Earth but Smaller Than Neptune",
+        "description": "Learn about super-Earths, a type of exoplanet that’s larger than Earth but smaller than Neptune, and why they are of great interest to scientists studying habitability."
+      }
+    ]
+  }  
+]

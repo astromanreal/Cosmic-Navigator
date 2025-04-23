@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "name": "SPHEREX",
+    "owner": "NASA",
+    "wavelength": "Infrared",
+    "target": "Exoplanets, galaxies",
+    "goals": "Survey the sky in infrared to study the origins of the universe and search for water in young stars",
+    "launch_date": "2025",
+    "status": "planned"
+  },
+  {
+    "id": 2,
+    "name": "Xuntian",
+    "owner": "China National Space Administration (CNSA)",
+    "wavelength": "Optical, Ultraviolet",
+    "target": "Distant galaxies, exoplanets",
+    "goals": "Provide high-resolution images of the universe, complementing the Hubble Space Telescope",
+    "launch_date": "2025",
+    "status": "planned"
+  },
+  {
+    "id": 3,
+    "name": "Nancy Grace Roman Space Telescope",
+    "owner": "NASA",
+    "wavelength": "Infrared, Optical",
+    "target": "Exoplanets, dark energy",
+    "goals": "Study dark energy and exoplanets with a wide-field view",
+    "launch_date": "2027",
+    "status": "planned"
+  },
+  {
+    "id": 4,
+    "name": "Astrosat-2",
+    "owner": "Indian Space Research Organisation (ISRO)",
+    "wavelength": "UV, Optical, X-ray",
+    "target": "Various celestial sources",
+    "goals": "Multi-wavelength observations of the universe",
+    "launch_date": "TBD",
+    "status": "planned"
+  },
+  {
+    "id": 5,
+    "name": "Spektr-UV (WSO-UV)",
+    "owner": "Roscosmos, Ukraine",
+    "wavelength": "Ultraviolet",
+    "target": "Hot stars, active galactic nuclei",
+    "goals": "Study the ultraviolet spectra of celestial objects",
+    "launch_date": "TBD",
+    "status": "planned"
+  },
+  {
+    "id": 6,
+    "name": "PLATO",
+    "owner": "European Space Agency (ESA)",
+    "wavelength": "Optical",
+    "target": "Exoplanets",
+    "goals": "Discover and characterize exoplanets, focusing on Earth-sized planets in the habitable zone",
+    "launch_date": "2026",
+    "status": "planned"
+  },
+  {
+    "id": 7,
+    "name": "LiteBIRD",
+    "owner": "Japan Aerospace Exploration Agency (JAXA)",
+    "wavelength": "Microwave",
+    "target": "Cosmic Microwave Background",
+    "goals": "Study the polarization of the cosmic microwave background to probe the inflationary epoch of the universe",
+    "launch_date": "2028",
+    "status": "planned"
+  },
+  {
+    "id": 8,
+    "name": "ARIEL",
+    "owner": "European Space Agency (ESA)",
+    "wavelength": "Infrared",
+    "target": "Exoplanets",
+    "goals": "Study the atmospheres of exoplanets to understand their composition and conditions",
+    "launch_date": "2029",
+    "status": "planned"
+  },
+  {
+    "id": 9,
+    "name": "ATHENA",
+    "owner": "European Space Agency (ESA)",
+    "wavelength": "X-ray",
+    "target": "Hot and energetic phenomena in the universe",
+    "goals": "Investigate the hot and energetic universe, including black holes, galaxy clusters, and supernova remnants",
+    "launch_date": "2030s",
+    "status": "planned"
+  },
+  {
+    "id": 10,
+    "name": "LISA",
+    "owner": "European Space Agency (ESA)",
+    "wavelength": "Gravitational waves",
+    "target": "Massive black holes, binary star systems",
+    "goals": "Detect gravitational waves from space to study the universe’s most massive objects and events",
+    "launch_date": "2037",
+    "status": "planned"
+  },
+  {
+    "id": 11,
+    "name": "Future Great Observatory 1",
+    "owner": "NASA (planned)",
+    "wavelength": "Various",
+    "target": "Various celestial sources",
+    "goals": "Successor to Hubble, Spitzer, and Chandra, with advanced capabilities",
+    "launch_date": "TBD",
+    "status": "concept"
+  },
+  {
+    "id": 12,
+    "name": "Future Great Observatory 2",
+    "owner": "NASA (planned)",
+    "wavelength": "Various",
+    "target": "Various celestial sources",
+    "goals": "Successor to Hubble, Spitzer, and Chandra, with advanced capabilities",
+    "launch_date": "TBD",
+    "status": "concept"
+  },
+  {
+    "id": 13,
+    "name": "Future Great Observatory 3",
+    "owner": "NASA (planned)",
+    "wavelength": "Various",
+    "target": "Various celestial sources",
+    "goals": "Successor to Hubble, Spitzer, and Chandra, with advanced capabilities",
+    "launch_date": "TBD",
+    "status": "concept"
+  },
+  {
+    "id": 14,
+    "name": "X-ray Polarimeter Satellite (XPoSat)",
+    "owner": "ISRO",
+    "wavelength": "X-ray",
+    "target": "Black holes, neutron stars",
+    "goals": "Study polarization of X-rays from celestial sources",
+    "launch_date": "2023",
+    "status": "active"
+  },
+  {
+    "id": 15,
+    "name": "Aditya L1",
+    "owner": "ISRO",
+    "wavelength": "Visible, UV",
+    "target": "Sun",
+    "goals": "Study the Sun’s corona, chromosphere, and photosphere",
+    "launch_date": "2023",
+    "status": "active"
+  },
+  {
+    "id": 16,
+    "name": "TOLIMAN",
+    "owner": "University of Sydney",
+    "wavelength": "Infrared",
+    "target": "Alpha Centauri",
+    "goals": "Search for potentially habitable exoplanets",
+    "launch_date": "TBD",
+    "status": "planned"
+  },
+  {
+    "id": 17,
+    "name": "International Lunar Observatory Precursor (ILO-X)",
+    "owner": "International Lunar Observatory Association",
+    "wavelength": "Radio, Optical",
+    "target": "Moon",
+    "goals": "Conduct astronomical observations from the Moon",
+    "launch_date": "TBD",
+    "status": "planned"
+  },
+  {
+    "id": 18,
+    "name": "XRISM",
+    "owner": "JAXA/NASA",
+    "wavelength": "X-ray",
+    "target": "Hot plasma in the Universe",
+    "goals": "Study hot plasma in galaxies and galaxy clusters",
+    "launch_date": "2023",
+    "status": "active"
+  },
+  {
+    "id": 19,
+    "name": "Euclid",
+    "owner": "ESA",
+    "wavelength": "Visible, Near-Infrared",
+    "target": "Distant galaxies",
+    "goals": "Study dark matter and dark energy",
+    "launch_date": "2023",
+    "status": "active"
+  },
+  {
+    "id": 20,
+    "name": "SVOM",
+    "owner": "CNSA/CNES",
+    "wavelength": "Gamma-ray, X-ray, Visible",
+    "target": "Gamma-ray bursts",
+    "goals": "Detect and study gamma-ray bursts",
+    "launch_date": "2024",
+    "status": "active"
+  }
+]

@@ -1,0 +1,315 @@
+
+[
+
+  {
+    "id": 1,
+    "name": "AGILE",
+    "owner": "ASI",
+    "wavelength": "Gamma-ray",
+    "target": "Gamma-ray sources",
+    "goals": "Study the most energetic phenomena in the Universe",
+    "status": "Active",
+    "launch_date": "2007-04-23"
+  },
+  {
+    "id": 2,
+    "name": "Gamma-ray Burst polarimeter (GPA)",
+    "owner": "Various",
+    "wavelength": "Gamma-ray",
+    "target": "Gamma-ray bursts",
+    "goals": "Measure the polarization of gamma-ray bursts",
+    "status": "Planned",
+    "launch_date": "2025-09"
+  },
+  {
+    "id": 3,
+    "name": "XMM-Newton",
+    "owner": "ESA",
+    "wavelength": "X-ray",
+    "target": "X-ray sources",
+    "goals": "Observe X-ray sources, providing insights into the Universe",
+    "status": "Active",
+    "launch_date": "1999-12-10"
+  },
+  {
+    "id": 4,
+    "name": "NuStar",
+    "owner": "NASA",
+    "wavelength": "Hard X-ray",
+    "target": "Black holes, Supernovae",
+    "goals": "Study black holes, supernovae, and other high-energy objects",
+    "status": "Active",
+    "launch_date": "2012-06-13"
+  },
+  {
+    "id": 5,
+    "name": "AstroSat",
+    "owner": "ISRO",
+    "wavelength": "UV, Optical, X-ray",
+    "target": "Various celestial sources",
+    "goals": "Multi-wavelength observations of the universe",
+    "status": "Active",
+    "launch_date": "2015-09-28"
+  },
+  {
+    "id": 6,
+    "name": "Neutron Star Interior Composition Explorer (NICER)",
+    "owner": "NASA",
+    "wavelength": "X-ray",
+    "target": "Neutron stars",
+    "goals": "Study the physics of neutron stars",
+    "status": "Active",
+    "launch_date": "2017-06-03"
+  },
+  {
+    "id": 7,
+    "name": "Hard X-ray Modulation Telescope (HXMT)",
+    "owner": "CNSA",
+    "wavelength": "X-ray",
+    "target": "Black holes, Neutron stars",
+    "goals": "Observe black holes and neutron stars",
+    "status": "Active",
+    "launch_date": "2017-06-15"
+  },
+  {
+    "id": 8,
+    "name": "Spektr-RG",
+    "owner": "Roscosmos/DLR",
+    "wavelength": "X-ray",
+    "target": "X-ray sources",
+    "goals": "Map the X-ray sky",
+    "status": "Active",
+    "launch_date": "2019-07-13"
+  },
+  {
+    "id": 9,
+    "name": "IXPE",
+    "owner": "NASA/ASI",
+    "wavelength": "X-ray",
+    "target": "Black holes, Neutron stars",
+    "goals": "Measure the polarization of X-rays from black holes and neutron stars",
+    "status": "Active",
+    "launch_date": "2021-12-09"
+  },
+  {
+    "id": 10,
+    "name": "Interface Region Imaging Spectrograph (IRIS)",
+    "owner": "NASA",
+    "wavelength": "Ultraviolet",
+    "target": "Sun",
+    "goals": "Study the solar interface region",
+    "status": "Active",
+    "launch_date": "2013-06-27"
+  },
+  {
+    "id": 11,
+    "name": "Hisaki (SPRINT-A)",
+    "owner": "JAXA",
+    "wavelength": "EUV",
+    "target": "Planets",
+    "goals": "Observe exospheres of planets",
+    "status": "Active",
+    "launch_date": "2013-09-14"
+  },
+  {
+    "id": 12,
+    "name": "Near Earth Object Surveillance Satellite (NEOSSat)",
+    "owner": "CSA",
+    "wavelength": "Optical",
+    "target": "Near-Earth Objects",
+    "goals": "Detect and track near-Earth objects",
+    "status": "Active",
+    "launch_date": "2013-02-25"
+  },
+  {
+    "id": 13,
+    "name": "Hubble",
+    "owner": "NASA/ESA",
+    "wavelength": "Visible, UV, IR",
+    "target": "Various",
+    "goals": "Study the universe at large",
+    "status": "Active",
+    "launch_date": "1990-04-24"
+  },
+  {
+    "id": 14,
+    "name": "Chandra X-ray",
+    "owner": "NASA",
+    "wavelength": "X-ray",
+    "target": "X-ray sources",
+    "goals": "Study high-energy phenomena",
+    "status": "Active",
+    "launch_date": "1999-07-23"
+  },
+  {
+    "id": 15,
+    "name": "Fermi Gamma-ray",
+    "owner": "NASA",
+    "wavelength": "Gamma-ray",
+    "target": "Gamma-ray sources",
+    "goals": "Study the most energetic phenomena in the universe",
+    "status": "Active",
+    "launch_date": "2008-06-11"
+  },
+  {
+    "id": 16,
+    "name": "Swift Gamma Ray",
+    "owner": "NASA/ASI/UKSA",
+    "wavelength": "Gamma-ray, X-ray, UV",
+    "target": "Gamma-ray bursts",
+    "goals": "Observe gamma-ray bursts and afterglows",
+    "status": "Active",
+    "launch_date": "2004-11-20"
+  },
+  {
+    "id": 17,
+    "name": "INTEGRAL",
+    "owner": "ESA",
+    "wavelength": "Gamma-ray, X-ray, Visible",
+    "target": "Gamma-ray sources",
+    "goals": "Observe high-energy cosmic sources",
+    "status": "Active",
+    "launch_date": "2002-10-17"
+  },
+  {
+    "id": 18,
+    "name": "Gaia",
+    "owner": "ESA",
+    "wavelength": "Visible",
+    "target": "Stars",
+    "goals": "Create a 3D map of the Milky Way",
+    "status": "Active",
+    "launch_date": "2013-12-19"
+  },
+  {
+    "id": 19,
+    "name": "STEREO",
+    "owner": "NASA",
+    "wavelength": "Radio to Ultraviolet",
+    "target": "Sun and Heliosphere",
+    "goals": "Provide stereoscopic images of the Sun and study coronal mass ejections",
+    "status": "Active",
+    "type": "Space Telescope"
+  },
+  {
+    "id": 20,
+    "name": "TESS",
+    "owner": "NASA",
+    "wavelength": "Visible",
+    "target": "Exoplanets",
+    "goals": "Discover exoplanets around nearby stars",
+    "status": "Active",
+    "launch_date": "2018-04-18"
+  },
+  {
+    "id": 21,
+    "name": "CHEOPS",
+    "owner": "ESA",
+    "wavelength": "Visible",
+    "target": "Exoplanets",
+    "goals": "Characterize exoplanets",
+    "status": "Active",
+    "launch_date": "2019-12-18"
+  },
+  {
+    "id": 22,
+    "name": "WISE (Wide-field Infrared Survey Explorer)",
+    "owner": "NASA",
+    "wavelength": "Infrared",
+    "target": "Various",
+    "goals": "Survey the sky in infrared light",
+    "status": "Active (as NEOWISE)",
+    "launch_date": "2009-12-14"
+  },
+  {
+    "id": 23,
+    "name": "Odin",
+    "owner": "Sweden/Canada/France/Finland",
+    "wavelength": "Submillimeter/Infrared/Optical",
+    "target": "Interstellar gas and dust, planetary atmospheres",
+    "goals": "Study the chemical composition of the universe",
+    "status": "Active (limited operations)",
+    "launch_date": "2001-02-20"
+  },
+  {
+    "id": 24,
+    "name": "Interstellar Boundary Explorer (IBEX)",
+    "owner": "NASA",
+    "wavelength": "Energetic neutral atoms",
+    "target": "The heliosphere boundary",
+    "goals": "Map the boundary between our solar system and interstellar space",
+    "status": "Active",
+    "launch_date": "2008-10-19"
+  },
+  {
+    "id": 25,
+    "name": "Alpha Magnetic Spectrometer (AMS-02)",
+    "owner": "International collaboration",
+    "wavelength": "Charged particles",
+    "target": "Cosmic rays",
+    "goals": "Study cosmic rays in search of dark matter and antimatter",
+    "status": "Active",
+    "launch_date": "2011-05-16"
+  },
+  {
+    "id": 26,
+    "name": "Dark Matter Particle Explorer (DAMPE)",
+    "owner": "China",
+    "wavelength": "High-energy particles",
+    "target": "Cosmic rays",
+    "goals": "Search for dark matter by detecting high-energy particles in space",
+    "status": "Active",
+    "launch_date": "2015-12-17"
+  },
+  {
+    "id": 27,
+    "name": "Aditya L1",
+    "owner": "ISRO",
+    "wavelength": "Visible, UV",
+    "target": "Sun",
+    "goals": "Study the Sun’s corona, chromosphere, and photosphere",
+    "status": "Active",
+    "launch_date": "2023-09-02"
+  },
+  {
+    "id": 28,
+    "name": "Euclid",
+    "owner": "ESA",
+    "wavelength": "Visible, Near-Infrared",
+    "target": "Distant galaxies",
+    "goals": "Study dark matter and dark energy",
+    "status": "Active",
+    "launch_date": "2023-07-01"
+  },
+  {
+    "id": 29,
+    "name": "GALEX",
+    "owner": "NASA",
+    "wavelength": "Ultraviolet",
+    "target": "Distant Galaxies",
+    "goals": "Study the history of star formation in the universe",
+    "status": "Active",
+    "type": "Space Telescope"
+  },
+  {
+    "id": 30,
+    "name": "COROT",
+    "owner": "ESA",
+    "wavelength": "Optical",
+    "target": "Exoplanets",
+    "goals": "Search for exoplanets and study stellar oscillations",
+    "status": "Active",
+    "type": "Space Telescope"
+  },
+  {
+    "id": 31,
+    "name": "Solar & Heliospheric Observatory",
+    "owner": "ESA/NASA",
+    "wavelength": "Optical and Ultraviolet",
+    "target": "Sun",
+    "goals": "Study the Sun, from its interior to its outer atmosphere and the solar wind",
+    "status": "Active",
+    "type": "Space Telescope"
+  }
+  ]
+  

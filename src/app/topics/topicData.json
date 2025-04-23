@@ -1,0 +1,546 @@
+[
+  {
+    "id": "dark-matter",
+    "name": "Dark Matter",
+    "description": "Explore the mysterious substance that makes up a significant portion of the universe.",
+    "category": "Cosmology",
+    "difficulty": "Intermediate",
+    "status": "Theoretical",
+    "relatedTopics": ["dark-energy", "cosmic-microwave-background"],
+    "articles": [
+      {
+        "title": "What Is Dark Matter? Understanding the Invisible Universe",
+        "description": "Dive into the enigma of dark matter, a mysterious substance that doesn't emit light but makes up a large portion of the universe's mass. Learn how scientists are studying its effects on galaxies and cosmological structures."
+      },
+      {
+        "title": "The Role of Dark Matter in the Formation of Galaxies",
+        "description": "Explore how dark matter influences the formation of galaxies by providing the gravitational pull that holds galaxies together, preventing them from flying apart despite their rapid rotation."
+      },
+      {
+        "title": "Evidence for Dark Matter: Observing the Unseen",
+        "description": "Discover the various methods scientists use to detect dark matter, including gravitational lensing, galaxy rotation curves, and cosmic microwave background observations."
+      },
+      {
+        "title": "Dark Matter vs. Dark Energy: What’s the Difference?",
+        "description": "Learn about the key differences between dark matter and dark energy, two mysterious forces that shape the universe in opposite ways—one attracting, the other causing acceleration."
+      },
+      {
+        "title": "Theories on the Nature of Dark Matter",
+        "description": "Explore the leading theories on what dark matter might be made of, including WIMPs (Weakly Interacting Massive Particles) and axions, and how these theories are being tested."
+      }
+    ]
+  },  
+  {
+    "id": "dark-energy",
+    "name": "Dark Energy",
+    "description": "Uncover the nature of the force driving the accelerating expansion of the universe.",
+    "content": "Content about Dark Energy will be added soon...",
+    "category": "Cosmology",
+    "difficulty": "Intermediate",
+    "status": "Theoretical",
+    "relatedTopics": ["dark-matter", "cosmic-inflation"],
+    "articles": [
+      {
+        "title": "What Is Dark Energy? Understanding the Force Behind the Universe’s Acceleration",
+        "description": "Explore the mysterious force known as dark energy, which is driving the accelerated expansion of the universe. Learn about its discovery and how it challenges our understanding of physics."
+      },
+      {
+        "title": "Theories Behind Dark Energy: From Cosmological Constant to Quintessence",
+        "description": "Dive into the leading theories on dark energy, including Einstein's cosmological constant and the concept of quintessence, which proposes that dark energy is a dynamic field."
+      },
+      {
+        "title": "Dark Energy and Cosmic Expansion: How It’s Changing the Universe",
+        "description": "Discover how dark energy influences the rate of expansion of the universe, and why it’s key to understanding the future of the cosmos and the ultimate fate of everything within it."
+      },
+      {
+        "title": "Dark Energy vs. Dark Matter: Exploring the Differences",
+        "description": "Learn about the key differences between dark energy and dark matter—two mysterious components of the universe that both shape the cosmos but in vastly different ways."
+      },
+      {
+        "title": "The Role of Dark Energy in Cosmic Inflation",
+        "description": "Understand how dark energy is related to the theory of cosmic inflation, the rapid expansion of the universe that occurred shortly after the Big Bang."
+      }
+    ]
+  },
+  {
+    "id": "big-bang-theory",
+    "name": "Big Bang Theory",
+    "description": "Understand the prevailing cosmological model for the universe from its earliest known periods through its subsequent large-scale evolution.",
+    "content": "Content about Big Bang Theory will be added soon...",
+    "category": "Cosmology",
+    "difficulty": "Beginner",
+    "status": "Established",
+    "relatedTopics": ["cosmic-inflation", "cosmic-microwave-background"],
+    "articles": [
+      {
+        "title": "What Is the Big Bang Theory? The Beginning of the Universe",
+        "description": "Explore the Big Bang Theory, which explains the origin of the universe, from a singularity to the expanding cosmos we see today. Learn about the evidence that supports this prevailing cosmological model."
+      },
+      {
+        "title": "The First Moments: From Singularity to the Expanding Universe",
+        "description": "Dive into the early moments of the universe, starting from the singularity, the Big Bang event, and the rapid expansion that led to the creation of matter and energy in the universe."
+      },
+      {
+        "title": "Cosmic Inflation: The Rapid Expansion After the Big Bang",
+        "description": "Learn about the theory of cosmic inflation, which proposes a brief but extremely rapid expansion of the universe right after the Big Bang, explaining its large-scale structure."
+      },
+      {
+        "title": "The Cosmic Microwave Background: The Afterglow of the Big Bang",
+        "description": "Understand the significance of the cosmic microwave background (CMB) radiation, which is considered the 'afterglow' of the Big Bang, providing a snapshot of the universe's early state."
+      },
+      {
+        "title": "The Fate of the Universe: How the Big Bang Theory Shapes Our Future",
+        "description": "Explore the implications of the Big Bang Theory on the future of the universe, including theories about its ultimate fate—whether it will continue expanding indefinitely or eventually collapse."
+      }
+    ]
+  },
+  {
+    "id": "general-relativity",
+    "name": "General Relativity",
+    "description": "Learn about Einstein's theory of gravity and its effects on spacetime.",
+    "content": "Content about General Relativity will be added soon...",
+    "category": "Relativity",
+    "difficulty": "Intermediate",
+    "status": "Established",
+    "relatedTopics": ["gravitational-waves", "special-relativity", "time-dilation"],
+    "articles": [
+      {
+        "title": "What Is General Relativity? Understanding Einstein’s Theory of Gravity",
+        "description": "Delve into Einstein's groundbreaking theory of general relativity, which revolutionized our understanding of gravity, spacetime, and the curvature of space caused by mass and energy."
+      },
+      {
+        "title": "How General Relativity Changes Our Understanding of Gravity",
+        "description": "Explore how general relativity departs from Newtonian gravity, explaining how massive objects warp spacetime and how this affects the motion of planets, stars, and light."
+      },
+      {
+        "title": "Gravitational Waves: The Ripple in Spacetime",
+        "description": "Learn about gravitational waves, ripples in spacetime predicted by general relativity, and how they were directly detected by LIGO, providing a new way to observe cosmic events."
+      },
+      {
+        "title": "The Relationship Between Special and General Relativity",
+        "description": "Understand how Einstein’s special relativity, which deals with objects moving at constant speeds, paved the way for general relativity, which applies to accelerated motion and gravitational effects."
+      },
+      {
+        "title": "Time Dilation: How Gravity Affects Time",
+        "description": "Discover the concept of time dilation, where time passes more slowly in stronger gravitational fields, a fascinating effect predicted by general relativity and confirmed by modern experiments."
+      }
+    ]
+  },
+  {
+    "id": "special-relativity",
+    "name": "Special Relativity",
+    "description": "Study Einstein's first theory of relativity, dealing with the relationship between space and time.",
+    "content": "Content about Special Relativity will be added soon...",
+    "category": "Relativity",
+    "difficulty": "Beginner",
+    "status": "Established",
+    "relatedTopics": ["time-dilation", "general-relativity"],
+    "articles": [
+      {
+        "title": "What Is Special Relativity? The Theory That Changed Physics",
+        "description": "Explore Einstein’s special theory of relativity, which explains how the laws of physics are the same for all observers in uniform motion and how time and space are intertwined."
+      },
+      {
+        "title": "The Key Concepts of Special Relativity: Speed of Light, Time Dilation, and Mass",
+        "description": "Understand the fundamental concepts of special relativity, including the speed of light as the ultimate limit, time dilation, and how mass increases as objects approach light speed."
+      },
+      {
+        "title": "Relativity and Time Dilation: How Moving Faster Affects Time",
+        "description": "Learn about time dilation, one of the most famous results of special relativity, and how moving at high speeds causes time to slow down for moving objects compared to stationary observers."
+      },
+      {
+        "title": "E = mc²: The Famous Equation of Special Relativity",
+        "description": "Delve into Einstein’s famous equation, E = mc², which expresses the equivalence of mass and energy and has had profound implications in both physics and the technology we use today."
+      },
+      {
+        "title": "The Relationship Between Special and General Relativity",
+        "description": "Explore the connection between special relativity and general relativity, understanding how the former laid the groundwork for the latter's exploration of gravity and spacetime curvature."
+      }
+    ]
+  },
+  {
+    "id": "string-theory",
+    "name": "String Theory",
+    "description": "Explore the theoretical framework in which point-like particles are replaced by one-dimensional objects called strings.",
+    "content": "Content about String Theory will be added soon...",
+    "category": "Quantum Physics",
+    "difficulty": "Advanced",
+    "status": "Hypothetical",
+    "relatedTopics": ["quantum-gravity", "holographic-principle"],
+    "articles": [
+      {
+        "title": "What Is String Theory? The Quest for a Unified Theory of Physics",
+        "description": "Dive into string theory, a framework in which fundamental particles are replaced by one-dimensional strings. Learn about the possibility of unifying quantum mechanics and general relativity."
+      },
+      {
+        "title": "The Basics of String Theory: Strings, Branes, and Extra Dimensions",
+        "description": "Explore the fundamental concepts of string theory, including strings, branes, and the theory's reliance on extra dimensions to explain forces and particles in the universe."
+      },
+      {
+        "title": "String Theory and Quantum Gravity: Unifying the Forces of Nature",
+        "description": "Understand how string theory aims to unify the four fundamental forces of nature: gravity, electromagnetism, the weak nuclear force, and the strong nuclear force."
+      },
+      {
+        "title": "The Holographic Principle: How String Theory Relates to the Nature of Space",
+        "description": "Learn about the holographic principle, which suggests that the entire universe can be described by information encoded on a lower-dimensional boundary, a concept that is closely tied to string theory."
+      },
+      {
+        "title": "Challenges of String Theory: Testing the Hypothesis",
+        "description": "Examine the challenges string theory faces, including the lack of experimental evidence and how physicists are attempting to find ways to test the predictions of string theory in the real world."
+      }
+    ]
+  },
+  {
+    "id": "multiverse-hypothesis",
+    "name": "Multiverse Hypothesis",
+    "description": "Consider the speculative idea that our universe is just one of many.",
+    "content": "Content about Multiverse Hypothesis will be added soon...",
+    "category": "Philosophy of Science",
+    "difficulty": "Advanced",
+    "status": "Hypothetical",
+    "relatedTopics": ["anthropic-principle", "cosmic-inflation"],
+    "articles": [
+      {
+        "title": "What Is the Multiverse Hypothesis? The Idea of Infinite Universes",
+        "description": "Explore the multiverse hypothesis, which proposes that our universe is just one of many, each with potentially different physical laws and constants."
+      },
+      {
+        "title": "Types of Multiverses: From Parallel Universes to Bubble Universes",
+        "description": "Learn about the different types of multiverses, including the parallel universe theory, bubble universes, and the possibility of a 'many-worlds' interpretation of quantum mechanics."
+      },
+      {
+        "title": "The Anthropic Principle: Why Is Our Universe So Special?",
+        "description": "Dive into the anthropic principle, which suggests that the universe’s physical constants appear fine-tuned for the existence of life. This principle is often discussed in the context of the multiverse hypothesis."
+      },
+      {
+        "title": "Cosmic Inflation and Its Connection to the Multiverse Theory",
+        "description": "Understand how cosmic inflation theory suggests that rapid expansion in the early universe could give rise to multiple universes, leading to the possibility of a multiverse."
+      },
+      {
+        "title": "Criticisms of the Multiverse Hypothesis: Unfalsifiable and Speculative",
+        "description": "Explore the criticisms of the multiverse hypothesis, including its lack of testability and how it challenges the scientific principle of falsifiability."
+      }
+    ]
+  },
+  {
+    "id": "quantum-gravity",
+    "name": "Quantum Gravity",
+    "description": "Delve into theories that seek to unify quantum mechanics with general relativity.",
+    "content": "Content about Quantum Gravity will be added soon...",
+    "category": "Theoretical Physics",
+    "difficulty": "Advanced",
+    "status": "Theoretical",
+    "relatedTopics": ["string-theory", "general-relativity"],
+    "articles": [
+      {
+        "title": "What Is Quantum Gravity? Understanding the Search for a Unified Theory",
+        "description": "Explore the fundamental challenge of quantum gravity: reconciling the principles of quantum mechanics with the theory of general relativity to explain gravity at the quantum level."
+      },
+      {
+        "title": "String Theory and Quantum Gravity: A Path to Unification",
+        "description": "Learn how string theory provides one potential route to quantum gravity, suggesting that gravity may arise from the vibration of one-dimensional strings rather than from a force in the traditional sense."
+      },
+      {
+        "title": "Loop Quantum Gravity: An Alternative Approach to Quantum Gravity",
+        "description": "Delve into loop quantum gravity, a theory that proposes spacetime is quantized and that space itself is composed of discrete loops, offering an alternative to string theory in the search for quantum gravity."
+      },
+      {
+        "title": "Theoretical Implications of Quantum Gravity on Space and Time",
+        "description": "Understand the theoretical implications of quantum gravity on the fabric of spacetime, including the concept of spacetime being granular at the smallest scales and how this might affect our understanding of black holes and the Big Bang."
+      },
+      {
+        "title": "Challenges in Testing Quantum Gravity Theories: Unfalsifiability and Experimentation",
+        "description": "Explore the challenges faced in testing quantum gravity theories, including issues of untestability, the lack of experimental data, and how scientists are working to make these theories more observable."
+      }
+    ]
+  },
+  {
+    "id": "cosmic-inflation",
+    "name": "Cosmic Inflation",
+    "description": "Discover the rapid expansion of the universe shortly after the Big Bang.",
+    "content": "Content about Cosmic Inflation will be added soon...",
+    "category": "Cosmology",
+    "difficulty": "Intermediate",
+    "status": "Theoretical",
+    "relatedTopics": ["big-bang-theory", "dark-energy"],
+    "articles": [
+      {
+        "title": "What Is Cosmic Inflation? Understanding the Early Expansion of the Universe",
+        "description": "Explore the theory of cosmic inflation, which suggests that the universe expanded exponentially in the first fraction of a second after the Big Bang, shaping the cosmos as we know it today."
+      },
+      {
+        "title": "The Mechanics of Cosmic Inflation: How It Changed the Universe",
+        "description": "Dive into the mechanics of cosmic inflation, learning about how a tiny region of space expanded at an incredible rate and how this rapid growth explains the uniformity and structure of the universe."
+      },
+      {
+        "title": "Cosmic Inflation and the Big Bang: A Unified View of the Early Universe",
+        "description": "Learn about the relationship between cosmic inflation and the Big Bang theory, exploring how inflation fits into the broader cosmological model and provides a solution to certain puzzles in the early universe."
+      },
+      {
+        "title": "The Role of Dark Energy in Cosmic Inflation",
+        "description": "Investigate how dark energy may be connected to the process of cosmic inflation, and how this mysterious force could play a role in both the rapid expansion of the early universe and its current accelerated expansion."
+      },
+      {
+        "title": "Testing the Cosmic Inflation Theory: Evidence and Challenges",
+        "description": "Examine the evidence supporting cosmic inflation, including the cosmic microwave background radiation, and explore the challenges involved in testing this theoretical model."
+      }
+    ]
+  },
+  {
+    "id": "fermi-paradox",
+    "name": "Fermi Paradox",
+    "description": "Examine the contradiction between the high probability of extraterrestrial civilizations and the lack of contact.",
+    "content": "Content about Fermi Paradox will be added soon...",
+    "category": "Astrobiology",
+    "difficulty": "Beginner",
+    "status": "Speculative",
+    "relatedTopics": ["anthropic-principle", "multiverse-hypothesis"],
+    "articles": [
+      {
+        "title": "What Is the Fermi Paradox? Exploring the Search for Extraterrestrial Life",
+        "description": "Understand the Fermi Paradox, which highlights the contradiction between the high probability of extraterrestrial civilizations and the lack of evidence or contact with such civilizations."
+      },
+      {
+        "title": "The Drake Equation: Estimating the Number of Alien Civilizations",
+        "description": "Learn about the Drake Equation, a formula used to estimate the number of potential extraterrestrial civilizations in our galaxy and how it ties into the Fermi Paradox."
+      },
+      {
+        "title": "Possible Explanations for the Fermi Paradox: Why Haven’t We Found Aliens?",
+        "description": "Dive into some of the theories attempting to explain the Fermi Paradox, such as the idea that civilizations are rare, that they self-destruct, or that they are deliberately avoiding us."
+      },
+      {
+        "title": "The Anthropic Principle and the Fermi Paradox: Could We Be Alone?",
+        "description": "Explore how the anthropic principle could explain the Fermi Paradox by suggesting that our universe is fine-tuned for life and that intelligent life may be much rarer than we expect."
+      },
+      {
+        "title": "The Role of the Multiverse Hypothesis in Solving the Fermi Paradox",
+        "description": "Investigate the connection between the Fermi Paradox and the multiverse hypothesis, which proposes that our universe might be just one of many, possibly affecting the chances of finding extraterrestrial life."
+      }
+    ]
+  },
+  {
+    "id": "anthropic-principle",
+    "name": "Anthropic Principle",
+    "description": "Investigate the philosophical argument that our observations of the universe are constrained by the necessity of its compatibility with life.",
+    "content": "Content about Anthropic Principle will be added soon...",
+    "category": "Philosophy of Science",
+    "difficulty": "Intermediate",
+    "status": "Speculative",
+    "relatedTopics": ["fermi-paradox", "multiverse-hypothesis"],
+    "articles": [
+      {
+        "title": "What Is the Anthropic Principle? Understanding Its Philosophical Significance",
+        "description": "Explore the Anthropic Principle, which suggests that the universe's properties are conditioned by the necessity to support life, and how this principle influences our view of the cosmos."
+      },
+      {
+        "title": "The Weak and Strong Anthropic Principles: Different Interpretations",
+        "description": "Learn about the two main forms of the Anthropic Principle—the weak and strong versions—and how they differ in explaining the fine-tuning of the universe for life."
+      },
+      {
+        "title": "Anthropic Principle and the Fine-Tuning Argument: Is the Universe Designed for Life?",
+        "description": "Dive into the debate around fine-tuning in the universe and how the Anthropic Principle is used to address why the laws of physics appear to be perfectly calibrated for the existence of life."
+      },
+      {
+        "title": "How the Anthropic Principle Relates to the Fermi Paradox and the Search for Extraterrestrial Life",
+        "description": "Examine how the Anthropic Principle could help explain the Fermi Paradox, suggesting that our observations of the universe are limited to those conditions that make life possible."
+      },
+      {
+        "title": "The Multiverse Hypothesis and the Anthropic Principle: A Connection?",
+        "description": "Explore the potential connection between the Anthropic Principle and the multiverse hypothesis, which proposes that our universe is just one of many, each with different properties, possibly explaining the fine-tuning for life."
+      }
+    ]
+  },
+  {
+    "id": "time-dilation",
+    "name": "Time Dilation",
+    "description": "Understand how time can pass differently for observers in relative motion or near gravitational fields.",
+    "content": "Content about Time Dilation will be added soon...",
+    "category": "Relativity",
+    "difficulty": "Intermediate",
+    "status": "Established",
+    "relatedTopics": ["special-relativity", "general-relativity"],
+    "articles": [
+      {
+        "title": "What Is Time Dilation? An Introduction to Relativity's Strange Effect",
+        "description": "Explore the concept of time dilation and how time can pass differently for observers in relative motion or near massive objects, a fundamental prediction of Einstein's theories of relativity."
+      },
+      {
+        "title": "Special Relativity and Time Dilation: The Faster You Move, the Slower You Age",
+        "description": "Dive into time dilation in special relativity, where objects moving at high speeds experience time differently than stationary observers, as famously demonstrated by the 'twin paradox'."
+      },
+      {
+        "title": "General Relativity and Time Dilation: How Gravity Affects the Flow of Time",
+        "description": "Learn how general relativity explains time dilation near massive objects, such as black holes, where time can slow down due to the intense gravitational field."
+      },
+      {
+        "title": "Practical Examples of Time Dilation: GPS Satellites and More",
+        "description": "Discover real-world applications of time dilation, including how GPS satellites account for time dilation effects caused by both their speed and the gravitational field of Earth."
+      },
+      {
+        "title": "Theoretical Implications of Time Dilation: What It Means for Space Travel",
+        "description": "Investigate the potential effects of time dilation on long-duration space travel and how astronauts traveling close to the speed of light would experience time differently than those on Earth."
+      }
+    ]
+  },
+  {
+    "id": "gravitational-waves",
+    "name": "Gravitational Waves",
+    "description": "Learn about ripples in spacetime caused by accelerating massive objects.",
+    "content": "Content about Gravitational Waves will be added soon...",
+    "category": "Astrophysics",
+    "difficulty": "Intermediate",
+    "status": "Established",
+    "relatedTopics": ["general-relativity"],
+    "articles": [
+      {
+        "title": "What Are Gravitational Waves? A Beginner's Guide to Ripples in Spacetime",
+        "description": "Explore the concept of gravitational waves, which are ripples in spacetime caused by accelerating massive objects, predicted by Einstein’s general relativity."
+      },
+      {
+        "title": "How Gravitational Waves Were First Detected: The Breakthrough Observation",
+        "description": "Dive into the historic 2015 detection of gravitational waves by LIGO, the groundbreaking experiment that confirmed Einstein's century-old prediction."
+      },
+      {
+        "title": "Gravitational Waves and Black Hole Mergers: A Cosmic Symphony",
+        "description": "Learn how gravitational waves provide insights into cosmic events like black hole mergers, offering a new way to observe and study the universe."
+      },
+      {
+        "title": "Applications of Gravitational Waves: What They Can Teach Us About the Universe",
+        "description": "Examine how scientists use gravitational waves to probe extreme events and objects in the universe, such as neutron stars, black holes, and the early universe."
+      },
+      {
+        "title": "The Future of Gravitational Wave Astronomy: What’s Next?",
+        "description": "Look ahead at the future of gravitational wave astronomy and how upcoming projects like LISA could revolutionize our understanding of the universe."
+      }
+    ]
+  },
+  {
+    "id": "holographic-principle",
+    "name": "Holographic Principle",
+    "description": "Explore the conjecture that all of the information contained in a volume of space can be represented as a hologram on its boundary.",
+    "content": "Content about Holographic Principle will be added soon...",
+    "category": "Theoretical Physics",
+    "difficulty": "Advanced",
+    "status": "Hypothetical",
+    "relatedTopics": ["string-theory"],
+    "articles": [
+      {
+        "title": "Understanding the Holographic Principle: A Radical Idea in Physics",
+        "description": "Dive into the Holographic Principle, a fascinating theory suggesting that all of the information in a given region of space can be encoded on its boundary, challenging our ideas about the nature of space and reality."
+      },
+      {
+        "title": "The Connection Between the Holographic Principle and String Theory",
+        "description": "Explore how the Holographic Principle is deeply connected to string theory, particularly through the AdS/CFT correspondence, and how this connection might unlock new understandings of quantum gravity."
+      },
+      {
+        "title": "Holography in the Universe: How Information Might Be Stored on the Edge",
+        "description": "Learn how the Holographic Principle proposes that the universe itself could be seen as a hologram, with the physical reality we experience being encoded on a distant cosmic boundary."
+      },
+      {
+        "title": "Challenges and Criticisms of the Holographic Principle",
+        "description": "Examine the criticisms and challenges to the Holographic Principle, including issues with experimental verification and the paradoxes that arise from such a radical proposal."
+      },
+      {
+        "title": "The Future of Holographic Principle in Physics: What We Still Don’t Know",
+        "description": "Look ahead to future research in theoretical physics and how the Holographic Principle may play a central role in the unification of quantum mechanics and general relativity."
+      }
+    ]
+  },
+  {
+    "id": "redshift-blueshift",
+    "name": "Redshift/Blueshift",
+    "description": "Understand how the wavelengths of light are stretched or compressed due to the relative motion of objects.",
+    "content": "Content about Redshift/Blueshift will be added soon...",
+    "category": "Astrophysics",
+    "difficulty": "Beginner",
+    "status": "Established",
+    "relatedTopics": ["cosmic-microwave-background", "big-bang-theory"],
+    "articles": [
+      {
+        "title": "What Is Redshift and Blueshift? A Beginner's Guide",
+        "description": "Explore the phenomenon of redshift and blueshift, where the wavelengths of light from distant objects are stretched or compressed based on their motion relative to us."
+      },
+      {
+        "title": "The Science of Redshift: How the Universe Is Expanding",
+        "description": "Learn how redshift provides evidence for the expanding universe, helping astronomers measure the velocity and distance of far-off galaxies."
+      },
+      {
+        "title": "Blueshift: When the Universe Moves Toward Us",
+        "description": "Understand blueshift and how it occurs when objects, such as stars or galaxies, are moving toward the observer, compressing their light waves."
+      },
+      {
+        "title": "Redshift/Blueshift and the Big Bang Theory: The Key to the Universe’s Expansion",
+        "description": "Discover how redshift and blueshift observations are integral to understanding the Big Bang Theory and the ongoing expansion of the universe."
+      },
+      {
+        "title": "Practical Applications of Redshift and Blueshift in Modern Astronomy",
+        "description": "Examine the tools and techniques astronomers use to measure redshift and blueshift, helping to map out the structure and dynamics of the universe."
+      }
+    ]
+  },
+  {
+    "id": "cosmic-microwave-background",
+    "name": "Cosmic Microwave Background (CMB)",
+    "description": "Study the afterglow of the Big Bang, providing insights into the early universe.",
+    "content": "Content about Cosmic Microwave Background will be added soon...",
+    "category": "Cosmology",
+    "difficulty": "Intermediate",
+    "status": "Established",
+    "relatedTopics": ["big-bang-theory", "redshift-blueshift"],
+    "articles": [
+      {
+        "title": "What Is the Cosmic Microwave Background? A Beginner’s Guide",
+        "description": "Learn about the Cosmic Microwave Background (CMB), the faint afterglow from the Big Bang that provides a snapshot of the early universe."
+      },
+      {
+        "title": "The Role of CMB in Understanding the Early Universe",
+        "description": "Explore how the CMB provides critical information about the universe’s first few moments after the Big Bang, revealing the conditions that led to galaxy formation."
+      },
+      {
+        "title": "The Journey of the Cosmic Microwave Background Radiation",
+        "description": "Trace the journey of the CMB from its creation during the early universe to its detection today by instruments like the Planck satellite."
+      },
+      {
+        "title": "CMB and the Evidence for the Big Bang",
+        "description": "Understand how the CMB serves as one of the strongest pieces of evidence supporting the Big Bang Theory and the expanding universe model."
+      },
+      {
+        "title": "How CMB Measurements Help Us Map the Universe",
+        "description": "Learn how detailed measurements of the CMB allow cosmologists to map the universe’s large-scale structure and gain insights into its age, composition, and evolution."
+      }
+    ]
+  },
+  {
+    "id": "entropy-heat-death",
+    "name": "Entropy & Heat Death of the Universe",
+    "description": "Consider the ultimate fate of the universe according to the second law of thermodynamics.",
+    "content": "Content about Entropy & Heat Death of the Universe will be added soon...",
+    "category": "Thermodynamics",
+    "difficulty": "Intermediate",
+    "status": "Theoretical",
+    "relatedTopics": ["cosmic-inflation", "dark-energy"],
+    "articles": [
+      {
+        "title": "What Is Entropy? A Beginner’s Guide to Thermodynamics",
+        "description": "Understand the concept of entropy and how it relates to the disorder in a system, a key idea in thermodynamics."
+      },
+      {
+        "title": "The Heat Death of the Universe: What It Means",
+        "description": "Explore the concept of the heat death of the universe and how it relates to the eventual fate of all matter and energy in the cosmos."
+      },
+      {
+        "title": "Entropy and the Second Law of Thermodynamics",
+        "description": "Learn how the second law of thermodynamics governs the direction of processes in the universe, leading to an increase in entropy."
+      },
+      {
+        "title": "Can the Universe Avoid Heat Death?",
+        "description": "Investigate the possibilities for the universe to avoid a heat death scenario, considering concepts like dark energy and cosmic inflation."
+      },
+      {
+        "title": "How Entropy Affects the Future of the Universe",
+        "description": "Delve into how entropy will continue to shape the universe’s fate, potentially leading to a state where no usable energy remains."
+      }
+    ]
+  }  
+  ]
+  

@@ -1,0 +1,147 @@
+[
+    {
+      "id": 1,
+      "name": "NASA",
+      "country": "USA",
+      "details": "National Aeronautics and Space Administration",
+      "url": "https://www.nasa.gov",
+      "type": "governmental",
+      "founded": "1958-07-29",
+      "owner": "U.S. Federal Government",
+      "headquarters": "Washington, D.C., USA",
+      "notable_missions": ["Apollo 11", "Voyager", "Mars Perseverance", "James Webb Space Telescope"]
+    },
+    {
+      "id": 2,
+      "name": "ESA",
+      "country": "EU",
+      "details": "European Space Agency",
+      "url": "https://www.esa.int",
+      "type": "governmental",
+      "founded": "1975-05-30",
+      "owner": "22 European member states",
+      "headquarters": "Paris, France",
+      "notable_missions": ["Rosetta", "Ariane", "Gaia", "Mars Express"]
+    },
+    {
+      "id": 3,
+      "name": "JAXA",
+      "country": "Japan",
+      "details": "Japan Aerospace Exploration Agency",
+      "url": "https://www.jaxa.jp/index_e.html",
+      "type": "governmental",
+      "founded": "2003-10-01",
+      "owner": "Japanese Government",
+      "headquarters": "Tokyo, Japan",
+      "notable_missions": ["Hayabusa", "Kibo", "Akatsuki", "SLIM"]
+    },
+    {
+      "id": 4,
+      "name": "ISRO",
+      "country": "India",
+      "details": "Indian Space Research Organisation",
+      "url": "https://www.isro.gov.in",
+      "type": "governmental",
+      "founded": "1969-08-15",
+      "owner": "Department of Space, Government of India",
+      "headquarters": "Bangalore, India",
+      "notable_missions": ["Chandrayaan-3", "Mangalyaan", "PSLV", "Gaganyaan"]
+    },
+    {
+      "id": 5,
+      "name": "CNSA",
+      "country": "China",
+      "details": "China National Space Administration",
+      "url": "http://www.cnsa.gov.cn/english/",
+      "type": "governmental",
+      "founded": "1993-04-22",
+      "owner": "State Council of China",
+      "headquarters": "Beijing, China",
+      "notable_missions": ["Tianwen-1", "Chang'e", "Tiangong Space Station"]
+    },
+    {
+      "id": 6,
+      "name": "Roscosmos",
+      "country": "Russia",
+      "details": "Russian Federal Space Agency",
+      "url": "https://www.roscosmos.ru/",
+      "type": "governmental",
+      "founded": "1992-02-25",
+      "owner": "Russian Government",
+      "headquarters": "Moscow, Russia",
+      "notable_missions": ["Soyuz", "Luna", "Mir", "Vostok"]
+    },
+    {
+      "id": 7,
+      "name": "SpaceX",
+      "country": "USA",
+      "details": "Space Exploration Technologies Corp.",
+      "url": "https://www.spacex.com",
+      "type": "private",
+      "founded": "2002-03-14",
+      "owner": "Elon Musk",
+      "headquarters": "Hawthorne, California, USA",
+      "notable_missions": ["Falcon 9", "Starship", "Dragon", "Starlink"]
+    },
+    {
+      "id": 8,
+      "name": "Blue Origin",
+      "country": "USA",
+      "details": "Private aerospace company founded by Jeff Bezos",
+      "url": "https://www.blueorigin.com",
+      "type": "private",
+      "founded": "2000",
+      "owner": "Jeff Bezos",
+      "headquarters": "Kent, Washington, USA",
+      "notable_missions": ["New Shepard", "New Glenn"]
+    },
+    {
+      "id": 9,
+      "name": "DLR",
+      "country": "Germany",
+      "details": "German Aerospace Center (Deutsches Zentrum für Luft- und Raumfahrt)",
+      "url": "https://www.dlr.de",
+      "type": "governmental",
+      "founded": "1969",
+      "owner": "Federal Republic of Germany",
+      "headquarters": "Cologne, Germany",
+      "notable_missions": ["TerraSAR-X", "Heinrich Hertz", "TET-1"]
+    },
+    {
+      "id": 10,
+      "name": "UK Space Agency",
+      "country": "United Kingdom",
+      "details": "Government agency responsible for the UK’s civil space programme",
+      "url": "https://www.gov.uk/government/organisations/uk-space-agency",
+      "type": "governmental",
+      "founded": "2010-04-01",
+      "owner": "UK Government",
+      "headquarters": "Swindon, United Kingdom",
+      "notable_missions": ["NovaSAR-1", "Solar Orbiter", "UKube-1"]
+    },
+    {
+      "id": 11,
+      "name": "Virgin Galactic",
+      "country": "USA",
+      "details": "Private spaceflight company within the Virgin Group",
+      "url": "https://www.virgingalactic.com",
+      "type": "private",
+      "founded": "2004",
+      "owner": "Virgin Group (Richard Branson)",
+      "headquarters": "Mojave, California, USA",
+      "notable_missions": ["VSS Unity", "SpaceShipTwo"]
+    },
+    {
+      "id": 12,
+      "name": "Rocket Lab",
+      "country": "New Zealand",
+      "details": "Private aerospace company focused on small satellite launch",
+      "url": "https://www.rocketlabusa.com",
+      "type": "private",
+      "founded": "2006",
+      "owner": "Peter Beck",
+      "headquarters": "Auckland, New Zealand",
+      "notable_missions": ["Electron", "Photon", "CAPSTONE"]
+    }
+  ]
+  

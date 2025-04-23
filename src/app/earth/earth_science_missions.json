@@ -1,0 +1,961 @@
+
+[
+  {
+    "target": "atmosphere",
+    "missions": [
+      {
+        "name": "AIM",
+        "description": "The Aeronomy of Ice in the Mesosphere (AIM) mission studied noctilucent clouds to understand their formation and variability.",
+        "owner": "NASA",
+        "launch_date": "2007-04-25",
+        "rocket": "Pegasus-XL",
+        "status": "Decommissioned (2023)",
+        "url": "http://www.nasa.gov/mission_pages/aim/index.html"
+      },
+      {
+        "name": "Aqua",
+        "description": "Aqua is part of NASA's Earth Observing System, focusing on the Earth's water cycle, including evaporation, precipitation, and the cycling of water.",
+        "owner": "NASA",
+        "launch_date": "2002-05-04",
+        "rocket": "Delta II 7920-10L",
+        "status": "Active",
+        "url": "http://www.nasa.gov/mission_pages/aqua/index.html"
+      },
+      {
+        "name": "Aura",
+        "description": "Aura is a satellite mission dedicated to studying the Earth's ozone layer, air quality, and climate.",
+        "owner": "NASA",
+        "launch_date": "2004-07-15",
+        "rocket": "Delta II 7920-10L",
+        "status": "Active",
+        "url": "http://www.nasa.gov/mission_pages/aura/main/index.html"
+      },
+      {
+        "name": "CALIPSO",
+        "description": "The Cloud-Aerosol Lidar and Infrared Pathfinder Satellite Observations (CALIPSO) mission provided data on the vertical distribution of aerosols and clouds.",
+        "owner": "NASA/CNES",
+        "launch_date": "2006-04-28",
+        "rocket": "Delta II 7420-10C",
+        "status": "Decommissioned (2023)",
+        "url": "http://www.nasa.gov/mission_pages/calipso/main/index.html"
+      },
+      {
+        "name": "CloudSat",
+        "description": "CloudSat used radar to observe cloud properties and their effects on climate and weather.",
+        "owner": "NASA",
+        "launch_date": "2006-04-28",
+        "rocket": "Delta II 7420-10C",
+        "status": "Decommissioned (2023)",
+        "url": "http://www.nasa.gov/mission_pages/cloudsat/main/index.html"
+      },
+      {
+        "name": "ICESat-2",
+        "description": "The Ice, Cloud, and land Elevation Satellite-2 (ICESat-2) measures the height of Earth's ice, land, and vegetation.",
+        "owner": "NASA",
+        "launch_date": "2018-09-15",
+        "rocket": "Delta II 7420-10C",
+        "status": "Active",
+        "url": "http://www.nasa.gov/icesat2"
+      },
+      {
+        "name": "Glory",
+        "description": "Glory was a climate research satellite intended to collect data on aerosols and solar irradiance but failed to reach orbit.",
+        "owner": "NASA",
+        "launch_date": "2011-03-04",
+        "rocket": "Taurus XL",
+        "status": "Launch Failure",
+        "url": "http://www.nasa.gov/mission_pages/Glory/main/index.html"
+      },
+      {
+        "name": "NOAA-N Prime",
+        "description": "NOAA-N Prime (NOAA-19) is a weather satellite that provides data for forecasting and climate research.",
+        "owner": "NOAA",
+        "launch_date": "2009-02-06",
+        "rocket": "Delta II 7320-10C",
+        "status": "Active",
+        "url": "http://www.nasa.gov/mission_pages/NOAA-N-Prime/main/index.html"
+      },
+      {
+        "name": "ICESat",
+        "description": "The original Ice, Cloud, and land Elevation Satellite (ICESat) measured ice sheet mass balance, cloud and aerosol heights, and land topography.",
+        "owner": "NASA",
+        "launch_date": "2003-01-12",
+        "rocket": "Delta II 7320-10",
+        "status": "Decommissioned (2010)",
+        "url": "http://www.nasa.gov/mission_pages/icesat/"
+      },
+      {
+        "name": "Terra",
+        "description": "Terra is a flagship Earth Observing System satellite that monitors Earth's atmosphere, land, and oceans.",
+        "owner": "NASA",
+        "launch_date": "1999-12-18",
+        "rocket": "Atlas IIAS",
+        "status": "Active",
+        "url": "http://www.nasa.gov/mission_pages/terra/index.html"
+      }
+    ]
+  },
+  {
+    "target": "continental-drift",
+    "missions": [
+      {
+        "name": "LAGEOS 1 and 2",
+         "description": "The LAGEOS satellites were designed to provide accurate measurements of the movement of the Earth's tectonic plates, contributing to the study of continental drift and geodynamics.",
+        "url": "https://science.nasa.gov/missions/lageos-1-2/",
+        "launchDate": "1976-05-04 (LAGEOS 1), 1992-10-23 (LAGEOS 2)",
+        "owner": "NASA / ASI",
+        "rocket": "Delta 2910 (LAGEOS 1), Ariane 4 (LAGEOS 2)"
+      },
+      {
+        "name": "Van Allen Probes (Radiation Belt Storm Probes)",
+        "description": "The Van Allen Probes explored the Earth's radiation belts to help understand their dynamics and how they affect Earth's magnetic environment, aiding geodynamic research.",
+        "url": "https://www.nasa.gov/mission_pages/rbsp/main/index.html",
+        "launchDate": "2012-08-30",
+        "owner": "NASA",
+        "rocket": "Atlas V 401"
+      },
+      {
+        "name": "TDRS (Tracking and Data Relay Satellite System)",
+        "description": "TDRS provides essential communication support for various geoscience missions, enabling continuous data transmission crucial for geodynamic and Earth science research.",
+        "url": "https://www.nasa.gov/mission_pages/tdrs/index.html",
+        "launchDate": "First launched 1983-04-04 (TDRS-1)",
+        "owner": "NASA",
+        "rocket": "Space Shuttle Challenger (STS-6)"
+      }
+    ]
+  },  
+  {
+    "target": "gravity",
+    "missions": [
+      {
+        "name": "Gravity Probe-B",
+        "description": "Gravity Probe-B tested two unverified predictions of Einstein's general theory of relativity by measuring the warping of space and time around Earth.",
+        "url": "https://www.nasa.gov/mission_pages/gpb/index.html",
+        "launchDate": "2004-04-20",
+        "owner": "NASA / Stanford University",
+        "rocket": "Delta II"
+      },
+      {
+        "name": "Gravity Recovery and Climate Experiment (GRACE)",
+        "description": "GRACE tracked changes in Earth's gravity field to monitor movements of mass within the Earth system, including ice sheets, oceans, and land water storage.",
+        "url": "https://www.nasa.gov/mission_pages/Grace/",
+        "launchDate": "2002-03-17",
+        "owner": "NASA / DLR",
+        "rocket": "Rockot"
+      },
+      {
+        "name": "Van Allen Probes (Radiation Belt Storm Probes)",
+        "description": "The Van Allen Probes studied charged particles in Earth's radiation belts, contributing data relevant to understanding gravitational influences on particle motion.",
+        "url": "https://www.nasa.gov/mission_pages/rbsp/main/index.html",
+        "launchDate": "2012-08-30",
+        "owner": "NASA",
+        "rocket": "Atlas V 401"
+      },
+      {
+        "name": "TDRS (Tracking and Data Relay Satellite System)",
+        "description": "TDRS ensures real-time communication for Earth-observing satellites, supporting gravity-related data transmission critical for geophysical studies.",
+        "url": "https://www.nasa.gov/mission_pages/tdrs/index.html",
+        "launchDate": "First launched 1983-04-04 (TDRS-1)",
+        "owner": "NASA",
+        "rocket": "Space Shuttle Challenger (STS-6)"
+      }
+    ]
+  },
+  {
+    "target": "hurricanes",
+    "missions": [
+      {
+        "name": "CYGNSS (Cyclone Global Navigation Satellite System)",
+        "description": "CYGNSS uses GPS signal reflections to measure surface wind speed over oceans, improving forecasts of tropical cyclone formation and intensity.",
+        "url": "https://www.nasa.gov/cygnss",
+        "launchDate": "2016-12-15",
+        "owner": "NASA",
+        "rocket": "Pegasus XL"
+      },
+      {
+        "name": "GOES (Geostationary Operational Environmental Satellites)",
+        "description": "GOES satellites provide continuous imagery and atmospheric measurements, enabling real-time tracking and monitoring of hurricanes and severe weather.",
+        "url": "https://www.nasa.gov/content/goes/",
+        "launchDate": "1975-10-16 (GOES-1)",
+        "owner": "NOAA / NASA",
+        "rocket": "Delta 2914 (GOES-1)"
+      },
+      {
+        "name": "Hurricanes",
+        "description": "This NASA program collects and curates data from various missions to improve understanding of hurricane development, dynamics, and forecasting accuracy.",
+        "url": "https://www.nasa.gov/mission_pages/hurricanes/main/index.html",
+        "launchDate": "Ongoing program",
+        "owner": "NASA",
+        "rocket": "Multiple platforms"
+      },
+      {
+        "name": "NPP (Suomi National Polar-orbiting Partnership)",
+        "description": "Suomi NPP provides critical weather and climate data, including measurements used for hurricane forecasting, sea surface temperatures, and cloud properties.",
+        "url": "https://www.nasa.gov/mission_pages/NPP/main/index.html",
+        "launchDate": "2011-10-28",
+        "owner": "NASA / NOAA",
+        "rocket": "Delta II 7920-10"
+      },
+      {
+        "name": "Polar",
+        "description": "The Polar spacecraft studied Earth's magnetosphere and its interactions with solar wind, contributing to knowledge about space weather impacts on Earth's atmosphere, including hurricane-related dynamics.",
+        "url": "https://science.nasa.gov/missions/polar/",
+        "launchDate": "1996-02-24",
+        "owner": "NASA",
+        "rocket": "McDonnell Douglas Delta II 7925"
+      },
+      {
+        "name": "Van Allen Probes (Radiation Belt Storm Probes)",
+        "description": "Designed to study radiation belts, these probes also provide insight into how solar storms influence Earth's atmosphere and can affect hurricane systems indirectly.",
+        "url": "https://www.nasa.gov/mission_pages/rbsp/main/index.html",
+        "launchDate": "2012-08-30",
+        "owner": "NASA",
+        "rocket": "Atlas V 401"
+      },
+      {
+        "name": "TDRS (Tracking and Data Relay Satellite System)",
+        "description": "TDRS ensures continuous communication between Earth and satellites monitoring hurricanes, enabling near real-time data flow for weather prediction and disaster response.",
+        "url": "https://www.nasa.gov/mission_pages/tdrs/index.html",
+        "launchDate": "1983-04-04 (TDRS-1)",
+        "owner": "NASA",
+        "rocket": "Space Shuttle Challenger (STS-6)"
+      },
+      {
+        "name": "Terra",
+        "description": "Terra collects data on Earth's atmosphere, land, and oceans; its instruments support hurricane research through measurements of cloud properties, temperature, and aerosols.",
+        "url": "https://www.nasa.gov/mission_pages/terra/index.html",
+        "launchDate": "1999-12-18",
+        "owner": "NASA",
+        "rocket": "Atlas IIAS"
+      },
+      {
+        "name": "Tropical Rainfall Measuring Mission (TRMM)",
+        "description": "TRMM observed precipitation in tropical regions and provided critical data on rainfall patterns inside hurricanes, improving storm models and forecasting.",
+        "url": "https://science.nasa.gov/missions/trmm/",
+        "launchDate": "1997-11-27",
+        "owner": "NASA / JAXA",
+        "rocket": "H-II"
+      }
+    ]
+  },
+  {
+    "target": "ice",
+    "missions": [
+      {
+        "name": "ICESat (Ice, Cloud, and land Elevation Satellite)",
+        "description": "ICESat measured changes in the mass of ice sheets, glaciers, and sea ice, helping scientists monitor climate change and its impact on Earth's polar regions.",
+        "url": "https://www.nasa.gov/mission_pages/icesat/",
+        "launchDate": "2003-01-12",
+        "owner": "NASA",
+        "rocket": "Delta II 7320-10"
+      },
+      {
+        "name": "Landsat",
+        "description": "The Landsat program provides continuous Earth imagery used to monitor ice cover, glacier movement, and long-term environmental change in polar regions.",
+        "url": "https://landsat.gsfc.nasa.gov/",
+        "launchDate": "1972-07-23 (Landsat 1)",
+        "owner": "NASA / USGS",
+        "rocket": "Delta 900 series (Landsat 1)"
+      },
+      {
+        "name": "LDCM (Landsat Data Continuity Mission, later Landsat 8)",
+        "description": "LDCM ensures the continuity of the Landsat program and delivers high-resolution data on ice and snow coverage, supporting glaciology and climate research.",
+        "url": "https://www.nasa.gov/mission_pages/landsat/main/index.html",
+        "launchDate": "2013-02-11",
+        "owner": "NASA / USGS",
+        "rocket": "Atlas V 401"
+      },
+      {
+        "name": "Operation IceBridge",
+        "description": "An airborne mission that filled the data gap between ICESat missions, Operation IceBridge provided 3D views of Arctic and Antarctic ice sheets and sea ice thickness.",
+        "url": "https://www.nasa.gov/topics/earth/features/ice_bridge/index.html",
+        "launchDate": "2009 (first campaign)",
+        "owner": "NASA",
+        "rocket": "Airborne mission (no rocket)"
+      },
+      {
+        "name": "Van Allen Probes (Radiation Belt Storm Probes)",
+        "description": "While primarily focused on radiation belts, the probes contributed to understanding how solar activity may affect ice and polar atmospheric conditions.",
+        "url": "https://www.nasa.gov/mission_pages/rbsp/main/index.html",
+        "launchDate": "2012-08-30",
+        "owner": "NASA",
+        "rocket": "Atlas V 401"
+      },
+      {
+        "name": "TDRS (Tracking and Data Relay Satellite System)",
+        "description": "TDRS supports real-time communication between ground stations and satellites collecting ice and polar data, ensuring rapid transmission for scientific analysis.",
+        "url": "https://www.nasa.gov/mission_pages/tdrs/index.html",
+        "launchDate": "1983-04-04 (TDRS-1)",
+        "owner": "NASA",
+        "rocket": "Space Shuttle Challenger (STS-6)"
+      }
+    ]
+  },
+  {
+    "target": "land-vegetation",
+    "missions": [
+      {
+        "name": "Aqua",
+        "description": "Aqua monitors Earth's water cycle, including soil moisture and vegetation health, using a suite of instruments to collect data on land surface conditions.",
+        "url": "https://www.nasa.gov/mission_pages/aqua/index.html",
+        "launchDate": "2002-05-04",
+        "owner": "NASA",
+        "rocket": "Delta II 7920-10L"
+      },
+      {
+        "name": "ICESat (Ice, Cloud, and land Elevation Satellite)",
+        "description": "Besides monitoring polar ice, ICESat provided precise elevation data useful in assessing forest structure and changes in vegetation coverage.",
+        "url": "https://www.nasa.gov/mission_pages/icesat/",
+        "launchDate": "2003-01-12",
+        "owner": "NASA",
+        "rocket": "Delta II 7320-10"
+      },
+      {
+        "name": "ICESat-2",
+        "description": "ICESat-2 improved upon its predecessor by providing more detailed elevation and biomass data for monitoring forests and vegetation dynamics.",
+        "url": "https://www.nasa.gov/icesat2",
+        "launchDate": "2018-09-15",
+        "owner": "NASA",
+        "rocket": "Delta II 7420-10C"
+      },
+      {
+        "name": "Landsat",
+        "description": "Landsat’s long-term data archive supports the study of land cover and vegetation change, urban growth, deforestation, and agricultural monitoring.",
+        "url": "https://landsat.gsfc.nasa.gov/",
+        "launchDate": "1972-07-23 (Landsat 1)",
+        "owner": "NASA / USGS",
+        "rocket": "Delta 900 series (Landsat 1)"
+      },
+      {
+        "name": "LDCM (Landsat Data Continuity Mission, later Landsat 8)",
+        "description": "LDCM continued Landsat's legacy by capturing high-resolution multispectral data for land use, vegetation, and environmental change analysis.",
+        "url": "https://www.nasa.gov/mission_pages/landsat/main/index.html",
+        "launchDate": "2013-02-11",
+        "owner": "NASA / USGS",
+        "rocket": "Atlas V 401"
+      },
+      {
+        "name": "NPP (Suomi National Polar-orbiting Partnership)",
+        "description": "NPP provides data on vegetation productivity, land surface temperature, and vegetation index trends to support land and ecosystem research.",
+        "url": "https://www.nasa.gov/mission_pages/NPP/main/index.html",
+        "launchDate": "2011-10-28",
+        "owner": "NASA / NOAA",
+        "rocket": "Delta II 7920-10"
+      },
+      {
+        "name": "Operation IceBridge",
+        "description": "Although focused on polar ice, IceBridge also gathered valuable terrain elevation data that aids in studying land topography and vegetation structure.",
+        "url": "https://www.nasa.gov/topics/earth/features/ice_bridge/index.html",
+        "launchDate": "2009 (first campaign)",
+        "owner": "NASA",
+        "rocket": "Airborne mission (no rocket)"
+      },
+      {
+        "name": "Orbiting Carbon Observatory-2 (OCO-2)",
+        "description": "OCO-2 tracks carbon dioxide in Earth's atmosphere, supporting studies on photosynthesis and how vegetation affects carbon cycling on land.",
+        "url": "https://www.nasa.gov/mission_pages/oco2/index.html",
+        "launchDate": "2014-07-02",
+        "owner": "NASA",
+        "rocket": "Delta II 7320-10"
+      },
+      {
+        "name": "Van Allen Probes (Radiation Belt Storm Probes)",
+        "description": "Though not directly focused on vegetation, their measurements help understand solar influences that may indirectly affect Earth's land systems.",
+        "url": "https://www.nasa.gov/mission_pages/rbsp/main/index.html",
+        "launchDate": "2012-08-30",
+        "owner": "NASA",
+        "rocket": "Atlas V 401"
+      },
+      {
+        "name": "Shuttle Radar Topography Mission (SRTM)",
+        "description": "SRTM created a high-resolution topographic map of Earth, aiding vegetation mapping, forest management, and land use planning globally.",
+        "url": "https://www2.jpl.nasa.gov/srtm/",
+        "launchDate": "2000-02-11",
+        "owner": "NASA / NGA / DLR",
+        "rocket": "Space Shuttle Endeavour (STS-99)"
+      },
+      {
+        "name": "SMAP (Soil Moisture Active Passive)",
+        "description": "SMAP measures soil moisture and freeze-thaw state, crucial for monitoring vegetation health, agriculture, and ecosystem dynamics.",
+        "url": "https://www.nasa.gov/smap/",
+        "launchDate": "2015-01-31",
+        "owner": "NASA",
+        "rocket": "Delta II 7320-10C"
+      },
+      {
+        "name": "TDRS (Tracking and Data Relay Satellite System)",
+        "description": "TDRS ensures real-time data relay from Earth-observing satellites, supporting land and vegetation studies with timely data delivery.",
+        "url": "https://www.nasa.gov/mission_pages/tdrs/index.html",
+        "launchDate": "1983-04-04 (TDRS-1)",
+        "owner": "NASA",
+        "rocket": "Space Shuttle Challenger (STS-6)"
+      },
+      {
+        "name": "Terra",
+        "description": "Terra monitors land surface conditions, vegetation cover, and thermal emissions, supporting a wide range of environmental and ecological studies.",
+        "url": "https://www.nasa.gov/mission_pages/terra/index.html",
+        "launchDate": "1999-12-18",
+        "owner": "NASA",
+        "rocket": "Atlas IIAS"
+      }
+    ]
+  },
+  {
+    "target": "oceans",
+    "missions": [
+      {
+        "name": "Aqua",
+        "description": "Studies Earth's water cycle including oceans, atmosphere, and land.",
+        "url": "https://www.nasa.gov/mission_pages/aqua/index.html",
+        "launchDate": "2002-05-04",
+        "owner": "NASA",
+        "rocket": "Delta II 7920-10L"
+      },
+      {
+        "name": "Aquarius",
+        "description": "Mapped sea surface salinity to study ocean circulation and climate.",
+        "url": "https://www.nasa.gov/mission_pages/aquarius/main/index.html",
+        "launchDate": "2011-06-10",
+        "owner": "NASA / CONAE",
+        "rocket": "Delta II 7320-10C"
+      },
+      {
+        "name": "Jason-1",
+        "description": "Monitored global ocean surface topography and sea level.",
+        "url": "https://science.nasa.gov/missions/jason-1/",
+        "launchDate": "2001-12-07",
+        "owner": "NASA / CNES",
+        "rocket": "Delta II 7920"
+      },
+      {
+        "name": "NOAA-N Prime",
+        "description": "Monitored oceanic and atmospheric conditions for weather forecasting.",
+        "url": "https://www.nasa.gov/mission_pages/NOAA-N-Prime/main/index.html",
+        "launchDate": "2009-02-06",
+        "owner": "NOAA / NASA",
+        "rocket": "Delta II 7320-10C"
+      },
+      {
+        "name": "Ocean Surface Topography Mission (OSTM)/Jason-2",
+        "description": "Continued ocean topography measurements started by Jason-1.",
+        "url": "https://www.nasa.gov/mission_pages/ostm/main/index.html",
+        "launchDate": "2008-06-20",
+        "owner": "NASA / CNES / NOAA / EUMETSAT",
+        "rocket": "Delta II 7320"
+      },
+      {
+        "name": "Van Allen Probes (Radiation Belt Storm Probes)",
+        "description": "While not ocean-focused, it provides space weather data influencing Earth’s magnetosphere and indirectly affecting ocean-based measurements.",
+        "url": "https://www.nasa.gov/mission_pages/rbsp/main/index.html",
+        "launchDate": "2012-08-30",
+        "owner": "NASA",
+        "rocket": "Atlas V 401"
+      },
+      {
+        "name": "RapidScat",
+        "description": "Measured ocean surface wind speed and direction to support weather forecasting and climate studies.",
+        "url": "https://www.nasa.gov/rapidscat",
+        "launchDate": "2014-09-21",
+        "owner": "NASA",
+        "rocket": "SpaceX Falcon 9 (via ISS resupply mission)"
+      },
+      {
+        "name": "TDRS (Tracking and Data Relay Satellite)",
+        "description": "Enables near-continuous communication with Earth-observing satellites like ocean missions.",
+        "url": "https://www.nasa.gov/mission_pages/tdrs/index.html",
+        "launchDate": "Multiple (first in 1983)",
+        "owner": "NASA",
+        "rocket": "Various"
+      },
+      {
+        "name": "Terra",
+        "description": "Monitors ocean color, temperature, and productivity as part of Earth system science.",
+        "url": "https://www.nasa.gov/mission_pages/terra/index.html",
+        "launchDate": "1999-12-18",
+        "owner": "NASA",
+        "rocket": "Atlas IIAS"
+      },
+      {
+        "name": "TOPEX/Poseidon",
+        "description": "Revolutionized oceanography by precisely measuring sea surface height.",
+        "url": "https://science.nasa.gov/missions/topex-poseidon/",
+        "launchDate": "1992-08-10",
+        "owner": "NASA / CNES",
+        "rocket": "Ariane 42P"
+      }
+    ]
+  },
+  {
+    "target": "ozone",
+    "missions": [
+      {
+        "name": "Aura",
+        "description": "Monitors ozone, air quality, and climate change with a suite of atmospheric chemistry instruments.",
+        "url": "https://www.nasa.gov/mission_pages/aura/main/index.html",
+        "launchDate": "2004-07-15",
+        "owner": "NASA",
+        "rocket": "Delta II 7920-10L"
+      },
+      {
+        "name": "NOAA-N Prime",
+        "description": "Collects ozone and atmospheric data to support weather forecasting and environmental monitoring.",
+        "url": "https://www.nasa.gov/mission_pages/NOAA-N-Prime/main/index.html",
+        "launchDate": "2009-02-06",
+        "owner": "NOAA / NASA",
+        "rocket": "Delta II 7320-10C"
+      },
+      {
+        "name": "Van Allen Probes (Radiation Belt Storm Probes)",
+        "description": "Though not ozone-specific, it provides insights into space weather which can affect upper atmospheric composition including ozone.",
+        "url": "https://www.nasa.gov/mission_pages/rbsp/main/index.html",
+        "launchDate": "2012-08-30",
+        "owner": "NASA",
+        "rocket": "Atlas V 401"
+      },
+      {
+        "name": "TDRS (Tracking and Data Relay Satellite)",
+        "description": "Enables communication with Earth-observing satellites monitoring ozone and atmospheric dynamics.",
+        "url": "https://www.nasa.gov/mission_pages/tdrs/index.html",
+        "launchDate": "Multiple (first in 1983)",
+        "owner": "NASA",
+        "rocket": "Various"
+      },
+      {
+        "name": "TOMS-EP (Total Ozone Mapping Spectrometer - Earth Probe)",
+        "description": "Focused on monitoring global ozone levels and detecting the ozone hole.",
+        "url": "https://toms.gsfc.nasa.gov/index_v8.html",
+        "launchDate": "1996-07-02",
+        "owner": "NASA",
+        "rocket": "Pegasus XL"
+      },
+      {
+        "name": "Upper Atmosphere Research Satellite (UARS)",
+        "description": "Studied ozone layer and other atmospheric variables to understand the upper atmosphere's chemistry and dynamics.",
+        "url": "https://www.nasa.gov/mission_pages/uars/index.html",
+        "launchDate": "1991-09-12",
+        "owner": "NASA",
+        "rocket": "Space Shuttle Discovery (STS-48)"
+      }
+    ]
+  },
+  {
+    "target": "water-cycle",
+    "missions": [
+      {
+        "name": "Aqua",
+        "description": "Aqua collects data about Earth's water cycle including precipitation, evaporation, and the cycling of water vapor, with instruments like MODIS and AMSR-E.",
+        "url": "https://www.nasa.gov/mission_pages/aqua/index.html",
+        "launchDate": "2002-05-04",
+        "owner": "NASA",
+        "rocket": "Delta II 7920-10L"
+      },
+      {
+        "name": "ATTREX (Airborne Tropical Tropopause Experiment)",
+        "description": "Investigates the transport of water vapor and other chemicals in the upper atmosphere to improve climate models and understanding of the water cycle.",
+        "url": "https://espo.nasa.gov/missions/attrex",
+        "launchDate": "Research campaigns from 2013 to 2014",
+        "owner": "NASA",
+        "rocket": "N/A (airborne mission)"
+      },
+      {
+        "name": "GOES (Geostationary Operational Environmental Satellites)",
+        "description": "Provides continuous observations of weather systems and supports monitoring of atmospheric water vapor and cloud development.",
+        "url": "https://www.nasa.gov/content/goes/",
+        "launchDate": "Multiple (first in 1975)",
+        "owner": "NOAA / NASA",
+        "rocket": "Various"
+      },
+      {
+        "name": "NPP (Suomi National Polar-orbiting Partnership)",
+        "description": "Measures key climate variables including precipitation and water vapor to support weather forecasting and climate research.",
+        "url": "https://www.nasa.gov/mission_pages/NPP/main/index.html",
+        "launchDate": "2011-10-28",
+        "owner": "NASA / NOAA",
+        "rocket": "Delta II"
+      },
+      {
+        "name": "POES (Polar Operational Environmental Satellites)",
+        "description": "Provides global data on temperature, humidity, and cloud cover to monitor the Earth's water cycle and support weather forecasting.",
+        "url": "https://science.nasa.gov/about-us/smd-programs/goes-poes/",
+        "launchDate": "Multiple (from 1978)",
+        "owner": "NOAA / NASA",
+        "rocket": "Various"
+      },
+      {
+        "name": "Van Allen Probes (Radiation Belt Storm Probes)",
+        "description": "Focused on space weather, it indirectly contributes to understanding Earth's atmospheric dynamics and energy transfers that influence the water cycle.",
+        "url": "https://www.nasa.gov/mission_pages/rbsp/main/index.html",
+        "launchDate": "2012-08-30",
+        "owner": "NASA",
+        "rocket": "Atlas V 401"
+      },
+      {
+        "name": "SMAP (Soil Moisture Active Passive)",
+        "description": "Measures soil moisture and freeze-thaw state to provide insights into water availability, droughts, and global water cycle trends.",
+        "url": "https://www.nasa.gov/smap/",
+        "launchDate": "2015-01-31",
+        "owner": "NASA",
+        "rocket": "Delta II 7320"
+      },
+      {
+        "name": "TDRS (Tracking and Data Relay Satellite)",
+        "description": "Supports continuous data communication for satellites monitoring the Earth's hydrological systems and weather phenomena.",
+        "url": "https://www.nasa.gov/mission_pages/tdrs/index.html",
+        "launchDate": "Multiple (first in 1983)",
+        "owner": "NASA",
+        "rocket": "Various"
+      },
+      {
+        "name": "Tropical Rainfall Measuring Mission (TRMM)",
+        "description": "Provided detailed observations of tropical rainfall and its role in the global water cycle and energy exchange.",
+        "url": "https://science.nasa.gov/missions/trmm/",
+        "launchDate": "1997-11-27",
+        "owner": "NASA / JAXA",
+        "rocket": "H-II"
+      }
+    ]
+  },
+    {
+      "target": "weather",
+      "missions": [
+        {
+          "name": "ATTREX (Airborne Tropical Tropopause Experiment)",
+          "description": "Studied the composition and chemistry of the tropical tropopause to better understand climate change and atmospheric dynamics.",
+          "url": "https://espo.nasa.gov/missions/attrex",
+          "launchDate": "2011 (First campaign)",
+          "owner": "NASA",
+          "rocket": "Airborne (Global Hawk UAV)"
+        },
+        {
+          "name": "GOES (Geostationary Operational Environmental Satellites)",
+          "description": "Provides real-time weather data, storm tracking, and forecasting tools for the U.S. and Western Hemisphere.",
+          "url": "https://www.nasa.gov/content/goes/",
+          "launchDate": "Multiple (first in 1975)",
+          "owner": "NOAA / NASA",
+          "rocket": "Various"
+        },
+        {
+          "name": "NOAA-N",
+          "description": "Part of the POES series, it monitored weather, ocean, and atmospheric data to support forecasting.",
+          "url": "https://www.nasa.gov/mission_pages/noaa-n/main/index.html",
+          "launchDate": "2005-05-20",
+          "owner": "NOAA / NASA",
+          "rocket": "Delta II"
+        },
+        {
+          "name": "NOAA-N Prime",
+          "description": "Continued the NOAA-N mission, collecting critical weather and climate data for Earth observation.",
+          "url": "https://www.nasa.gov/mission_pages/NOAA-N-Prime/main/index.html",
+          "launchDate": "2009-02-06",
+          "owner": "NOAA / NASA",
+          "rocket": "Delta II 7320-10C"
+        },
+        {
+          "name": "NPP (Suomi National Polar-orbiting Partnership)",
+          "description": "Bridges NASA and NOAA satellite missions, monitoring weather, atmosphere, and climate with advanced instruments.",
+          "url": "https://www.nasa.gov/mission_pages/NPP/main/index.html",
+          "launchDate": "2011-10-28",
+          "owner": "NASA / NOAA",
+          "rocket": "Delta II 7920-10"
+        },
+        {
+          "name": "POES (Polar Operational Environmental Satellites)",
+          "description": "A series of satellites providing global data for long-term weather forecasting and climate research.",
+          "url": "https://science.nasa.gov/about-us/smd-programs/goes-poes/",
+          "launchDate": "Multiple (starting in 1978)",
+          "owner": "NOAA / NASA",
+          "rocket": "Various"
+        },
+        {
+          "name": "Van Allen Probes (Radiation Belt Storm Probes)",
+          "description": "Supports weather models by monitoring space weather that influences Earth's magnetosphere and upper atmosphere.",
+          "url": "https://www.nasa.gov/mission_pages/rbsp/main/index.html",
+          "launchDate": "2012-08-30",
+          "owner": "NASA",
+          "rocket": "Atlas V 401"
+        },
+        {
+          "name": "SERVIR",
+          "description": "Uses satellite data to improve environmental decision-making and weather-related disaster preparedness in developing regions.",
+          "url": "https://www.nasa.gov/mission_pages/servir/index.html",
+          "launchDate": "2005 (Program established)",
+          "owner": "NASA / USAID",
+          "rocket": "N/A (data and services program)"
+        },
+        {
+          "name": "TDRS (Tracking and Data Relay Satellite)",
+          "description": "Provides near-continuous communication for weather satellites and atmospheric monitoring missions.",
+          "url": "https://www.nasa.gov/mission_pages/tdrs/index.html",
+          "launchDate": "Multiple (first in 1983)",
+          "owner": "NASA",
+          "rocket": "Various"
+        },
+        {
+          "name": "Tropical Rainfall Measuring Mission (TRMM)",
+          "description": "Studied tropical rainfall to improve forecasting of hurricanes, floods, and severe storms.",
+          "url": "https://science.nasa.gov/missions/trmm/",
+          "launchDate": "1997-11-27",
+          "owner": "NASA / JAXA",
+          "rocket": "H-II"
+        }
+      ]
+    },
+    {
+      "target": "wildfires",
+      "missions": [
+        {
+          "name": "Fire and Smoke",
+          "description": "NASA’s wildfire research focuses on observing fires and smoke from space to improve forecasting and study their impact on air quality and climate.",
+          "url": "https://www.nasa.gov/mission_pages/fires/main/index.html",
+          "launchDate": "Ongoing research initiative",
+          "owner": "NASA",
+          "rocket": "Various"
+        },
+        {
+          "name": "GOES (Geostationary Operational Environmental Satellites)",
+          "description": "Provides real-time imagery and data to detect wildfires, monitor smoke movement, and support emergency response.",
+          "url": "https://www.nasa.gov/content/goes/",
+          "launchDate": "Multiple (first in 1975)",
+          "owner": "NOAA / NASA",
+          "rocket": "Various"
+        },
+        {
+          "name": "Landsat",
+          "description": "Captures high-resolution satellite imagery for tracking wildfire progression, assessing damage, and mapping land cover changes.",
+          "url": "https://landsat.gsfc.nasa.gov/",
+          "launchDate": "Multiple (starting 1972)",
+          "owner": "USGS / NASA",
+          "rocket": "Various"
+        },
+        {
+          "name": "LDCM (Landsat Data Continuity Mission)",
+          "description": "Continues Landsat's mission to collect essential data on land use, wildfires, and environmental changes.",
+          "url": "https://www.nasa.gov/mission_pages/landsat/main/index.html",
+          "launchDate": "2013-02-11",
+          "owner": "NASA / USGS",
+          "rocket": "Atlas V 401"
+        },
+        {
+          "name": "Earth Observing-1 (EO-1)",
+          "description": "Tested advanced imaging technologies for wildfire detection, including hyperspectral and thermal imaging.",
+          "url": "https://science.nasa.gov/missions/eo-1/",
+          "launchDate": "2000-11-21",
+          "owner": "NASA",
+          "rocket": "Delta II"
+        },
+        {
+          "name": "Van Allen Probes (Radiation Belt Storm Probes)",
+          "description": "Primarily studies space weather, but supports understanding of Earth’s atmospheric conditions which may interact with wildfire activity.",
+          "url": "https://www.nasa.gov/mission_pages/rbsp/main/index.html",
+          "launchDate": "2012-08-30",
+          "owner": "NASA",
+          "rocket": "Atlas V 401"
+        },
+        {
+          "name": "TDRS (Tracking and Data Relay Satellite)",
+          "description": "Ensures continuous data relay for Earth observation satellites monitoring wildfires and related phenomena.",
+          "url": "https://www.nasa.gov/mission_pages/tdrs/index.html",
+          "launchDate": "Multiple (first in 1983)",
+          "owner": "NASA",
+          "rocket": "Various"
+        },
+        {
+          "name": "Terra",
+          "description": "Carries sensors like MODIS that monitor active fires, burn scars, and vegetation conditions to support wildfire management.",
+          "url": "https://www.nasa.gov/mission_pages/terra/index.html",
+          "launchDate": "1999-12-18",
+          "owner": "NASA",
+          "rocket": "Atlas IIAS"
+        }
+      ]
+    },
+    {
+      "target": "sun-influence",
+      "missions": [
+        {
+          "name": "CHAMP",
+          "description": "CHAMP (Challenging Minisatellite Payload) was a German satellite launched to study Earth's gravity and magnetic fields, and atmospheric conditions.",
+          "url": "http://science.nasa.gov/missions/champ/",
+          "launchDate": "2000-07-15",
+          "owner": "GeoForschungsZentrum (GFZ) Potsdam",
+          "rocket": "Kosmos-3M"
+        },
+        {
+          "name": "Earth Radiation Budget Satellite (ERBS)",
+          "description": "ERBS measured the energy radiated by Earth and its atmosphere to study climate change and ozone depletion.",
+          "url": "http://nasascience.nasa.gov/missions/erbs",
+          "launchDate": "1984-10-05",
+          "owner": "NASA",
+          "rocket": "Space Shuttle Challenger (STS-41-G)"
+        },
+        {
+          "name": "Explorer 1",
+          "description": "Explorer 1 was the first satellite launched by the United States, initiating the Explorer program.",
+          "url": "http://www.nasa.gov/mission_pages/explorer/index.html",
+          "launchDate": "1958-01-31",
+          "owner": "U.S. Army Ballistic Missile Agency / NASA",
+          "rocket": "Juno I"
+        },
+        {
+          "name": "FAST",
+          "description": "FAST (Fast Auroral Snapshot Explorer) studied auroras and plasma processes in Earth's magnetosphere.",
+          "url": "http://sprg.ssl.berkeley.edu/fast/",
+          "launchDate": "1996-08-21",
+          "owner": "NASA",
+          "rocket": "Pegasus XL"
+        },
+        {
+          "name": "Geotail",
+          "description": "Geotail explored the structure and dynamics of the magnetotail and solar wind interaction.",
+          "url": "http://science.nasa.gov/missions/geotail/",
+          "launchDate": "1992-07-24",
+          "owner": "JAXA / NASA",
+          "rocket": "Delta II 6925"
+        },
+        {
+          "name": "Hinode (Solar-B)",
+          "description": "Hinode studied the magnetic fields of the Sun to understand solar flares and coronal mass ejections.",
+          "url": "http://www.nasa.gov/mission_pages/solar-b/index.html",
+          "launchDate": "2006-09-23",
+          "owner": "JAXA / NASA / UKSA",
+          "rocket": "M-V-7"
+        },
+        {
+          "name": "IMAGE",
+          "description": "IMAGE (Imager for Magnetopause-to-Aurora Global Exploration) provided the first comprehensive global view of the plasma in Earth's magnetosphere.",
+          "url": "http://image.gsfc.nasa.gov/",
+          "launchDate": "2000-03-25",
+          "owner": "NASA",
+          "rocket": "Delta II 7326-9.5"
+        },
+        {
+          "name": "IRIS: Interface Region Imaging Spectrograph",
+          "description": "IRIS observes the Sun's interface region to improve understanding of solar wind and its interaction with the solar atmosphere.",
+          "url": "http://www.nasa.gov/mission_pages/iris/index.html",
+          "launchDate": "2013-06-27",
+          "owner": "NASA",
+          "rocket": "Minotaur 1"
+        },
+        {
+          "name": "Polar",
+          "description": "Polar explored the Sun's polar regions and helped understand the causes of auroras and geomagnetic storms.",
+          "url": "http://science.nasa.gov/missions/polar/",
+          "launchDate": "1996-02-24",
+          "owner": "NASA",
+          "rocket": "Pegasus XL"
+        },
+        {
+          "name": "Van Allen Probes/Radiation Belt Storm Probes",
+          "description": "The Van Allen Probes studied the Earth's radiation belts, providing insights into space weather and the effects of solar wind.",
+          "url": "http://www.nasa.gov/mission_pages/rbsp/main/index.html",
+          "launchDate": "2012-08-30",
+          "owner": "NASA",
+          "rocket": "Atlas V 401"
+        },
+        {
+          "name": "RHESSI",
+          "description": "RHESSI observed solar flares and high-energy solar phenomena, contributing to understanding solar activity.",
+          "url": "http://science.nasa.gov/missions/rhessi/",
+          "launchDate": "2002-02-05",
+          "owner": "NASA",
+          "rocket": "Pegasus XL"
+        },
+        {
+          "name": "SDO: Solar Dynamics Observatory",
+          "description": "SDO observes the Sun to understand the solar atmosphere and its effects on space weather and Earth.",
+          "url": "http://www.nasa.gov/mission_pages/sdo/main/index.html",
+          "launchDate": "2010-02-11",
+          "owner": "NASA",
+          "rocket": "Atlas V 401"
+        },
+        {
+          "name": "SOHO: Solar and Heliospheric Observatory",
+          "description": "SOHO observes the Sun's interior, atmosphere, and solar wind to improve understanding of solar dynamics.",
+          "url": "http://www.nasa.gov/mission_pages/soho/index.html",
+          "launchDate": "1995-12-02",
+          "owner": "ESA / NASA",
+          "rocket": "Atlas 2AS"
+        },
+        {
+          "name": "SAMPEX: Solar Anomalous and Magnetospheric Particle Explorer",
+          "description": "SAMPEX studied charged particles in space and their influence on space weather and Earth's magnetosphere.",
+          "url": "http://science.nasa.gov/missions/sampex/",
+          "launchDate": "1992-07-03",
+          "owner": "NASA",
+          "rocket": "Delta 2 7920"
+        },
+        {
+          "name": "SORCE: Solar Radiation and Climate Experiment",
+          "description": "SORCE measured the Sun's radiation output and its impact on Earth's climate and atmosphere.",
+          "url": "http://science.nasa.gov/missions/sorce/",
+          "launchDate": "2003-01-25",
+          "owner": "NASA",
+          "rocket": "Delta II 7320-10C"
+        },{
+          "name": "STEREO",
+          "description": "STEREO provided the first 3D images of the Sun and its atmosphere, contributing to understanding of solar activities and space weather.",
+          "url": "http://www.nasa.gov/mission_pages/stereo/main/index.html",
+          "launchDate": "2006-10-25",
+          "owner": "NASA",
+          "rocket": "Delta II 7920-10C"
+        },
+        {
+          "name": "TDRS",
+          "description": "The TDRS series provides critical data relay support for NASA's space missions and is vital for maintaining communication with spacecraft.",
+          "url": "http://www.nasa.gov/mission_pages/tdrs/index.html",
+          "launchDate": "1983-04-05",
+          "owner": "NASA",
+          "rocket": "Space Shuttle"
+        },
+        {
+          "name": "Terra",
+          "description": "Terra monitors Earth's climate and environmental changes, providing essential data for understanding the Earth's systems and human impacts.",
+          "url": "http://www.nasa.gov/mission_pages/terra/index.html",
+          "launchDate": "1999-12-18",
+          "owner": "NASA",
+          "rocket": "Delta II 7920-10L"
+        },
+        {
+          "name": "THEMIS",
+          "description": "THEMIS studies the Earth's magnetosphere, specifically auroras and magnetic storms, providing new insights into space weather.",
+          "url": "http://www.nasa.gov/mission_pages/themis/main/index.html",
+          "launchDate": "2007-02-17",
+          "owner": "NASA",
+          "rocket": "Delta II 7920-10L"
+        },
+        {
+          "name": "TIMED",
+          "description": "TIMED measures the upper atmosphere and its interactions with solar radiation, improving understanding of atmospheric dynamics and climate.",
+          "url": "http://science.nasa.gov/missions/timed/",
+          "launchDate": "2001-12-07",
+          "owner": "NASA",
+          "rocket": "Delta 7320"
+        },
+        {
+          "name": "TRACE",
+          "description": "TRACE provided high-resolution images of the Sun's corona and magnetic fields, helping to understand solar flares and coronal mass ejections.",
+          "url": "http://science.nasa.gov/missions/trace/",
+          "launchDate": "1998-04-01",
+          "owner": "NASA",
+          "rocket": "Pegasus XL"
+        },
+        {
+          "name": "Ulysses",
+          "description": "Ulysses studied the Sun's polar regions, providing key data on solar wind, cosmic rays, and the Sun's magnetic field.",
+          "url": "http://solarsystem.nasa.gov/missions/profile.cfm?MCode=Ulysses",
+          "launchDate": "1990-10-06",
+          "owner": "ESA / NASA",
+          "rocket": "Space Shuttle Atlantis"
+        },
+        {
+          "name": "WIND",
+          "description": "WIND provides detailed measurements of the solar wind, helping scientists understand space weather and its impact on Earth.",
+          "url": "http://wind.nasa.gov/",
+          "launchDate": "1994-11-01",
+          "owner": "NASA",
+          "rocket": "Atlas I"
+        }
+      ]
+    }
+  ]
+  
