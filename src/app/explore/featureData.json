@@ -1,0 +1,57 @@
+
+[
+  {
+    "title": "Rockets",
+    "description": "Discover the launch vehicles that make space exploration possible.",
+    "href": "/rockets",
+    "icon": "Rocket"
+  },
+  {
+    "title": "Telescopes",
+    "description": "Uncover the tools that let us see deep into the cosmos.",
+    "href": "/telescopes",
+    "icon": "Telescope"
+  },
+  {
+    "title": "Missions",
+    "description": "Track the journeys of spacecraft across our solar system—and beyond.",
+    "href": "/missions",
+    "icon": "Compass"
+  },
+  {
+    "title": "Solar System",
+    "description": "Journey through our solar system, from the fiery Sun to the icy reaches of the Kuiper Belt.",
+    "href": "/solar-system",
+    "icon": "Globe"
+  },
+  {
+    "title": "Earth",
+    "description": "Discover the beauty and complexity of our planet, its diverse ecosystems, and its place in the cosmos.",
+    "href": "/earth",
+    "icon": "Globe"
+  },
+  {
+    "title": "Space Agencies",
+    "description": "Learn about the pioneering space agencies that are driving humanity's exploration of the universe.",
+    "href": "/space-agencies",
+    "icon": "Compass"
+  },
+  {
+    "title": "Objects",
+    "description": "Explore the different types of celestial objects that populate the universe.",
+    "href": "/objects",
+    "icon": "Atom"
+  },
+  {
+    "title": "Programmes",
+    "description": "Discover the groundbreaking programmes that have shaped our understanding of space.",
+    "href": "/programmes",
+    "icon": "Compass"
+  },
+  {
+    "title": "Topics",
+    "description": "Delve into a variety of fascinating subjects that unravel the mysteries of the cosmos.",
+    "href": "/topics",
+    "icon": "BookOpen"
+  }
+]

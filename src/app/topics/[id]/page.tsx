@@ -20,6 +20,12 @@ interface Topic {
   difficulty: string;
   status: string;
   relatedTopics: string[];
+  articles: Article[];
+}
+
+interface Article {
+  title: string;
+  description: string;
 }
 
 const TopicDetailPage = () => {
@@ -62,7 +68,6 @@ const TopicDetailPage = () => {
         <h2 className="text-2xl font-semibold mb-4 dark:text-white text-gray-900">Overview</h2>
         <Card className="dark:bg-gray-900 bg-white">
           <CardHeader>
-            {/* <CardTitle>{topic.name}</CardTitle> */}
             <CardDescription>Category: {topic.category}</CardDescription>
             <CardDescription>Difficulty: {topic.difficulty}</CardDescription>
             <CardDescription>Status: {topic.status}</CardDescription>
@@ -71,6 +76,24 @@ const TopicDetailPage = () => {
             {topic.content}
           </CardContent>
         </Card>
+      </section>
+
+      <section className="mt-8">
+        <h2 className="text-2xl font-semibold mb-4 dark:text-white text-gray-900">
+          Further Reading
+        </h2>
+        {topic.articles && topic.articles.length > 0 ? (
+          <ul className="list-none list-inside dark:text-gray-300">
+            {topic.articles.map((article, index) => (
+              <li key={index} className="mb-2">
+                <h3 className="text-lg font-semibold dark:text-white text-gray-900">{article.title}</h3>
+                <p className="text-md text-gray-600 dark:text-gray-300">{article.description}</p>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p className="dark:text-gray-300">No articles available for this topic.</p>
+        )}
       </section>
     </div>
   );

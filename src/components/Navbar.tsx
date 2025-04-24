@@ -71,6 +71,16 @@ const Navbar = () => {
               </DropdownMenuTrigger>
               <DropdownMenuContent className="w-56">
                  <DropdownMenuItem>
+                  <Link href="/explore" onClick={handleNavigation} className="hover:text-accent dark:text-white">
+                    Explore
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem>
+                  <Link href="/contact" onClick={handleNavigation} className="hover:text-accent dark:text-white">
+                    Contact
+                  </Link>
+                </DropdownMenuItem>
+                 <DropdownMenuItem>
                   <Link href="/topics" onClick={handleNavigation} className="hover:text-accent dark:text-white">
                     Topics
                   </Link>
@@ -109,11 +119,17 @@ const Navbar = () => {
                   <Link href="/missions" onClick={handleNavigation} className="hover:text-accent dark:text-white">
                     Missions
                   </Link>
+                  <Link href="/explore" onClick={handleNavigation} className="hover:text-accent dark:text-white">
+                    Explore
+                  </Link>
                    <Link href="/topics" onClick={handleNavigation} className="hover:text-accent dark:text-white">
                    Topics
                   </Link>
                   <Link href="/objects" onClick={handleNavigation} className="hover:text-accent dark:text-white">
                    Objects
+                  </Link>
+                  <Link href="/contact" onClick={handleNavigation} className="hover:text-accent dark:text-white">
+                    Contact
                   </Link>
                   <Button variant="ghost" size="icon" onClick={toggleDarkMode} className="dark:text-white">
                     {isDarkMode ? <Sun/> : <Moon/>}

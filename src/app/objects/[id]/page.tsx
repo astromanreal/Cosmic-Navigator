@@ -21,6 +21,12 @@ interface Topic {
   difficulty: string;
   status: string;
   relatedTopics: string[];
+  articles: Article[];
+}
+
+interface Article {
+  title: string;
+  description: string;
 }
 
 const ObjectDetailPage = () => {
@@ -68,23 +74,41 @@ const ObjectDetailPage = () => {
         <h2 className="text-2xl font-semibold mb-4 dark:text-white text-gray-900">Overview</h2>
         <Card className="dark:bg-gray-900 bg-white">
           <CardHeader>
-            {/* <CardTitle>{object.name}</CardTitle> */}
             <CardDescription>Category: {object.category}</CardDescription>
             <CardDescription>Difficulty: {object.difficulty}</CardDescription>
             <CardDescription>Status: {object.status}</CardDescription>
           </CardHeader>
           <CardContent className="text-gray-600 dark:text-gray-300">
             {object.content}
+              
           </CardContent>
         </Card>
+
+        <section> 
+        <h2 className="text-2xl font-semibold mt-4 dark:text-white text-gray-900">
+                Further Reading
+              </h2>
+             {object.articles && object.articles.length > 0 ? (
+            <div className="space-y-6">
+              {object.articles.map((article, index) => (
+                <div key={index} className="mb-4">
+                  <h3 className="text-xl font-semibold dark:text-white text-gray-900">{article.title}</h3>
+                  <p className="text-base text-gray-600 dark:text-gray-300 mt-2">{article.description}</p>
+                </div>
+              ))}
+            </div>
+
+            ) : (
+                <p className="dark:text-gray-300">No articles available for this topic.</p>
+            )}
+          </section>
       </section>
        {relatedObjects.length > 0 && (
         <section className="mt-8">
           <h2 className="text-2xl font-semibold mb-4 dark:text-white text-gray-900">
             Related Objects
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {relatedObjects.map((relatedObject) => (
+          </h2><div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {relatedObjects.map((relatedObject) => (
               <Card key={relatedObject.id} className="dark:bg-gray-800 bg-white">
                 <CardHeader>
                   <CardTitle className="text-xl font-semibold dark:text-white text-gray-900">
@@ -104,7 +128,7 @@ const ObjectDetailPage = () => {
                 </CardContent>
               </Card>
             ))}
-          </div>
+            </div>
         </section>
       )}
     </div>
