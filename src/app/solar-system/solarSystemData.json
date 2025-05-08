@@ -1,67 +1,449 @@
-[
-  {
-    "id": "sun",
-    "name": "The Sun",
-    "description": "Our solar system’s star. The source of energy and light."
-  },
-  {
-    "id": "mercury",
-    "name": "Mercury",
-    "description": "The smallest and innermost planet in the Solar System."
-  },
-  {
-    "id": "venus",
-    "name": "Venus",
-    "description": "A scorching planet shrouded in thick, toxic atmosphere."
-  },
-  {
-    "id": "earth",
-    "name": "Earth",
-    "description": "Our home. The third planet from the Sun."
-  },
-  {
-    "id": "mars",
-    "name": "Mars",
-    "description": "The red planet and a target for future colonization."
-  },
-  {
-    "id": "asteroid_belt",
-    "name": "Asteroid Belt",
-    "description": "A region of rocky objects located between Mars and Jupiter, home to many asteroids."
-  },
-  {
-    "id": "jupiter",
-    "name": "Jupiter",
-    "description": "A gas giant and the largest planet in our solar system."
-  },
-  {
-    "id": "saturn",
-    "name": "Saturn",
-    "description": "Known for its beautiful rings."
-  },
-  {
-    "id": "uranus",
-    "name": "Uranus",
-    "description": "An ice giant with a unique axial tilt."
-  },
-  {
-    "id": "neptune",
-    "name": "Neptune",
-    "description": "The farthest known major planet from the Sun."
-  },
-  {
-    "id": "pluto",
-    "name": "Pluto & Dwarf Planets",
-    "description": "Dwarf planets and icy objects in the outer solar system."
-  },
-  {
-    "id": "kuiper_belt",
-    "name": "Kuiper Belt",
-    "description": "A vast region beyond Neptune, populated by icy bodies and dwarf planets, including Pluto."
-  },
-  {
-    "id": "asteroids",
-    "name": "Asteroids, Comets & Meteors",
-    "description": "Rocky fragments, icy bodies, and cosmic debris."
-  }
-]
+{
+  "solarSystemObjects": [
+    {
+      "id": "sun",
+      "name": "The Sun",
+      "tagline": "Our Solar System's Star and Source of Life",
+      "description": "The Sun is the star at the center of our Solar System. It is a nearly perfect sphere of hot plasma, heated to incandescence by nuclear fusion reactions in its core, radiating the energy mainly as light, ultraviolet, and infrared radiation. It is by far the most important source of energy for life on Earth.",
+      "type": "G-type main-sequence star (G2V)",
+      "category": "Star",
+      "diameter": "1.39 million km (864,000 miles)",
+      "mass": "1.989 × 10^30 kg (333,000 Earths)",
+      "moons": "N/A",
+      "orbitalPeriod": "N/A (Center of Solar System)",
+      "dayLength": "About 25-35 Earth days (differential rotation)",
+      "surfaceTemperature": "Approx. 5,500°C (9,940°F) at the surface",
+      "atmosphere": "Photosphere, Chromosphere, Corona (mostly Hydrogen & Helium)",
+      "composition": "Hydrogen (73%), Helium (25%), Other elements (2%)",
+      "age": "About 4.6 billion years",
+      "notableFeatures": [
+        "Solar flares and prominences",
+        "Sunspots and solar cycles",
+        "Source of solar wind",
+        "Powers life on Earth"
+      ],
+      "image": "https://i.pinimg.com/736x/b1/cb/a9/b1cba9006649d0cd75d3e2c2b66bc996.jpg",
+      "articles": [
+        {
+          "title": "Inside the Sun: A Nuclear Furnace",
+          "description": "Explore the core of the Sun and the nuclear fusion processes that power it."
+        },
+        {
+          "title": "Solar Weather: Flares, Storms, and Their Impact",
+          "description": "Learn about solar activity and how it affects Earth and the solar system."
+        }
+      ],
+      "relatedSolarSystemBodies": ["mercury", "earth", "jupiter"],
+      "aiHint": "sun space star"
+    },
+    {
+      "id": "mercury",
+      "name": "Mercury",
+      "tagline": "The Swiftest Planet, Closest to the Sun",
+      "description": "Mercury is the smallest planet in our Solar System and the closest to the Sun. Its orbit takes it around the Sun once every 88 Earth days. It has a very thin atmosphere (exosphere) and extreme temperature variations between its sunlit and shadowed sides.",
+      "type": "Terrestrial Planet",
+      "category": "Planet",
+      "diameter": "4,879 km (3,032 miles)",
+      "mass": "3.30 × 10^23 kg (0.055 Earths)",
+      "moons": "0",
+      "orbitalPeriod": "88 Earth days",
+      "dayLength": "59 Earth days (solar day is 176 Earth days)",
+      "surfaceTemperature": "-173°C to 427°C (-280°F to 800°F)",
+      "atmosphere": "Thin exosphere (Oxygen, Sodium, Hydrogen, Helium, Potassium)",
+      "composition": "Rocky, metallic core",
+      "age": "About 4.5 billion years",
+      "notableFeatures": [
+        "Extreme temperature differences",
+        "Heavily cratered surface",
+        "Caloris Basin (large impact crater)",
+        "Possible water ice in polar craters"
+      ],
+      "image": "https://i.pinimg.com/736x/05/6a/6d/056a6d3e13032e46bd01bbe7f7c47a9c.jpg",
+      "articles": [
+        {
+          "title": "Mercury's Scorched Surface",
+          "description": "A closer look at the extreme conditions and geological features of the innermost planet."
+        }
+      ],
+      "relatedSolarSystemBodies": ["sun", "venus"],
+      "aiHint": "mercury planet space"
+    },
+    {
+      "id": "venus",
+      "name": "Venus",
+      "tagline": "Earth's Twin, Shrouded in a Toxic Veil",
+      "description": "Venus is the second planet from the Sun and is similar in size and structure to Earth. It has a thick, toxic atmosphere composed primarily of carbon dioxide, creating an extreme greenhouse effect that makes it the hottest planet in our solar system.",
+      "type": "Terrestrial Planet",
+      "category": "Planet",
+      "diameter": "12,104 km (7,521 miles)",
+      "mass": "4.87 × 10^24 kg (0.815 Earths)",
+      "moons": "0",
+      "orbitalPeriod": "225 Earth days",
+      "dayLength": "243 Earth days (rotates retrograde)",
+      "surfaceTemperature": "Average 465°C (869°F)",
+      "atmosphere": "Carbon Dioxide (96.5%), Nitrogen (3.5%), Sulfuric acid clouds",
+      "composition": "Rocky, metallic core",
+      "age": "About 4.5 billion years",
+      "notableFeatures": [
+        "Extreme greenhouse effect",
+        "Dense, acidic atmosphere",
+        "Volcanic plains and mountains (e.g., Maxwell Montes)",
+        "Retrograde rotation (spins backwards)"
+      ],
+      "image": "https://i.pinimg.com/736x/00/92/0f/00920f6c8a440416c9ba3ffca76faad2.jpg",
+      "articles": [
+        {
+          "title": "Venus: The Runaway Greenhouse",
+          "description": "Understanding the extreme atmospheric conditions on Venus."
+        }
+      ],
+      "relatedSolarSystemBodies": ["earth", "mercury"],
+      "aiHint": "venus planet clouds"
+    },
+    {
+      "id": "earth",
+      "name": "Earth",
+      "tagline": "Our Pale Blue Dot, Teeming with Life",
+      "description": "Earth is the third planet from the Sun and the only astronomical object known to harbor life. About 29.2% of Earth's surface is land consisting of continents and islands. The remaining 70.8% is covered with water, mostly by oceans, seas, gulfs, and other salt-water bodies.",
+      "type": "Terrestrial Planet",
+      "category": "Planet",
+      "diameter": "12,742 km (7,918 miles)",
+      "mass": "5.97 × 10^24 kg",
+      "moons": "1 (The Moon)",
+      "orbitalPeriod": "365.25 Earth days",
+      "dayLength": "24 hours",
+      "surfaceTemperature": "Average 15°C (59°F)",
+      "atmosphere": "Nitrogen (78%), Oxygen (21%), Argon, CO2",
+      "composition": "Rocky, metallic core, liquid water",
+      "age": "About 4.54 billion years",
+      "notableFeatures": [
+        "Liquid water oceans",
+        "Diverse ecosystems and biosphere",
+        "Plate tectonics",
+        "Significant magnetic field"
+      ],
+      "image": "https://i.pinimg.com/736x/e6/dd/d8/e6ddd8030114ffeb712ea1ab9f3aff5f.jpg",
+      "articles": [
+        { "title": "Earth's Unique Atmosphere", "description": "A deep dive into the layers and composition of our protective atmosphere." },
+        { "title": "The Blue Marble: Oceans of Earth", "description": "Exploring the vast oceans that cover our planet and their role in climate." }
+      ],
+      "relatedSolarSystemBodies": ["moon", "mars", "venus"],
+      "aiHint": "earth planet space"
+    },
+    {
+      "id": "moon",
+      "name": "The Moon",
+      "tagline": "Earth's Constant Companion and Celestial Neighbor",
+      "description": "The Moon is Earth's only natural satellite. It is the fifth largest moon in the Solar System and the largest relative to the size of its planet. It plays a crucial role in stabilizing Earth's wobble and moderating our climate. The Moon's surface is characterized by impact craters, maria (dark volcanic plains), and highlands.",
+      "type": "Natural Satellite",
+      "category": "Moon",
+      "diameter": "3,474 km (2,159 miles)",
+      "mass": "7.34 × 10^22 kg (0.0123 Earths)",
+      "orbitalPeriod": "27.3 Earth days (around Earth)",
+      "dayLength": "27.3 Earth days (synchronous rotation)",
+      "surfaceTemperature": "-173°C to 127°C (-280°F to 260°F)",
+      "atmosphere": "Very thin exosphere (Helium, Neon, Argon, Hydrogen)",
+      "composition": "Rocky, small core",
+      "age": "About 4.51 billion years",
+      "notableFeatures": [
+        "Impact craters (e.g., Tycho, Copernicus)",
+        "Maria (large, dark, basaltic plains)",
+        "Lunar highlands",
+        "Water ice in permanently shadowed polar craters"
+      ],
+      "image": "https://i.pinimg.com/736x/aa/f1/56/aaf156244ebe0b337f23ebf97b831d55.jpg",
+      "articles": [
+        {
+          "title": "Missions to the Moon: A History of Lunar Exploration",
+          "description": "From Apollo landings to modern orbiters and rovers."
+        },
+        {
+          "title": "The Lunar Surface: Craters, Maria, and Regolith",
+          "description": "Exploring the geology and features of our natural satellite."
+        }
+      ],
+      "relatedSolarSystemBodies": ["earth", "mars"],
+      "aiHint": "moon space craters"
+    },
+    {
+      "id": "mars",
+      "name": "Mars",
+      "tagline": "The Red Planet, Our Neighbor with a Mysterious Past",
+      "description": "Mars is the fourth planet from the Sun and the second-smallest planet in our Solar System, being larger than only Mercury. It is often called the \"Red Planet\" due to the iron oxide prevalent on its surface, which gives it a reddish appearance. Mars has a thin atmosphere, polar ice caps, and diverse geological features, including the largest volcano and deepest canyon in the Solar System.",
+      "type": "Terrestrial Planet",
+      "category": "Planet",
+      "diameter": "6,779 km (4,212 miles)",
+      "mass": "6.42 × 10^23 kg (0.107 Earths)",
+      "moons": "2 (Phobos and Deimos)",
+      "orbitalPeriod": "687 Earth days",
+      "dayLength": "24.6 hours (a Martian sol)",
+      "surfaceTemperature": "-143°C to 35°C (-225°F to 95°F)",
+      "atmosphere": "Carbon Dioxide (95%), Nitrogen, Argon, trace Oxygen & Water Vapor",
+      "composition": "Rocky, iron core",
+      "age": "About 4.6 billion years",
+      "notableFeatures": [
+        "Olympus Mons (largest volcano)",
+        "Valles Marineris (deepest canyon)",
+        "Polar ice caps (water and CO2 ice)",
+        "Evidence of ancient rivers and lakes"
+      ],
+      "image": "https://i.pinimg.com/736x/d8/2f/fd/d82ffd23701c4fe5b3ab6fad1cd9a186.jpg",
+      "articles": [
+        {
+          "title": "Searching for Life on Mars",
+          "description": "An overview of past, present, and future missions looking for signs of life."
+        },
+        {
+          "title": "The Geology of Mars: Volcanoes, Canyons, and Dust Storms",
+          "description": "Exploring the diverse and extreme geological landscapes of the Red Planet."
+        }
+      ],
+      "relatedSolarSystemBodies": ["earth", "jupiter", "asteroid_belt"],
+      "aiHint": "mars planet red"
+    },
+    {
+      "id": "asteroid_belt",
+      "name": "Asteroid Belt",
+      "tagline": "The Rocky Remnants Between Mars and Jupiter",
+      "description": "The asteroid belt is a torus-shaped region in the Solar System, located roughly between the orbits of the planets Jupiter and Mars. It contains a great many solid, irregularly shaped bodies, of many sizes but much smaller than planets, called asteroids or minor planets.",
+      "type": "Circumstellar Disc",
+      "category": "Region",
+      "location": "Between Mars and Jupiter",
+      "majorComponents": "Asteroids (rocky, metallic), Dwarf Planet Ceres",
+      "estimatedObjects": "Millions, with Ceres being the largest",
+      "composition": "Rocky and metallic fragments",
+      "age": "Remnants of early solar system formation",
+      "notableFeatures": [
+        "Source of many meteorites that reach Earth",
+        "Contains the dwarf planet Ceres",
+        "Dynamic region with collisions and gravitational influences"
+      ],
+      "image": "https://i.pinimg.com/736x/e7/7f/01/e77f01f88cba1f038f7fb88f0556315d.jpg",
+      "articles": [
+        {
+          "title": "Ceres: The Dwarf Planet in the Asteroid Belt",
+          "description": "Learn about the largest object in the asteroid belt and its unique features."
+        }
+      ],
+      "relatedSolarSystemBodies": ["mars", "jupiter", "asteroids"],
+      "aiHint": "asteroid belt space"
+    },
+    {
+      "id": "jupiter",
+      "name": "Jupiter",
+      "tagline": "The King of Planets, A Gas Giant with a Great Red Spot",
+      "description": "Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass more than two and a half times that of all the other planets in the Solar System combined. Jupiter is known for its Great Red Spot, a giant storm raging for centuries, and its numerous moons.",
+      "type": "Gas Giant",
+      "category": "Planet",
+      "diameter": "139,820 km (86,881 miles)",
+      "mass": "1.90 × 10^27 kg (318 Earths)",
+      "moons": "95 (including Io, Europa, Ganymede, Callisto)",
+      "orbitalPeriod": "11.86 Earth years",
+      "dayLength": "9.9 Earth hours",
+      "cloudTopTemperature": "Approx. -145°C (-230°F)",
+      "atmosphere": "Hydrogen (90%), Helium (10%), trace Methane & Ammonia",
+      "composition": "Mostly Hydrogen and Helium, small rocky core",
+      "age": "About 4.6 billion years",
+      "notableFeatures": [
+        "Great Red Spot (giant storm)",
+        "Strong magnetic field",
+        "Numerous moons (Galilean moons)",
+        "Faint ring system"
+      ],
+      "image": "https://i.pinimg.com/736x/2b/32/ef/2b32efd1163d2789cfe8803a0a23629a.jpg",
+      "articles": [
+        {
+          "title": "Jupiter's Moons: Worlds of Wonder",
+          "description": "Explore the Galilean moons and other fascinating satellites orbiting the gas giant."
+        }
+      ],
+      "relatedSolarSystemBodies": ["saturn", "mars", "asteroid_belt"],
+      "aiHint": "jupiter planet storm"
+    },
+    {
+      "id": "saturn",
+      "name": "Saturn",
+      "tagline": "The Jewel of the Solar System with Stunning Rings",
+      "description": "Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius of about nine and a half times that of Earth. It is most famous for its spectacular system of rings, which are mostly made of ice particles with a smaller amount of rocky debris and dust.",
+      "type": "Gas Giant",
+      "category": "Planet",
+      "diameter": "116,460 km (72,367 miles)",
+      "mass": "5.68 × 10^26 kg (95 Earths)",
+      "moons": "146 (including Titan, Enceladus, Rhea)",
+      "orbitalPeriod": "29.5 Earth years",
+      "dayLength": "10.7 Earth hours",
+      "cloudTopTemperature": "Approx. -178°C (-288°F)",
+      "atmosphere": "Hydrogen (96%), Helium (3%), trace Methane & Ammonia",
+      "composition": "Mostly Hydrogen and Helium, small rocky core",
+      "age": "About 4.5 billion years",
+      "notableFeatures": [
+        "Extensive and complex ring system",
+        "Titan (moon with a thick atmosphere)",
+        "Enceladus (moon with subsurface ocean and geysers)",
+        "Hexagonal storm at the north pole"
+      ],
+      "image": "https://i.pinimg.com/736x/4b/9a/23/4b9a23467c2a88b5b0b9f6a02c615028.jpg",
+      "articles": [
+        {
+          "title": "Saturn's Magnificent Rings",
+          "description": "A detailed look at the composition and dynamics of Saturn's iconic rings."
+        }
+      ],
+      "relatedSolarSystemBodies": ["jupiter", "uranus"],
+      "aiHint": "saturn planet rings"
+    },
+    {
+      "id": "uranus",
+      "name": "Uranus",
+      "tagline": "The Ice Giant Tilted on Its Side",
+      "description": "Uranus is the seventh planet from the Sun. It has the third-largest planetary radius and fourth-largest planetary mass in the Solar System. Uranus is unique among planets because its axis of rotation is tilted sideways, nearly into the plane of its solar orbit. Hence, its north and south poles lie where most other planets have their equators.",
+      "type": "Ice Giant",
+      "category": "Planet",
+      "diameter": "50,724 km (31,518 miles)",
+      "mass": "8.68 × 10^25 kg (14.5 Earths)",
+      "moons": "27 (including Titania, Oberon, Miranda)",
+      "orbitalPeriod": "84 Earth years",
+      "dayLength": "17.2 Earth hours",
+      "cloudTopTemperature": "Approx. -214°C (-353°F)",
+      "atmosphere": "Hydrogen, Helium, Methane (gives its blue-green color)",
+      "composition": "Ices (water, methane, ammonia), rock, hydrogen, helium",
+      "age": "About 4.5 billion years",
+      "notableFeatures": [
+        "Extreme axial tilt (rotates on its side)",
+        "Faint ring system",
+        "Coldest planetary atmosphere",
+        "Icy mantle"
+      ],
+      "image": "https://i.pinimg.com/736x/72/dd/6e/72dd6e06fd75728eed3a77b23456c582.jpg",
+      "articles": [
+        {
+          "title": "Uranus: The Sideways Planet",
+          "description": "Exploring the unique axial tilt and atmosphere of this ice giant."
+        }
+      ],
+      "relatedSolarSystemBodies": ["neptune", "saturn"],
+      "aiHint": "uranus planet blue"
+    },
+    {
+      "id": "neptune",
+      "name": "Neptune",
+      "tagline": "The Windy Blue Giant at the Edge of the Known Planets",
+      "description": "Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. Neptune is 17 times the mass of Earth, and slightly more massive than its near-twin Uranus. Neptune is known for its strong winds and dynamic atmosphere.",
+      "type": "Ice Giant",
+      "category": "Planet",
+      "diameter": "49,244 km (30,599 miles)",
+      "mass": "1.02 × 10^26 kg (17 Earths)",
+      "moons": "14 (including Triton)",
+      "orbitalPeriod": "164.8 Earth years",
+      "dayLength": "16.1 Earth hours",
+      "cloudTopTemperature": "Approx. -218°C (-360°F)",
+      "atmosphere": "Hydrogen, Helium, Methane (gives its deep blue color)",
+      "composition": "Ices (water, methane, ammonia), rock, hydrogen, helium",
+      "age": "About 4.5 billion years",
+      "notableFeatures": [
+        "Strongest winds in the Solar System",
+        "Great Dark Spot (transient storm system)",
+        "Faint ring system",
+        "Triton (large moon with retrograde orbit)"
+      ],
+      "image": "https://i.pinimg.com/736x/72/dd/6e/72dd6e06fd75728eed3a77b23456c582.jpg",
+      "articles": [
+        {
+          "title": "Neptune's Turbulent Atmosphere and Great Dark Spots",
+          "description": "Investigating the dynamic weather patterns on the most distant planet."
+        }
+      ],
+      "relatedSolarSystemBodies": ["uranus", "kuiper_belt"],
+      "aiHint": "neptune planet blue"
+    },
+    {
+      "id": "pluto",
+      "name": "Pluto & Dwarf Planets",
+      "tagline": "Mysterious Worlds in the Outer Reaches",
+      "description": "Pluto, once considered the ninth planet, is now classified as a dwarf planet. It resides in the Kuiper Belt, a distant region of icy bodies. Other dwarf planets like Eris, Haumea, and Makemake also inhabit this cold, remote part of our solar system, offering clues about its early formation.",
+      "type": "Dwarf Planet / Kuiper Belt Object",
+      "category": "Dwarf Planet",
+      "examples": "Pluto, Eris, Haumea, Makemake, Ceres",
+      "location": "Kuiper Belt (most), Asteroid Belt (Ceres)",
+      "composition": "Mostly ice and rock",
+      "age": "Formed early in the Solar System's history",
+      "notableFeatures": [
+        "Icy compositions",
+        "Often have moons (e.g., Pluto's Charon)",
+        "Varying sizes and surface features",
+        "Provide insights into planetary formation"
+      ],
+      "image": "https://i.pinimg.com/736x/91/80/74/918074a93b4b36e669b0b7142b3628bc.jpg",
+      "articles": [
+        {
+          "title": "The New Horizons Mission to Pluto",
+          "description": "Relive the historic flyby that unveiled the surprising complexity of Pluto."
+        },
+        {
+          "title": "What Defines a Dwarf Planet?",
+          "description": "Understanding the criteria that reclassified Pluto and led to the recognition of other dwarf planets."
+        }
+      ],
+      "relatedSolarSystemBodies": ["kuiper_belt", "neptune", "asteroids"],
+      "aiHint": "pluto planet dwarf"
+    },
+    {
+      "id": "kuiper_belt",
+      "name": "Kuiper Belt",
+      "tagline": "The Icy Frontier Beyond Neptune",
+      "description": "The Kuiper Belt is a circumstellar disc in the outer Solar System, extending from the orbit of Neptune at approximately 30 astronomical units (AU) to approximately 50 AU from the Sun. It is similar to the asteroid belt but is far larger and composed mainly of icy bodies, including dwarf planets like Pluto.",
+      "type": "Circumstellar Disc / Debris Disc",
+      "category": "Region",
+      "location": "Beyond Neptune (30-50 AU from Sun)",
+      "majorComponents": "Ice bodies, Dwarf Planets (Pluto, Eris, Haumea, Makemake), Comets",
+      "estimatedObjects": "Hundreds of thousands of icy bodies larger than 100 km, and an estimated trillion or more comets",
+      "composition": "Primarily icy volatiles (water, methane, ammonia)",
+      "age": "Remnants from the Solar System's formation",
+      "notableFeatures": [
+        "Source of short-period comets",
+        "Home to several dwarf planets",
+        "Remnants from the Solar System's formation",
+        "Cold and distant region"
+      ],
+      "image": "https://i.pinimg.com/736x/6a/a7/1f/6aa71f505439d0c1b58206881640fca6.jpg",
+      "articles": [
+        {
+          "title": "Exploring the Kuiper Belt with New Horizons",
+          "description": "Discoveries from NASA's New Horizons mission beyond Pluto."
+        }
+      ],
+      "relatedSolarSystemBodies": ["pluto", "neptune", "asteroids"],
+      "aiHint": "kuiper belt space"
+    },
+    {
+      "id": "asteroids",
+      "name": "Asteroids, Comets & Meteors",
+      "tagline": "The Solar System's Small Bodies and Cosmic Debris",
+      "description": "Asteroids are small, rocky objects that orbit the Sun, mostly found in the asteroid belt. Comets are icy bodies that release gas and dust as they approach the Sun, forming a visible coma and tail. Meteors (shooting stars) are streaks of light produced when meteoroids (small fragments of asteroids or comets) enter Earth's atmosphere and burn up. Meteorites are those fragments that survive to reach the ground.",
+      "type": "Small Solar System Bodies",
+      "category": "Small Bodies",
+      "examples": "Asteroids (Ceres, Vesta), Comets (Halley's, Hale-Bopp), Meteors (Perseids, Leonids)",
+      "composition": "Asteroids (rock, metal), Comets (ice, dust, rock)",
+      "age": "Varies, many are primordial remnants",
+      "notableFeatures": [
+        "Asteroids: Rocky, metallic, can have moons.",
+        "Comets: Icy nucleus, develop coma and tails near Sun, highly elliptical orbits.",
+        "Meteors: Visible streaks of light from burning meteoroids.",
+        "Meteorites: Space rocks that land on Earth."
+      ],
+      "image": "https://i.pinimg.com/736x/67/a6/8c/67a68c1d764258d22ba827c1ed684d8a.jpg",
+      "articles": [
+        {
+          "title": "The Difference Between Asteroids, Comets, and Meteors",
+          "description": "A clear explanation of these often-confused celestial objects."
+        },
+        {
+          "title": "Protecting Earth: Asteroid Detection and Deflection",
+          "description": "Learn about efforts to find and mitigate the risk of asteroid impacts."
+        }
+      ],
+      "relatedSolarSystemBodies": ["asteroid_belt", "kuiper_belt", "earth"],
+      "aiHint": "asteroids comets meteors"
+    }
+  ]
+}

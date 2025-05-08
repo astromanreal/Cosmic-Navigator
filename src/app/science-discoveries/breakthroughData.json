@@ -1,0 +1,57 @@
+
+[
+  {
+    "title": "Water Traces on Mars",
+    "mission": "NASA Curiosity Rover",
+    "year": 2015,
+    "description": "Confirmed hydrated minerals on Martian surface, indicating past flowing liquid water.",
+    "image": "https://i.pinimg.com/736x/a5/96/68/a596682557ccc2b40c2dd31d79cd8f19.jpg",
+    "source": "NASA/JPL",
+    "aiHint": "mars water streaks"
+  },
+  {
+    "title": "First Exoplanet Discoveries",
+    "mission": "Various (incl. Kepler, TESS)",
+    "year": 1995,
+    "description": "Confirmation of planets orbiting stars beyond our Sun, revolutionizing astronomy.",
+    "image": "https://i.pinimg.com/736x/3b/00/b7/3b00b735501c898cfa33d8fd22296e82.jpg",
+    "source": "Various Observatories",
+    "aiHint": "exoplanet star orbit"
+  },
+  {
+    "title": "Gravitational Waves Detected",
+    "mission": "LIGO/Virgo Collaborations",
+    "year": 2015,
+    "description": "First direct detection of ripples in spacetime from merging black holes, confirming Einstein's prediction.",
+    "image": "https://i.pinimg.com/736x/5b/0c/80/5b0c800bc8a493ac8a210fcdc32e50c2.jpg",
+    "source": "LIGO/Virgo",
+    "aiHint": "gravitational waves ripple"
+  },
+  {
+    "title": "Cosmic Microwave Background Anisotropies",
+    "mission": "COBE, WMAP, Planck",
+    "year": 1992,
+    "description": "Detailed mapping of the faint afterglow of the Big Bang revealed tiny temperature fluctuations, seeds of cosmic structure.",
+    "image": "https://i.pinimg.com/736x/f0/1a/8f/f01a8f02e01a916b3f27d810cd79dd57.jpg",
+    "source": "NASA/ESA",
+    "aiHint": "cosmic microwave background map"
+  },
+  {
+    "title": "Accelerating Universe Expansion",
+    "mission": "Hubble Space Telescope & Ground Observatories",
+    "year": 1998,
+    "description": "Discovery that the expansion of the universe is speeding up, attributed to mysterious dark energy.",
+    "image": "https://i.pinimg.com/736x/21/96/b3/2196b394e31d7b306c3150286c5e8d7f.jpg",
+    "source": "Various",
+    "aiHint": "galaxy supernova distance"
+  },
+  {
+    "title": "Imaging a Black Hole's Shadow",
+    "mission": "Event Horizon Telescope",
+    "year": 2019,
+    "description": "First direct image of the shadow of a supermassive black hole (M87*), providing visual evidence.",
+    "image": "https://i.pinimg.com/736x/f9/a4/f6/f9a4f6e9c6dab0baa8adcce4e204cbe9.jpg",
+    "source": "EHT Collaboration",
+    "aiHint": "black hole shadow M87"
+  }
+]

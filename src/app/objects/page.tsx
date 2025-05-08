@@ -1,53 +1,111 @@
 'use client';
 
 import Link from 'next/link';
+import objectData from './objectData.json'; // Assuming objectData.json is in the correct location
+import { Atom, ArrowRight, BrainCircuit, Waves, Sigma, Microscope, Infinity } from 'lucide-react';
+import type React from 'react'; // Import React type for ComponentType
+import { Badge } from '@/components/ui/badge';
+
+interface SpaceObject {
+  id: string;
+  name: string;
+  description: string;
+  category: string; // Assuming category exists, add if needed in JSON
+  difficulty: string; // Assuming difficulty exists, add if needed in JSON
+}
+
+// Map category to icons (similar to Topics page, adjust as needed)
+const categoryIcons: { [key: string]: React.ComponentType } = {
+  Cosmology: BrainCircuit,
+  Relativity: Waves,
+  'Quantum Physics': Atom,
+  'Theoretical Physics': Sigma,
+  Astrobiology: Microscope,
+  'Philosophy of Science': Infinity,
+  Astrophysics: Atom, // Default or specific icon
+  Astronomy: Atom, // Default or specific icon
+  // Add more categories and icons if present in objectData.json
+};
+
 
 const ObjectsPage = () => {
-  const object = [
-    { id: 'black-holes', name: 'Black Holes', description: 'Explore the mysteries of black holes and their impact on the cosmos.' },
-    { id: 'galaxies', name: 'Galaxies', description: 'Explore the different types of galaxies and their formation.' },
-    { id: 'gravity', name: 'Gravity', description: 'Understand the fundamental force that shapes the universe.' },
-    { id: 'interstellar-medium', name: 'Interstellar Medium', description: 'Learn about the matter and radiation that exist between stars.' },
-    { id: 'gamma-ray-bursts', name: 'Gamma-Ray Bursts', description: 'Uncover the secrets of these powerful cosmic explosions.' },
-    { id: 'nebulae', name: 'Nebulae', description: 'Witness the beauty of nebulae, stellar nurseries, and cosmic clouds.' },
-    { id: 'planets-beyond', name: 'Planets Beyond the Solar System', description: 'Discover the exoplanets that orbit distant stars.' },
-    { id: 'stars', name: 'Stars', description: 'Study the life cycle of stars, from birth to death.' },
-    { id: 'supernovae', name: 'Supernovae', description: 'Investigate the explosive demise of stars and their role in the universe.' },
-    { id: 'types-of-stars', name: 'Types of Stars', description: 'Explore the different classifications and characteristics of stars.' },
-    { id: 'types-of-planets', name: 'Types of Planets', description: 'Discover the diverse categories and properties of planets in our universe.' },
-  ];
+  // Use the imported JSON data directly
+  const objects: SpaceObject[] = objectData;
 
   return (
-    <div className="container mx-auto py-10 px-4">
-      <section className="text-center mb-8">
-        <h1 className="text-3xl font-bold mb-4 dark:text-white text-gray-900">Explore Space Objects</h1>
-        <p className="text-gray-500 mb-4 dark:text-gray-400">
-          "The universe is full of magical things, patiently waiting for our wits to grow sharper." - Eden Phillpotts
-        </p>
-        <p className="text-gray-600 dark:text-gray-300">
-          Delve into a variety of fascinating subjects that unravel the mysteries of the cosmos.
-        </p>
-      </section>
+    <div className="min-h-screen bg-gradient-to-b from-gray-900 via-indigo-900 to-black text-gray-100">
+       <div className="container mx-auto py-16 px-4">
+         {/* Enhanced Hero Section */}
+        <section className="text-center mb-20 animate-fade-in">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-cyan-500 to-blue-500 mb-6">
+             Celestial Wonders
+          </h1>
+          <p className="text-lg sm:text-xl text-gray-300 dark:text-gray-400 italic mb-6 max-w-3xl mx-auto font-mono">
+            "Somewhere, something incredible is waiting to be known." - Carl Sagan
+          </p>
+          <p className="text-base text-gray-400 dark:text-gray-300 max-w-3xl mx-auto">
+            Explore the diverse and mysterious objects that populate our universe, from stars and planets to black holes and nebulae.
+          </p>
+        </section>
 
-      <section className="mb-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {object.map((object) => (
-            <div key={object.id} className="bg-white dark:bg-gray-800 p-5 rounded-2xl shadow hover:shadow-lg transition-transform transform hover:scale-105">
-              <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">{object.name}</h3>
-              <p className="text-gray-600 dark:text-gray-300">{object.description}</p>
-                           <Link
-                  href={`/objects/${object.id}`}
-                  className="inline-block mt-4 text-blue-500 hover:text-blue-700 dark:text-teal-300 dark:hover:text-teal-200"
+        {/* Redesigned Object Grid */}
+        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+           {objects.map((obj: SpaceObject) => {
+            const IconComponent = categoryIcons[obj.category] || Atom; // Default icon if category doesn't match
+            return (
+              <Link
+                href={`/objects/${obj.id}`}
+                key={obj.id}
+                className="group perspective block" // Added perspective for 3D effect
+                style={{ perspective: '1000px' }} // Set perspective distance
+              >
+                <div
+                  className="
+                    bg-gray-800/50 dark:bg-black/60 dark:hover:bg-gray-900/80
+                    p-6 rounded-xl shadow-lg dark:shadow-cyan-900/30 /* Adjusted shadow color */
+                    transition-all duration-500 ease-out
+                    transform-style-3d
+                    group-hover:scale-105 group-hover:shadow-2xl dark:group-hover:shadow-cyan-500/50 /* Adjusted shadow color */
+                    group-hover:-rotate-y-1 group-hover:-translate-z-2
+                    border border-transparent dark:border-gray-700/50 dark:hover:border-cyan-500/60 /* Adjusted border color */
+                    relative overflow-hidden h-full flex flex-col justify-between
+                  "
                 >
-                  Know More...
-                </Link>
-            </div>
-          ))}
-        </div>
-      </section>
+                  {/* Subtle gradient background effect */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-transparent to-blue-500/10 opacity-0 group-hover:opacity-50 transition-opacity duration-500 -z-10"></div>
 
-      {/* Add more content related to Space Topics here */}
-      <p className="dark:text-gray-300">Content about Space Topics will be added soon...</p>
+                  <div className="relative z-10"> {/* Content container */}
+                    <div className="mb-4 flex justify-between items-start">
+                       <div className="p-3 rounded-full bg-cyan-900/50 inline-block"> {/* Adjusted icon background */ }
+                          <IconComponent className="h-6 w-6 text-cyan-300" /> {/* Adjusted icon color */}
+                       </div>
+                       {obj.difficulty && (
+                         <Badge variant="outline" className="border-cyan-400/50 text-cyan-300 text-xs"> {/* Adjusted badge color */}
+                           {obj.difficulty}
+                         </Badge>
+                       )}
+                    </div>
+                    <h3 className="text-xl font-semibold text-gray-100 dark:text-white mb-2">{obj.name}</h3>
+                    <p className="text-gray-400 dark:text-gray-300 text-sm flex-grow mb-4 line-clamp-3">{obj.description}</p>
+                    {obj.category && (
+                       <Badge variant="secondary" className="bg-gray-700/70 text-gray-300 text-xs">
+                         {obj.category}
+                       </Badge>
+                    )}
+                  </div>
+
+                  <div className="relative z-10 mt-5 flex justify-end items-center">
+                    <span className="inline-flex items-center text-cyan-300 group-hover:text-cyan-200 font-medium text-sm transition-colors"> {/* Adjusted text color */}
+                      Know More
+                      <ArrowRight className="h-4 w-4 ml-1.5 transition-transform duration-300 group-hover:translate-x-1" />
+                    </span>
+                  </div>
+                </div>
+              </Link>
+            );
+          })}
+        </section>
+      </div>
     </div>
   );
 };

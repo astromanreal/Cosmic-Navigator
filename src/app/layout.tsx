@@ -2,6 +2,7 @@ import type {Metadata} from 'next';
 import {Geist, Geist_Mono} from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/Navbar';
+import SiteFooter from '@/components/SiteFooter'; // Import SiteFooter
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -16,7 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: 'Cosmic Navigator',
   description: 'Explore humanity’s greatest achievements and future possibilities in space.',
-  icons: ['/space-icon.png'], // or whatever the path to your new favicon is
+  icons: ['/space-icon.png'], 
 };
 
 export default function RootLayout({
@@ -25,12 +26,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+    <html lang="en" className="dark">
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}>
         <Navbar />
-        {children}
+        <main className="flex-grow">{children}</main>
+        <SiteFooter /> {/* Add SiteFooter here */}
       </body>
     </html>
   );
 }
-

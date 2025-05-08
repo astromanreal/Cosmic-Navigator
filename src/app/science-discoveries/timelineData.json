@@ -1,0 +1,70 @@
+
+[
+  {
+    "decade": "1920s",
+    "events": [
+      {
+        "year": 1929,
+        "discovery": "Expanding Universe",
+        "impact": "Edwin Hubble observed distant galaxies moving away, providing evidence for the Big Bang.",
+        "icon": "placeholder"
+      }
+    ]
+  },
+  {
+    "decade": "1960s",
+    "events": [
+      {
+        "year": 1964,
+        "discovery": "Cosmic Microwave Background",
+        "impact": "Accidental discovery of the faint afterglow of the Big Bang, confirming the theory.",
+        "icon": "placeholder"
+      }
+    ]
+  },
+   {
+    "decade": "1990s",
+    "events": [
+      {
+        "year": 1995,
+        "discovery": "First Confirmed Exoplanet",
+        "impact": "Detection of 51 Pegasi b, proving planets exist outside our solar system.",
+        "icon": "placeholder"
+      },
+       {
+        "year": 1998,
+        "discovery": "Accelerating Expansion",
+        "impact": "Observations showed the universe's expansion is speeding up, leading to the concept of dark energy.",
+        "icon": "placeholder"
+      }
+    ]
+  },
+   {
+    "decade": "2010s",
+    "events": [
+       {
+        "year": 2015,
+        "discovery": "Gravitational Waves Detected",
+        "impact": "LIGO directly detected ripples in spacetime from merging black holes.",
+        "icon": "placeholder"
+      },
+      {
+        "year": 2019,
+        "discovery": "First Black Hole Image",
+        "impact": "The Event Horizon Telescope captured the shadow of the supermassive black hole M87*.",
+        "icon": "placeholder"
+      }
+    ]
+  },
+  {
+    "decade": "2020s",
+    "events": [
+       {
+        "year": 2022,
+        "discovery": "JWST Reveals Early Galaxies",
+        "impact": "The James Webb Space Telescope provided unprecedented views of the universe's earliest structures.",
+        "icon": "placeholder"
+      }
+    ]
+  }
+]

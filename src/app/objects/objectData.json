@@ -65,38 +65,6 @@
     ]
   },
   {
-    "id": "galaxies",
-    "name": "Galaxies",
-    "description": "Explore the different types of galaxies and their formation.",
-    "content": "Galaxies are vast collections of stars, stellar remnants, interstellar gas, dust, and dark matter, all bound together by gravity. They range in size from dwarfs with just a few million stars to giants with trillions. Galaxies are organized into a hierarchy of larger structures, called groups, clusters, and superclusters.",
-    "category": "Astrophysics",
-    "difficulty": "Beginner",
-    "status": "Established",
-    "relatedTopics": ["stars", "nebulae"],
-    "articles": [
-      {
-        "title": "What Are Galaxies? A Beginner’s Guide to Cosmic Cities",
-        "description": "Take your first steps into the universe by understanding what galaxies are, how they form, and why they matter in the grand architecture of the cosmos."
-      },
-      {
-        "title": "Spiral, Elliptical, and Irregular: Types of Galaxies Explained",
-        "description": "Learn how astronomers classify galaxies based on their shape and structure, and what these forms reveal about their history and evolution."
-      },
-      {
-        "title": "Our Home in the Universe: The Milky Way Galaxy",
-        "description": "Discover fascinating facts about the Milky Way—our galactic neighborhood—its size, structure, and how we fit into the bigger picture."
-      },
-      {
-        "title": "Galactic Collisions: When Galaxies Crash and Merge",
-        "description": "Explore how galactic collisions reshape the cosmos, creating bursts of star formation and leading to the birth of new galactic forms."
-      },
-      {
-        "title": "The Role of Dark Matter in Galaxies",
-        "description": "Unveil the hidden force holding galaxies together—dark matter. Learn how it shapes galaxies and the mystery it continues to pose for scientists."
-      }
-    ]
-  },
-  {
     "id": "interstellar-medium",
     "name": "Interstellar Medium",
     "description": "Learn about the matter and radiation that exist between stars.",

@@ -1,0 +1,476 @@
+
+[
+  {
+    "title": "Andromeda Galaxy",
+    "type": "Astronomical Object",
+    "summary": "The nearest major galaxy to the Milky Way, located about 2.5 million light-years away. It is on a collision course with our galaxy.",
+    "image": "andromeda.jpg",
+    "related": ["/objects/galaxies", "/missions/hubble"],
+    "glossary": ["Galaxy", "Light-year", "Milky Way"]
+  },
+  {
+    "title": "Apollo Program",
+    "type": "Space Program",
+    "summary": "A series of United States human spaceflight missions undertaken by NASA, which landed the first humans on the Moon from 1969 to 1972.",
+    "image": "apollo_program.jpg",
+    "related": ["/programmes", "/solar-system/moon"],
+    "glossary": ["NASA", "Lunar Landing", "Spacecraft"]
+  },
+  {
+    "title": "Asteroid",
+    "type": "Celestial Body",
+    "summary": "A small rocky body orbiting the Sun. Large numbers of these, ranging in size from nearly 600 miles (1,000 km) across (Ceres) to dust particles, are found, especially between the orbits of Mars and Jupiter.",
+    "image": "asteroid.jpg",
+    "related": ["/solar-system/asteroid_belt", "/objects/solar-system"],
+    "glossary": ["Orbit", "Solar System", "Ceres"]
+  },
+  {
+    "title": "Aurora",
+    "type": "Atmospheric Phenomenon",
+    "summary": "A natural light display in Earth's sky, predominantly seen in high-latitude regions (around the Arctic and Antarctic). Auroras are produced when the magnetosphere is sufficiently disturbed by the solar wind.",
+    "image": "aurora.jpg",
+    "related": ["/earth/atmosphere", "/solar-system/sun"],
+    "glossary": ["Magnetosphere", "Solar Wind", "Ionosphere"]
+  },
+  {
+    "title": "Big Bang Theory",
+    "type": "Cosmological Model",
+    "summary": "The prevailing cosmological model explaining the origin and evolution of the universe from an initial state of extremely high density and temperature.",
+    "image": "big_bang.jpg",
+    "related": ["/topics/cosmic-microwave-background", "/topics/dark-energy"],
+    "glossary": ["Cosmology", "Universe", "Singularity", "Inflation"]
+  },
+  {
+    "title": "Black Hole",
+    "type": "Cosmic Phenomenon",
+    "summary": "A region in spacetime where gravity is so strong that nothing—no particles or even electromagnetic radiation such as light—can escape from it.",
+    "image": "blackhole.jpg",
+    "related": ["/objects/supernovae", "/topics/general-relativity"],
+    "glossary": ["Event Horizon", "Singularity", "Spacetime", "Gravity"]
+  },
+  {
+    "title": "Comet",
+    "type": "Celestial Body",
+    "summary": "An icy, small Solar System body that, when passing close to the Sun, warms and begins to release gases, a process called outgassing. This produces a visible atmosphere or coma, and sometimes also a tail.",
+    "image": "comet.jpg",
+    "related": ["/solar-system/kuiper_belt", "/solar-system/asteroids"],
+    "glossary": ["Solar System", "Orbit", "Nucleus", "Coma", "Tail"]
+  },
+  {
+    "title": "Constellation",
+    "type": "Star Pattern",
+    "summary": "A group of stars forming a recognizable pattern that is traditionally named after its apparent form or identified with a mythological figure.",
+    "image": "constellation.jpg",
+    "related": ["/objects/stars"],
+    "glossary": ["Star", "Celestial Sphere", "Asterism"]
+  },
+  {
+    "title": "Cosmic Microwave Background (CMB)",
+    "type": "Cosmological Remnant",
+    "summary": "The faint cosmic background radiation filling all space. It is an important source of data on the early universe because it is the oldest electromagnetic radiation in the universe, dating to the epoch of recombination.",
+    "image": "cmb.jpg",
+    "related": ["/topics/big-bang-theory", "/missions/planck"],
+    "glossary": ["Big Bang", "Redshift", "Electromagnetic Radiation", "Recombination"]
+  },
+  {
+    "title": "Dark Energy",
+    "type": "Hypothetical Force",
+    "summary": "A mysterious form of energy that is hypothesized to permeate all of space, tending to accelerate the expansion of the universe.",
+    "image": "dark_energy.jpg",
+    "related": ["/topics/dark-matter", "/topics/big-bang-theory"],
+    "glossary": ["Cosmology", "Universe Expansion", "Cosmological Constant"]
+  },
+  {
+    "title": "Dark Matter",
+    "type": "Hypothetical Substance",
+    "summary": "A form of matter thought to account for approximately 85% of the matter in the universe and about a quarter of its total mass–energy density. Its presence is implied in a variety of astrophysical observations.",
+    "image": "darkmatter.jpg",
+    "related": ["/objects/galaxies", "/topics/dark-energy"],
+    "glossary": ["Galaxy Rotation Curve", "Gravitational Lensing", "WIMPs"]
+  },
+  {
+    "title": "Dwarf Planet",
+    "type": "Celestial Body",
+    "summary": "A celestial body orbiting the Sun that is massive enough to be rounded by its own gravity but has not cleared its orbital region of other objects. Pluto is a well-known example.",
+    "image": "dwarf_planet.jpg",
+    "related": ["/solar-system/pluto", "/solar-system/kuiper_belt"],
+    "glossary": ["Orbit", "Gravity", "Pluto", "Ceres", "Eris"]
+  },
+  {
+    "title": "Earth",
+    "type": "Planet",
+    "summary": "The third planet from the Sun and the only astronomical object known to harbor life. It has a dynamic atmosphere, vast oceans, and diverse ecosystems.",
+    "image": "earth.jpg",
+    "related": ["/earth", "/solar-system/moon"],
+    "glossary": ["Planet", "Atmosphere", "Hydrosphere", "Biosphere"]
+  },
+  {
+    "title": "Exoplanet",
+    "type": "Celestial Body",
+    "summary": "A planet that orbits a star outside our solar system. Thousands have been discovered, exhibiting a wide range of sizes, compositions, and orbital characteristics.",
+    "image": "exoplanet.jpg",
+    "related": ["/telescopes/kepler", "/telescopes/tess"],
+    "glossary": ["Star", "Planet", "Habitable Zone", "Transit Method"]
+  },
+  {
+    "title": "Galaxy",
+    "type": "Astronomical Object",
+    "summary": "A gravitationally bound system of stars, stellar remnants, interstellar gas, dust, and dark matter. Galaxies range in size from dwarfs with a few hundred million stars to giants with one hundred trillion stars.",
+    "image": "galaxy.jpg",
+    "related": ["/objects/milky-way", "/objects/andromeda-galaxy", "/topics/dark-matter"],
+    "glossary": ["Star", "Black Hole", "Interstellar Medium", "Spiral Galaxy", "Elliptical Galaxy"]
+  },
+  {
+    "title": "Gamma-Ray Burst (GRB)",
+    "type": "Cosmic Phenomenon",
+    "summary": "Extremely energetic explosions that have been observed in distant galaxies. They are the brightest electromagnetic events known to occur in the universe.",
+    "image": "grb.jpg",
+    "related": ["/objects/supernovae", "/missions/swift"],
+    "glossary": ["Gamma Ray", "Electromagnetic Spectrum", "Neutron Star Merger"]
+  },
+  {
+    "title": "Gravitational Lensing",
+    "type": "Physical Phenomenon",
+    "summary": "A phenomenon where light from a source (such as a galaxy or quasar) is bent by the gravity of a massive object (such as another galaxy or a cluster of galaxies) lying between the source and the observer.",
+    "image": "gravitational_lensing.jpg",
+    "related": ["/topics/general-relativity", "/topics/dark-matter"],
+    "glossary": ["Gravity", "Spacetime", "Einstein Ring"]
+  },
+  {
+    "title": "Gravity",
+    "type": "Fundamental Force",
+    "summary": "The force that attracts a body toward the center of the earth, or toward any other physical body having mass. It is one of the four fundamental forces of nature.",
+    "image": "gravity.jpg",
+    "related": ["/topics/general-relativity", "/objects/black-holes"],
+    "glossary": ["Mass", "Weight", "Newtonian Gravity", "General Relativity"]
+  },
+  {
+    "title": "Hubble Space Telescope (HST)",
+    "type": "Space Telescope",
+    "summary": "A space telescope launched into low Earth orbit in 1990 and still in operation. It has made numerous groundbreaking discoveries in astronomy.",
+    "image": "hubble.jpg",
+    "related": ["/telescopes", "/missions"],
+    "glossary": ["Telescope", "Orbit", "Deep Field", "Space Observatory"]
+  },
+  {
+    "title": "Interstellar Medium (ISM)",
+    "type": "Cosmic Substance",
+    "summary": "The matter and radiation that exist in the space between the star systems in a galaxy. This matter includes gas in ionic, atomic, and molecular form, as well as dust and cosmic rays.",
+    "image": "ism.jpg",
+    "related": ["/objects/nebulae", "/objects/stars"],
+    "glossary": ["Gas", "Dust", "Cosmic Rays", "Molecular Cloud"]
+  },
+  {
+    "title": "International Space Station (ISS)",
+    "type": "Space Station",
+    "summary": "A modular space station in low Earth orbit. It is a multinational collaborative project involving five participating space agencies: NASA (United States), Roscosmos (Russia), JAXA (Japan), ESA (Europe), and CSA (Canada).",
+    "image": "iss.jpg",
+    "related": ["/programmes", "/space-agencies"],
+    "glossary": ["Space Station", "Low Earth Orbit", "Microgravity"]
+  },
+  {
+    "title": "James Webb Space Telescope (JWST)",
+    "type": "Space Telescope",
+    "summary": "A space telescope designed primarily to conduct infrared astronomy. As the largest optical telescope in space, its greatly improved infrared resolution and sensitivity allow it to view objects too old, distant, or faint for the Hubble Space Telescope.",
+    "image": "jwst.jpg",
+    "related": ["/telescopes", "/missions/hubble"],
+    "glossary": ["Infrared Astronomy", "Space Observatory", "Exoplanet Atmospheres"]
+  },
+  {
+    "title": "Jupiter",
+    "type": "Planet",
+    "summary": "The fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass more than two and a half times that of all the other planets in the Solar System combined.",
+    "image": "jupiter.jpg",
+    "related": ["/solar-system/jupiter", "/missions/juno"],
+    "glossary": ["Gas Giant", "Great Red Spot", "Galilean Moons"]
+  },
+  {
+    "title": "Kepler Space Telescope",
+    "type": "Space Telescope",
+    "summary": "A retired space telescope launched by NASA to discover Earth-size planets orbiting other stars. It found thousands of exoplanets using the transit method.",
+    "image": "kepler.jpg",
+    "related": ["/telescopes", "/objects/exoplanet"],
+    "glossary": ["Exoplanet", "Transit Method", "Habitable Zone"]
+  },
+  {
+    "title": "Kuiper Belt",
+    "type": "Solar System Region",
+    "summary": "A circumstellar disc in the outer Solar System, extending from the orbit of Neptune at 30 astronomical units (AU) to approximately 50 AU from the Sun. It is similar to the asteroid belt, but is far larger—20 times as wide and 20–200 times as massive.",
+    "image": "kuiper_belt.jpg",
+    "related": ["/solar-system/pluto", "/objects/comet"],
+    "glossary": ["Astronomical Unit (AU)", "Dwarf Planet", "Trans-Neptunian Object"]
+  },
+  {
+    "title": "Light-Year",
+    "type": "Unit of Distance",
+    "summary": "A unit of astronomical distance equivalent to the distance that light travels in one year, which is 9.4607 × 10^12 km (nearly 6 trillion miles).",
+    "image": "light_year.jpg",
+    "related": ["/topics/special-relativity"],
+    "glossary": ["Speed of Light", "Astronomical Distance", "Parsec"]
+  },
+  {
+    "title": "Mars",
+    "type": "Planet",
+    "summary": "The fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. Mars carries a prominent red color, due to the prevalence of iron oxide on its surface.",
+    "image": "mars.jpg",
+    "related": ["/solar-system/mars", "/missions/perseverance"],
+    "glossary": ["Red Planet", "Olympus Mons", "Valles Marineris", "Martian Rovers"]
+  },
+  {
+    "title": "Meteoroid, Meteor, Meteorite",
+    "type": "Celestial Objects/Phenomena",
+    "summary": "A meteoroid is a small rocky or metallic body in outer space. A meteor is the streak of light seen when a meteoroid enters Earth's atmosphere and burns up. A meteorite is a meteoroid that survives its passage through the atmosphere and lands on the surface.",
+    "image": "meteor.jpg",
+    "related": ["/solar-system/asteroids"],
+    "glossary": ["Asteroid", "Comet", "Atmosphere"]
+  },
+  {
+    "title": "Milky Way Galaxy",
+    "type": "Galaxy",
+    "summary": "The galaxy that includes our Solar System. It is a barred spiral galaxy estimated to contain 100–400 billion stars and at least that number of planets.",
+    "image": "milky_way.jpg",
+    "related": ["/objects/galaxies", "/solar-system/sun"],
+    "glossary": ["Spiral Galaxy", "Galactic Center", "Sagittarius A*"]
+  },
+  {
+    "title": "Moon (Earth's Moon)",
+    "type": "Natural Satellite",
+    "summary": "Earth's only natural satellite. It is the fifth largest moon in the Solar System and the largest relative to the size of its planet.",
+    "image": "moon.jpg",
+    "related": ["/solar-system/moon", "/programmes/apollo"],
+    "glossary": ["Natural Satellite", "Lunar Phases", "Tides", "Mare"]
+  },
+  {
+    "title": "NASA (National Aeronautics and Space Administration)",
+    "type": "Space Agency",
+    "summary": "An independent agency of the U.S. federal government responsible for the civilian space program, as well as aeronautics and space research.",
+    "image": "nasa_logo.jpg",
+    "related": ["/space-agencies", "/programmes/apollo", "/missions/hubble"],
+    "glossary": ["Space Program", "Astronaut", "Rocket"]
+  },
+  {
+    "title": "Nebula",
+    "type": "Astronomical Object",
+    "summary": "An interstellar cloud of dust, hydrogen, helium and other ionized gases. Nebulae are often star-forming regions, such as in the Eagle Nebula.",
+    "image": "nebula.jpg",
+    "related": ["/objects/stars", "/objects/interstellar-medium"],
+    "glossary": ["Interstellar Cloud", "Star Formation", "Emission Nebula", "Reflection Nebula"]
+  },
+  {
+    "title": "Neutron Star",
+    "type": "Stellar Remnant",
+    "summary": "The collapsed core of a massive supergiant star, which had a total mass of between 10 and 25 solar masses, possibly more if the star was metal-rich. Except for black holes, neutron stars are the smallest and densest currently known class of stellar objects.",
+    "image": "neutron_star.jpg",
+    "related": ["/objects/supernovae", "/missions/nicer"],
+    "glossary": ["Supernova", "Pulsar", "Magnetar", "Stellar Evolution"]
+  },
+  {
+    "title": "Orbit",
+    "type": "Celestial Mechanics",
+    "summary": "The gravitationally curved trajectory of an object, such as the trajectory of a planet around a star or a natural satellite around a planet.",
+    "image": "orbit.jpg",
+    "related": ["/topics/gravity"],
+    "glossary": ["Gravity", "Trajectory", "Apogee", "Perigee", "Orbital Period"]
+  },
+  {
+    "title": "Planet",
+    "type": "Celestial Body",
+    "summary": "A celestial body that (a) is in orbit around the Sun, (b) has sufficient mass for its self-gravity to overcome rigid body forces so that it assumes a hydrostatic equilibrium (nearly round) shape, and (c) has cleared the neighbourhood around its orbit.",
+    "image": "planet.jpg",
+    "related": ["/solar-system", "/objects/exoplanet"],
+    "glossary": ["Orbit", "Star", "Solar System", "Gas Giant", "Terrestrial Planet"]
+  },
+  {
+    "title": "Pulsar",
+    "type": "Neutron Star",
+    "summary": "A highly magnetized rotating neutron star that emits beams of electromagnetic radiation out of its magnetic poles. This radiation can be observed only when a beam of emission is pointing toward Earth.",
+    "image": "pulsar.jpg",
+    "related": ["/objects/neutron-star"],
+    "glossary": ["Neutron Star", "Electromagnetic Radiation", "Magnetic Field"]
+  },
+  {
+    "title": "Quasar",
+    "type": "Active Galactic Nucleus",
+    "summary": "An extremely luminous active galactic nucleus (AGN), powered by a supermassive black hole at the center of a galaxy, surrounded by a gaseous accretion disk.",
+    "image": "quasar.jpg",
+    "related": ["/objects/black-holes", "/objects/galaxies"],
+    "glossary": ["Active Galactic Nucleus (AGN)", "Supermassive Black Hole", "Accretion Disk"]
+  },
+  {
+    "title": "Red Giant",
+    "type": "Stellar Stage",
+    "summary": "A luminous giant star of low or intermediate mass (roughly 0.3–8 solar masses (M☉)) in a late phase of stellar evolution. The outer atmosphere is inflated and tenuous, making the radius large and the surface temperature low.",
+    "image": "red_giant.jpg",
+    "related": ["/objects/stars", "/objects/white-dwarf"],
+    "glossary": ["Stellar Evolution", "Solar Mass", "Planetary Nebula"]
+  },
+  {
+    "title": "Rocket",
+    "type": "Vehicle",
+    "summary": "A spacecraft, aircraft, vehicle or projectile that obtains thrust from a rocket engine. Rocket engine exhaust is formed entirely from propellant carried within the rocket.",
+    "image": "rocket.jpg",
+    "related": ["/rockets", "/programmes"],
+    "glossary": ["Propellant", "Thrust", "Launch Vehicle", "Payload"]
+  },
+  {
+    "title": "Satellite",
+    "type": "Spacecraft/Celestial Body",
+    "summary": "An artificial body placed in orbit around the Earth or another planet in order to collect information or for communication. Also refers to a celestial body orbiting the Earth or another planet (e.g., the Moon).",
+    "image": "satellite.jpg",
+    "related": ["/objects/moon", "/missions"],
+    "glossary": ["Orbit", "Spacecraft", "Natural Satellite", "Artificial Satellite"]
+  },
+  {
+    "title": "Solar Flare",
+    "type": "Solar Phenomenon",
+    "summary": "A sudden flash of increased brightness on the Sun, usually observed near its surface and in close proximity to a sunspot group. Powerful flares are often, but not always, accompanied by a coronal mass ejection.",
+    "image": "solar_flare.jpg",
+    "related": ["/solar-system/sun", "/missions/sdo"],
+    "glossary": ["Sunspot", "Coronal Mass Ejection (CME)", "Solar Wind"]
+  },
+  {
+    "title": "Solar System",
+    "type": "Planetary System",
+    "summary": "The gravitationally bound system of the Sun and the objects that orbit it, either directly or indirectly. Of the objects that orbit the Sun directly, the largest are the eight planets.",
+    "image": "solar_system.jpg",
+    "related": ["/solar-system", "/objects/planet", "/objects/sun"],
+    "glossary": ["Sun", "Planet", "Asteroid Belt", "Kuiper Belt", "Oort Cloud"]
+  },
+  {
+    "title": "Solar Wind",
+    "type": "Plasma Stream",
+    "summary": "A stream of charged particles (a plasma) released from the upper atmosphere of the Sun. It mostly consists of electrons, protons and alpha particles with kinetic energy between 0.5 and 10 keV.",
+    "image": "solar_wind.jpg",
+    "related": ["/solar-system/sun", "/objects/aurora"],
+    "glossary": ["Plasma", "Charged Particles", "Magnetosphere", "Heliosphere"]
+  },
+  {
+    "title": "Space Shuttle Program",
+    "type": "Space Program",
+    "summary": "NASA's fourth human spaceflight program that developed and operated a partially reusable low Earth orbital spacecraft system from 1981 to 2011.",
+    "image": "space_shuttle.jpg",
+    "related": ["/programmes", "/rockets/space-shuttle"],
+    "glossary": ["NASA", "Reusable Spacecraft", "Low Earth Orbit"]
+  },
+  {
+    "title": "Spacetime",
+    "type": "Physical Concept",
+    "summary": "In physics, spacetime is any mathematical model which fuses the three dimensions of space and the one dimension of time into a single four-dimensional manifold. Spacetime diagrams can be used to visualize relativistic effects.",
+    "image": "spacetime.jpg",
+    "related": ["/topics/general-relativity", "/topics/special-relativity"],
+    "glossary": ["General Relativity", "Special Relativity", "Manifold", "World Line"]
+  },
+  {
+    "title": "Star",
+    "type": "Celestial Body",
+    "summary": "An astronomical object consisting of a luminous spheroid of plasma held together by its own gravity. The nearest star to Earth is the Sun.",
+    "image": "star.jpg",
+    "related": ["/objects/sun", "/objects/nebulae", "/objects/supernovae"],
+    "glossary": ["Plasma", "Nuclear Fusion", "Main Sequence", "Stellar Evolution"]
+  },
+  {
+    "title": "Sun",
+    "type": "Star",
+    "summary": "The star at the center of the Solar System. It is a nearly perfect sphere of hot plasma, heated to incandescence by nuclear fusion reactions in its core.",
+    "image": "sun.jpg",
+    "related": ["/solar-system/sun", "/objects/star", "/topics/solar-flare"],
+    "glossary": ["Star", "Plasma", "Nuclear Fusion", "Photosphere", "Corona"]
+  },
+  {
+    "title": "Supernova",
+    "type": "Stellar Explosion",
+    "summary": "A powerful and luminous stellar explosion. This transient astronomical event occurs during the last evolutionary stages of a massive star or when a white dwarf is triggered into runaway nuclear fusion.",
+    "image": "supernova.jpg",
+    "related": ["/objects/stars", "/objects/neutron-star", "/objects/black-hole"],
+    "glossary": ["Stellar Explosion", "Neutron Star", "Black Hole", "Light Curve"]
+  },
+  {
+    "title": "Telescope",
+    "type": "Instrument",
+    "summary": "An optical instrument designed to make distant objects appear nearer, containing an arrangement of lenses, or of curved mirrors and lenses, by which rays of light are collected and focused and the resulting image magnified.",
+    "image": "telescope.jpg",
+    "related": ["/telescopes", "/missions/hubble", "/missions/jwst"],
+    "glossary": ["Optical Instrument", "Lens", "Mirror", "Magnification", "Observatory"]
+  },
+  {
+    "title": "Universe",
+    "type": "Cosmic Entity",
+    "summary": "All of space and time and their contents, including planets, stars, galaxies, and all other forms of matter and energy.",
+    "image": "universe.jpg",
+    "related": ["/topics/big-bang-theory", "/topics/dark-energy", "/objects/galaxies"],
+    "glossary": ["Space", "Time", "Matter", "Energy", "Cosmology"]
+  },
+  {
+    "title": "Voyager Program",
+    "type": "Space Program",
+    "summary": "An American scientific program that employs two robotic interstellar probes, Voyager 1 and Voyager 2. They were launched in 1977 to take advantage of a favorable alignment of Jupiter, Saturn, Uranus, and Neptune.",
+    "image": "voyager.jpg",
+    "related": ["/missions/voyager-1", "/missions/voyager-2", "/solar-system"],
+    "glossary": ["Interstellar Probe", "Grand Tour", "Golden Record"]
+  },
+  {
+    "title": "White Dwarf",
+    "type": "Stellar Remnant",
+    "summary": "A stellar core remnant composed mostly of electron-degenerate matter. A white dwarf is very dense: its mass is comparable to that of the Sun, while its volume is comparable to that of Earth.",
+    "image": "white_dwarf.jpg",
+    "related": ["/objects/stars", "/objects/planetary-nebula"],
+    "glossary": ["Stellar Remnant", "Electron Degeneracy", "Planetary Nebula"]
+  },
+  {
+    "title": "Wormhole",
+    "type": "Hypothetical Spacetime Structure",
+    "summary": "A speculative structure linking disparate points in spacetime, and is based on a special solution of the Einstein field equations. A wormhole can be visualized as a tunnel with two ends at separate points in spacetime.",
+    "image": "wormhole.jpg",
+    "related": ["/topics/general-relativity", "/topics/spacetime"],
+    "glossary": ["Spacetime", "Einstein Field Equations", "Exotic Matter"]
+  },
+  {
+    "title": "X-ray Astronomy",
+    "type": "Field of Astronomy",
+    "summary": "The branch of astronomy concerned with the study of X-ray emission from celestial objects. X-rays are absorbed by the Earth's atmosphere, so instruments to detect X-rays must be taken to high altitude by balloons, sounding rockets, and satellites.",
+    "image": "xray_astronomy.jpg",
+    "related": ["/telescopes/chandra", "/missions/xmm-newton"],
+    "glossary": ["X-ray", "Telescope", "Celestial Object", "Black Hole", "Neutron Star"]
+  },
+  {
+    "title": "Xenon",
+    "type": "Chemical Element / Propellant",
+    "summary": "A chemical element with symbol Xe and atomic number 54. It is a colorless, dense, odorless noble gas. Xenon is used in ion propulsion systems for spacecraft due to its high atomic weight and ease of ionization.",
+    "image": "xenon_propulsion.jpg",
+    "related": ["/rockets", "/missions/dawn"],
+    "glossary": ["Propellant", "Ion Engine", "Spacecraft", "Noble Gas"]
+  },
+  {
+    "title": "Yerkes Observatory",
+    "type": "Astronomical Observatory",
+    "summary": "An astronomical observatory located in Williams Bay, Wisconsin, U.S.A. It was operated by the University of Chicago Department of Astronomy and Astrophysics from its founding in 1897 to 2018. It houses the largest refracting telescope ever used for astronomical research.",
+    "image": "yerkes_observatory.jpg",
+    "related": ["/telescopes"],
+    "glossary": ["Observatory", "Telescope", "Refracting Telescope", "Astronomy"]
+  },
+  {
+    "title": "Yellow Dwarf",
+    "type": "Star Type",
+    "summary": "A G-type main-sequence star (spectral type G V). Such a star has about 0.9 to 1.1 solar masses and surface temperature of between 5,300 and 6,000 K. Like other main-sequence stars, a G-type main-sequence star is converting the element hydrogen to helium in its core by means of nuclear fusion. Our Sun is the best-known example.",
+    "image": "sun.jpg",
+    "related": ["/objects/sun", "/objects/stars"],
+    "glossary": ["Star", "Main Sequence", "Spectral Type", "Nuclear Fusion", "Solar Mass"]
+  },
+  {
+    "title": "Zenith",
+    "type": "Astronomical Point",
+    "summary": "In astronomy and navigation, the zenith is an imaginary point directly \"above\" a particular location, on the imaginary celestial sphere. \"Above\" means in the vertical direction opposite to the gravity direction at that location (nadir).",
+    "image": "zenith_sky.jpg",
+    "related": ["/topics/celestial-sphere"],
+    "glossary": ["Celestial Sphere", "Nadir", "Horizon", "Altitude"]
+  },
+  {
+    "title": "Zodiacal Light",
+    "type": "Astronomical Phenomenon",
+    "summary": "A faint, diffuse, and roughly triangular white glow that is visible in the night sky and appears to extend from the Sun's direction and along the zodiac. It is sunlight scattered by interplanetary dust. Zodiacal light is best seen during twilight after sunset in spring and before sunrise in autumn.",
+    "image": "zodiacal_light.jpg",
+    "related": ["/solar-system/sun", "/objects/interstellar-medium"],
+    "glossary": ["Interplanetary Dust", "Sunlight Scattering", "Zodiac", "Twilight"]
+  }
+]
+

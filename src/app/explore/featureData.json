@@ -53,5 +53,18 @@
     "description": "Delve into a variety of fascinating subjects that unravel the mysteries of the cosmos.",
     "href": "/topics",
     "icon": "BookOpen"
+  },
+  {
+    "title": "Space Career & Education Hub",
+    "description": "Discover career paths, courses, and real opportunities in the space sector.",
+    "href": "/career",
+    "icon": "GraduationCap"
+  },
+  {
+    "title": "Space Encyclopedia (A-Z)",
+    "description": "Your Wikipedia-style guide to structured space knowledge, terms, missions and more.",
+    "href": "/space-encyclopedia",
+    "icon": "BookOpen"
   }
 ]
+
