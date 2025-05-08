@@ -1,8 +1,10 @@
-# Cosmic Navigator
+# **Cosmic Navigator**
 
-Cosmic Navigator is a Next.js web application designed to explore the wonders of space and astronomy. This application provides access to a wealth of information about rockets, telescopes, space missions, and various celestial objects and phenomena.
+**Cosmic Navigator** is a Next.js web application designed to explore the wonders of space and astronomy. This application provides access to a wealth of information about rockets, telescopes, space missions, and various celestial objects and phenomena.
 
-## Features
+---
+
+## **Features**
 
 - **Comprehensive Information:** Provides detailed information about rockets, telescopes, space missions, solar system bodies, and more.
 - **Daily Highlights:** Features a daily rotation of space missions, telescopes, and rockets to keep the content fresh and engaging.
@@ -13,28 +15,35 @@ Cosmic Navigator is a Next.js web application designed to explore the wonders of
 - **Explore Page:** Provides a centralized hub to discover all available features and content.
 - **Contact Page:** Includes multiple avenues for users to get in touch, including links to social media profiles and direct contact methods.
 
-## Technologies Used
+---
 
-- Next.js
-- React
-- Tailwind CSS
-- Lucide React
+## **Technologies Used**
 
-## Getting Started
+- **Next.js**
+- **React**
+- **Tailwind CSS**
+- **Lucide React**
 
-1.  Clone the repository:
+---
+
+## **Getting Started**
+
+1. Clone the repository:
     ```bash
     git clone [repository-url]
     ```
-2.  Navigate to the project directory:
+
+2. Navigate to the project directory:
     ```bash
     cd [project-directory]
     ```
-3.  Install dependencies:
+
+3. Install dependencies:
     ```bash
     npm install
     ```
-4.  Run the development server:
+
+4. Run the development server:
     ```bash
     npm run dev
     ```
@@ -42,9 +51,12 @@ Cosmic Navigator is a Next.js web application designed to explore the wonders of
     ```bash
     yarn dev
     ```
-5.  Open your browser and visit `http://localhost:9002`.
 
-## Project Structure
+5. Open your browser and visit `http://localhost:9002`.
+
+---
+
+## **Project Structure**
 
 - `src/app/`: Contains the main application code, including pages and components.
 - `src/components/`: Reusable React components.
@@ -52,14 +64,18 @@ Cosmic Navigator is a Next.js web application designed to explore the wonders of
 - `src/data/`: JSON files containing data for space missions, rockets, telescopes, and other content.
 - `public/`: Static assets such as images and fonts.
 
-## Contributing
+---
+
+## **Contributing**
 
 Contributions are welcome! Please feel free to submit pull requests or open issues for any bugs, enhancements, or ideas.
 
-## Contact
+---
+
+## **Contact**
 
 Feel free to reach out with any questions or inquiries:
 
-- Email: [astroman6569@gmail.com](mailto:astroman6569@gmail.com)
-- Twitter: [Sathyam Sarthak](https://x.com/Sathyamsarthak)
-- Instagram: [Sri shikharji](https://instagram.com/srishikharji/)
+- **Email:** [astroman6569@gmail.com](mailto:astroman6569@gmail.com)
+- **Twitter:** [Sathyam Sarthak](https://x.com/Sathyamsarthak)
+- **Instagram:** [Sri Shikharji](https://instagram.com/srishikharji/)
