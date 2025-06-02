@@ -1,3 +1,4 @@
+
 'use client';
 
 import Link from 'next/link';
@@ -20,7 +21,6 @@ import {
   Telescope,
   Atom,
   BookOpen,
-  Cloud, 
   Settings,
   Mail,
   Home,
@@ -30,6 +30,7 @@ import {
   FlaskConical,
   GraduationCap,
   Orbit,
+  Building2, // Changed from Compass for Space Agencies
 } from "lucide-react";
 import {Button} from "@/components/ui/button";
 import {
@@ -37,7 +38,9 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-  DropdownMenuSeparator
+  DropdownMenuSeparator,
+  DropdownMenuGroup, // Added for grouping
+  DropdownMenuLabel,  // Added for group labels (optional)
 } from "@/components/ui/dropdown-menu";
 import { VisuallyHidden } from '@radix-ui/react-visually-hidden';
 import { Separator } from '@/components/ui/separator';
@@ -89,17 +92,32 @@ const Navbar = () => {
     { href: "/topics", label: "Topics", icon: BookOpen, color: "text-green-400" },
   ];
 
-  const secondaryNavItems = [
-    { href: "/explore", label: "Explore", icon: Compass, color: "text-blue-400" },
-    { href: "/solar-system", label: "Solar System", icon: Sun, color: "text-yellow-400" },
-    { href: "/earth", label: "Earth", icon: Globe, color: "text-blue-400" },
-    { href: "/science-discoveries", label: "Science", icon: FlaskConical, color: "text-cyan-400" },
-    { href: "/space-agencies", label: "Space Agencies", icon: Compass, color: "text-gray-400" },
-    { href: "/programmes", label: "Programmes", icon: Rocket, color: "text-orange-400" },
-    { href: "/career", label: "Careers", icon: GraduationCap, color: "text-orange-400" },
-    { href: "/space-encyclopedia", label: "Encyclopedia", icon: BookOpen, color: "text-green-400" },
-    { href: "/contact", label: "Contact", icon: Mail, color: "text-red-400" },
-    { href: "/settings", label: "Settings", icon: Settings, color: "text-gray-400" },
+  const secondaryNavGroups = [
+    {
+      groupLabel: "Discover",
+      items: [
+        { href: "/explore", label: "Explore All", icon: Compass, color: "text-blue-400" },
+        { href: "/solar-system", label: "Solar System", icon: Sun, color: "text-yellow-400" },
+        { href: "/earth", label: "Earth", icon: Globe, color: "text-blue-400" },
+        { href: "/science-discoveries", label: "Science", icon: FlaskConical, color: "text-cyan-400" },
+      ]
+    },
+    {
+      groupLabel: "Resources",
+      items: [
+        { href: "/space-agencies", label: "Space Agencies", icon: Building2, color: "text-gray-400" },
+        { href: "/programmes", label: "Programmes", icon: Rocket, color: "text-orange-400" },
+        { href: "/career", label: "Careers", icon: GraduationCap, color: "text-orange-400" },
+        { href: "/space-encyclopedia", label: "Encyclopedia", icon: BookOpen, color: "text-green-400" },
+      ]
+    },
+    {
+      groupLabel: "Utility",
+      items: [
+        { href: "/contact", label: "Contact", icon: Mail, color: "text-red-400" },
+        { href: "/settings", label: "Settings", icon: Settings, color: "text-gray-400" },
+      ]
+    }
   ];
 
 
@@ -131,15 +149,22 @@ const Navbar = () => {
                   <span className="sr-only">More options</span>
                  </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent className="w-56 bg-gray-800/90 dark:bg-black/80 border-gray-700 dark:border-gray-700 backdrop-blur-md text-gray-200 dark:text-gray-100">
-                 {secondaryNavItems.map((item) => (
-                    <React.Fragment key={item.href}>
-                      {(item.href === "/contact" || item.href === "/explore") && <DropdownMenuSeparator className="bg-gray-600 dark:bg-gray-700"/>}
-                      <DropdownMenuItem className="focus:bg-teal-500/20 focus:text-teal-300">
-                        <Link href={item.href} onClick={handleNavigation} className="flex items-center w-full">
-                          <item.icon className={`mr-2 h-4 w-4 ${item.color}`}/> {item.label}
-                        </Link>
-                      </DropdownMenuItem>
+              <DropdownMenuContent className="w-60 bg-gray-800/90 dark:bg-black/80 border-gray-700 dark:border-gray-700 backdrop-blur-md text-gray-200 dark:text-gray-100">
+                 {secondaryNavGroups.map((group, groupIndex) => (
+                    <React.Fragment key={group.groupLabel || groupIndex}>
+                      {groupIndex > 0 && <DropdownMenuSeparator className="bg-gray-600 dark:bg-gray-700 my-1" />}
+                      {/* Optional: Add group labels if desired for desktop dropdown
+                      {group.groupLabel && (
+                        <DropdownMenuLabel className="px-2 py-1.5 text-xs text-gray-400 dark:text-gray-500">{group.groupLabel}</DropdownMenuLabel>
+                      )}
+                      */}
+                      {group.items.map((item) => (
+                        <DropdownMenuItem key={item.href} className="focus:bg-teal-500/20 focus:text-teal-300 p-0">
+                          <Link href={item.href} onClick={handleNavigation} className="flex items-center w-full px-2 py-1.5">
+                            <item.icon className={`mr-2 h-4 w-4 ${item.color}`}/> {item.label}
+                          </Link>
+                        </DropdownMenuItem>
+                      ))}
                     </React.Fragment>
                  ))}
               </DropdownMenuContent>
@@ -160,7 +185,6 @@ const Navbar = () => {
 
           {/* Mobile Menu */}
           <div className="md:hidden flex items-center">
-             {/* Dark mode toggle next to hamburger on small screens - already present */}
              <Button
                 variant="ghost"
                 size="icon"
@@ -179,15 +203,14 @@ const Navbar = () => {
                   <span className="sr-only">Open menu</span>
                 </button>
               </SheetTrigger>
-               <SheetContent side="right" className="bg-gray-900/95 dark:bg-black/90 backdrop-blur-md border-l border-gray-700/50 dark:border-gray-800/60 p-0 w-[250px] flex flex-col">
+               <SheetContent side="right" className="bg-gray-900/95 dark:bg-black/90 backdrop-blur-md border-l border-gray-700/50 dark:border-gray-800/60 p-0 w-[260px] flex flex-col"> {/* Increased width slightly */}
                  <VisuallyHidden>
                     <SheetTitle>Navigation Menu</SheetTitle>
                  </VisuallyHidden>
-                 <SheetHeader className="p-4 pb-2 border-b border-gray-700/50 dark:border-gray-800/60 flex flex-row justify-between items-center"> {/* Adjusted padding and flex */}
+                 <SheetHeader className="p-4 pb-2 border-b border-gray-700/50 dark:border-gray-800/60 flex flex-row justify-between items-center">
                      <div className="text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-blue-400 to-purple-500">
                        Navigation
                     </div>
-                    {/* Dark mode toggle for inside the sheet */}
                     <Button
                       variant="ghost"
                       size="icon"
@@ -203,25 +226,49 @@ const Navbar = () => {
                     </Button>
                  </SheetHeader>
                  <ScrollArea className="flex-grow">
-                   <div className="flex flex-col space-y-1 p-4">
-                     <Link href="/" onClick={handleNavigation} className="py-3 px-4 rounded-md hover:bg-teal-500/10 text-gray-200 dark:text-gray-100 hover:text-teal-300 transition-colors flex items-center text-base font-medium">
+                   <div className="flex flex-col space-y-0.5 p-3"> {/* Reduced space-y slightly */}
+                     <Link href="/" onClick={handleNavigation} className="py-2.5 px-3 rounded-md hover:bg-teal-500/10 text-gray-200 dark:text-gray-100 hover:text-teal-300 transition-colors flex items-center text-base font-medium">
                        <Home className="mr-3 h-5 w-5 text-blue-400"/> Home
                      </Link>
                      <Separator className="my-2 bg-gray-700/50 dark:bg-gray-800/60" />
-                     {[...mainNavItems, ...secondaryNavItems].map((item) => (
+                     
+                     {/* Main Nav Items */}
+                     {mainNavItems.map((item) => (
                        <Link
                          key={item.href}
                          href={item.href}
                          onClick={handleNavigation}
-                         className="py-3 px-4 rounded-md hover:bg-teal-500/10 text-gray-200 dark:text-gray-100 hover:text-teal-300 transition-colors flex items-center text-base"
+                         className="py-2.5 px-3 rounded-md hover:bg-teal-500/10 text-gray-200 dark:text-gray-100 hover:text-teal-300 transition-colors flex items-center text-base"
                        >
                          <item.icon className={`mr-3 h-5 w-5 ${item.color}`}/> {item.label}
                        </Link>
                      ))}
+                     
+                     {/* Secondary Nav Items (Grouped) */}
+                     {secondaryNavGroups.map((group, groupIndex) => (
+                       <React.Fragment key={group.groupLabel || groupIndex}>
+                         <Separator className="my-2 bg-gray-700/50 dark:bg-gray-800/60" />
+                         {group.groupLabel && (
+                           <div className="px-3 py-2 text-xs font-semibold text-gray-400 dark:text-gray-500 uppercase tracking-wider">
+                             {group.groupLabel}
+                           </div>
+                         )}
+                         {group.items.map((item) => (
+                           <Link
+                             key={item.href}
+                             href={item.href}
+                             onClick={handleNavigation}
+                             className="py-2.5 px-3 rounded-md hover:bg-teal-500/10 text-gray-200 dark:text-gray-100 hover:text-teal-300 transition-colors flex items-center text-base"
+                           >
+                             <item.icon className={`mr-3 h-5 w-5 ${item.color}`}/> {item.label}
+                           </Link>
+                         ))}
+                       </React.Fragment>
+                     ))}
                   </div>
                 </ScrollArea>
                  <SheetClose asChild>
-                   <Button variant="ghost" className="absolute right-4 top-4 text-gray-400 hover:text-gray-200" aria-label="Close Menu">
+                   <Button variant="ghost" className="absolute right-4 top-3 text-gray-400 hover:text-gray-200" aria-label="Close Menu"> {/* Adjusted top positioning */}
                      <X className="h-5 w-5" />
                      <span className="sr-only">Close</span>
                    </Button>
@@ -236,3 +283,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

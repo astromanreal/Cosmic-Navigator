@@ -1,108 +1,115 @@
-'use client';
+// src/app/telescopes/[telescopeName]/page.tsx
+// SERVER COMPONENT
 
-import React from 'react';
-import {useParams} from 'next/navigation';
+import type { Metadata } from 'next';
+import { notFound } from 'next/navigation';
 import activeTelescopesData from '@/app/telescopes/activeTelescopesData.json';
 import futureTelescopesData from '@/app/telescopes/futureTelescopesData.json';
-import {Badge} from '@/components/ui/badge';
-import {Card, CardContent, CardHeader, CardTitle, CardDescription} from "@/components/ui/card";
-import {Separator} from "@/components/ui/separator";
+import TelescopeDetailClientPage from './TelescopeDetailClientPage';
+import type { Telescope } from './TelescopeDetailClientPage';
 
-interface Telescope {
-  name: string;
-  owner: string;
-  wavelength: string;
-  target: string;
-  goals: string;
-  status?: string;
-  launch_date?: string;
-  type?: string;
-}
+const siteUrl = 'https://cosmic-navigator.vercel.app';
 
-const TelescopeDetailPage = () => {
-  const params = useParams();
-  const telescopeName = params.telescopeName;
-
-  // Attempt to find the telescope in both active and future datasets
-  const telescope: Telescope | undefined =
-    activeTelescopesData.find(
-      telescope => telescope.name.replace(/[^a-zA-Z0-9]/g, '-') === telescopeName
-    ) ||
-    futureTelescopesData.find(
-      telescope => telescope.name.replace(/[^a-zA-Z0-9]/g, '-') === telescopeName
-    );
+export async function generateMetadata({ params }: { params: { telescopeName: string } }): Promise<Metadata> {
+  const slug = params.telescopeName;
+  const allTelescopes: Telescope[] = [...activeTelescopesData, ...futureTelescopesData] as Telescope[];
+  const telescope = allTelescopes.find(
+    (t: Telescope) => t.name.replace(/[^a-zA-Z0-9]/g, '-').toLowerCase() === slug.toLowerCase()
+  );
 
   if (!telescope) {
-    return (
-      <div className="container mx-auto py-10 px-4 sm:px-6 lg:px-8">
-        <Card className="dark:bg-gray-900 bg-white">
-          <CardHeader>
-            <CardTitle className="text-2xl font-semibold dark:text-white text-gray-900">
-              Telescope Not Found
-            </CardTitle>
-            <CardDescription className="text-gray-600 dark:text-gray-300">
-              Sorry, the telescope you are looking for could not be found.
-            </CardDescription>
-          </CardHeader>
-        </Card>
-      </div>
-    );
+    return {
+      title: 'Telescope Not Found - Cosmic Navigator',
+      description: 'Detailed information for the requested telescope could not be found.',
+    };
   }
+
+  const title = `${telescope.name} - Telescope Details | Cosmic Navigator`;
+  const description = `Discover details about the ${telescope.name}, including its owner (${telescope.owner}), primary targets (${telescope.target}), and scientific goals. ${telescope.goals.substring(0, 120)}...`;
+  const pageUrl = `${siteUrl}/telescopes/${slug}`;
+  
+  // Use a placeholder image or a specific one if available in your telescope data
+  const imageUrl = telescope.image || `https://placehold.co/1200x630.png?text=${encodeURIComponent(telescope.name)}`;
+
+  return {
+    title,
+    description,
+    keywords: [telescope.name, telescope.wavelength, telescope.target, telescope.owner, 'telescope', 'observatory', 'astronomy', 'space science', 'cosmic exploration'],
+    alternates: {
+      canonical: pageUrl,
+    },
+    openGraph: {
+      title,
+      description,
+      url: pageUrl,
+      siteName: 'Cosmic Navigator',
+      images: [{ url: imageUrl, width: 1200, height: 630, alt: telescope.name }],
+      type: 'article', // More specific type for a detail page
+      section: 'Technology & Science', // Example category
+      publishedTime: telescope.launch_date ? new Date(telescope.launch_date).toISOString() : new Date().toISOString(),
+      modifiedTime: new Date().toISOString(), // Placeholder for last modified date
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [imageUrl],
+    },
+  };
+}
+
+export default async function TelescopeDetailPageServer({ params }: { params: { telescopeName: string } }) {
+  const telescopeNameSlug = params.telescopeName;
+  const allTelescopes: Telescope[] = [...activeTelescopesData, ...futureTelescopesData] as Telescope[];
+  
+  const telescope = allTelescopes.find(
+    (t: Telescope) => t.name.replace(/[^a-zA-Z0-9]/g, '-').toLowerCase() === telescopeNameSlug.toLowerCase()
+  );
+
+  if (!telescope) {
+    notFound();
+  }
+
+  // Construct JSON-LD data on the server
+  const pageUrl = `${siteUrl}/telescopes/${telescopeNameSlug}`;
+  const imageUrl = telescope.image || `https://placehold.co/1200x630.png?text=${encodeURIComponent(telescope.name)}`;
+
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article", // Could also be TechArticle or Product based on how you view telescopes
+    "headline": telescope.name,
+    "name": telescope.name,
+    "description": telescope.goals, // Or a more detailed description if available
+    "image": imageUrl,
+    "author": {
+      "@type": "Organization",
+      "name": "Cosmic Navigator Team"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Cosmic Navigator",
+      "logo": {
+        "@type": "ImageObject",
+        "url": `${siteUrl}/space-icon.png`
+      }
+    },
+    "datePublished": telescope.launch_date ? new Date(telescope.launch_date).toISOString() : new Date().toISOString(),
+    "dateModified": new Date().toISOString(),
+    "mainEntityOfPage": {
+       "@type": "WebPage",
+       "@id": pageUrl
+    },
+    // Add more specific properties if applicable, e.g., manufacturer, model
+  };
 
   return (
     <>
-      <div className="container mx-auto py-10 px-4 sm:px-6 lg:px-8">
-        <Card className="dark:bg-gray-900 bg-white">
-          <CardHeader>
-            <CardTitle className="text-2xl font-semibold dark:text-white text-gray-900">
-              {telescope.name}
-            </CardTitle>
-            <CardDescription className="text-gray-600 dark:text-gray-300">
-              Overview
-            </CardDescription>
-          </CardHeader>
-          <CardContent className="text-gray-600 dark:text-gray-300">
-            <div>
-              <b>Owner:</b> {telescope.owner}
-            </div>
-            <div>
-              <b>Wavelength:</b> {telescope.wavelength}
-            </div>
-            <div>
-              <b>Target:</b> {telescope.target}
-            </div>
-            <div>
-              <b>Goals:</b> {telescope.goals}
-            </div>
-            {telescope.status && (
-              <div className="text-gray-600 dark:text-gray-300">
-                <b>Status:</b> <Badge>{telescope.status}</Badge>
-              </div>
-            )}
-            {telescope.launch_date && (
-              <div className="text-gray-600 dark:text-gray-300">
-                <b>Launch Date:</b> {telescope.launch_date}
-              </div>
-            )}
-            {telescope.type && (
-              <div className="text-gray-600 dark:text-gray-300">
-                <b>Type:</b> {telescope.type}
-              </div>
-            )}
-          </CardContent>
-          <Separator className="my-4" />
-          <CardHeader>
-            <CardTitle className="text-xl font-semibold dark:text-white text-gray-900">
-              Additional Information
-            </CardTitle>
-          </CardHeader>
-          <CardContent className="text-gray-600 dark:text-gray-300">
-            More details about {telescope.name} will be added soon.
-          </CardContent>
-        </Card>
-      </div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        key="telescope-article-jsonld"
+      />
+      <TelescopeDetailClientPage telescope={telescope} />
     </>
   );
-};
-
-export default TelescopeDetailPage;
+}

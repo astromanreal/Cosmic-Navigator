@@ -1,10 +1,10 @@
 // src/app/terms-of-service/page.tsx
 'use client';
 
-import { FileText, ArrowLeft } from 'lucide-react';
+import { FileText, ArrowLeft, BookOpen, CopyrightIcon, Info, Users, Globe, ShieldCheck, AlertTriangle, Scale, Mail } from 'lucide-react'; // Added Mail icon here
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 
 const TermsOfServicePage = () => {
   return (
@@ -26,54 +26,81 @@ const TermsOfServicePage = () => {
             <CardTitle className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-cyan-500">
               Terms of Service
             </CardTitle>
+            <CardDescription className="text-gray-400 dark:text-gray-300 mt-1">
+              Please read these terms carefully before using Cosmic Navigator.
+            </CardDescription>
           </CardHeader>
           <CardContent className="pt-6 prose prose-invert prose-sm sm:prose-base max-w-none text-gray-300 dark:text-gray-200 leading-relaxed">
-            <p><strong>Last Updated:</strong> {new Date().toLocaleDateString()}</p>
+            <p className="text-center text-xs text-gray-500 dark:text-gray-400"><strong>Last Updated:</strong> {new Date().toLocaleDateString()}</p>
 
-            <h2 className="text-xl font-semibold text-teal-300 mt-6 mb-3">1. Acceptance of Terms</h2>
-            <p>
-              By accessing and using Cosmic Navigator (the "Site"), you accept and agree to be bound by the terms and provision of this agreement. In addition, when using this Site's particular services, you shall be subject to any posted guidelines or rules applicable to such services. Any participation in this Site will constitute acceptance of this agreement. If you do not agree to abide by the above, please do not use this Site.
-            </p>
+            <section className="my-6 p-4 bg-gray-700/30 dark:bg-black/40 rounded-lg border border-gray-600/50 dark:border-gray-700/60">
+              <h2 className="flex items-center text-xl font-semibold text-teal-300 mt-0 mb-3"><Info className="mr-2 h-5 w-5" />1. Acceptance of Terms</h2>
+              <p>
+                By accessing and using Cosmic Navigator (the "Site"), you accept and agree to be bound by the terms and provisions of this agreement. Your use of this Site signifies your understanding and acceptance of these Terms of Service. If you do not agree to abide by these terms, please do not use this Site.
+              </p>
+            </section>
 
-            <h2 className="text-xl font-semibold text-teal-300 mt-6 mb-3">2. Description of Service</h2>
-            <p>
-              Cosmic Navigator provides users with access to information and educational content related to space exploration, astronomy, and related sciences. The Site is provided "as is" and "as available" without any warranties of any kind, express or implied.
-            </p>
+            <section className="my-6 p-4 bg-gray-700/30 dark:bg-black/40 rounded-lg border border-gray-600/50 dark:border-gray-700/60">
+              <h2 className="flex items-center text-xl font-semibold text-teal-300 mt-0 mb-3"><BookOpen className="mr-2 h-5 w-5" />2. Educational Purpose & Scope of Service</h2>
+              <p>
+                Cosmic Navigator is an educational and informational platform dedicated to making space exploration, astronomy, and related sciences accessible and engaging for everyone. The content provided on this Site is for general informational and educational purposes only. While we strive for accuracy, the Site is provided "as is" and "as available" without any warranties of any kind, express or implied, regarding the completeness, accuracy, reliability, suitability, or availability of the information.
+              </p>
+            </section>
 
-            <h2 className="text-xl font-semibold text-teal-300 mt-6 mb-3">3. User Conduct</h2>
-            <p>
-              You agree to use the Site only for lawful purposes. You are prohibited from posting on or transmitting through the Site any material that is unlawful, harmful, threatening, abusive, harassing, defamatory, vulgar, obscene, sexually explicit, profane, hateful, fraudulent, racially, ethnically, or otherwise objectionable, including, but not limited to, any material that encourages conduct that would constitute a criminal offense, give rise to civil liability, or otherwise violate any applicable local, state, national, or international law.
-            </p>
+            <section className="my-6 p-4 bg-gray-700/30 dark:bg-black/40 rounded-lg border border-gray-600/50 dark:border-gray-700/60">
+              <h2 className="flex items-center text-xl font-semibold text-teal-300 mt-0 mb-3"><Users className="mr-2 h-5 w-5" />3. User Conduct</h2>
+              <p>
+                You agree to use the Site only for lawful and educational purposes. You are prohibited from using the Site in any way that could damage, disable, overburden, or impair the Site or interfere with any other party's use and enjoyment of the Site. Prohibited behavior includes, but is not limited to, transmitting any material that is unlawful, harmful, defamatory, obscene, or otherwise objectionable.
+              </p>
+            </section>
 
-            <h2 className="text-xl font-semibold text-teal-300 mt-6 mb-3">4. Intellectual Property</h2>
-            <p>
-              The Site and its original content, features, and functionality are owned by Cosmic Navigator and are protected by international copyright, trademark, patent, trade secret, and other intellectual property or proprietary rights laws. Certain content, such as images and data from space agencies (e.g., NASA, ESA), is used under their respective usage guidelines and remains the property of those agencies.
-            </p>
+            <section className="my-6 p-4 bg-gray-700/30 dark:bg-black/40 rounded-lg border border-gray-600/50 dark:border-gray-700/60">
+              <h2 className="flex items-center text-xl font-semibold text-teal-300 mt-0 mb-3"><CopyrightIcon className="mr-2 h-5 w-5" />4. Intellectual Property & Content Usage</h2>
+              <p>
+                The Site and its original content (text, graphics, logos, layout), features, and functionality are owned by Cosmic Navigator or its licensors and are protected by international copyright, trademark, and other intellectual property laws.
+              </p>
+              <p>
+                Much of the educational content, including images, data, and information regarding space missions, celestial bodies, and scientific discoveries, may originate from public domain sources or be provided by space agencies such as NASA, ESA, JAXA, ISRO, CNSA, Roscosmos, and other research institutions. Such content is used on this Site for educational and informational purposes. Copyright for these materials, where applicable, remains with the original owners (e.g., NASA, ESA, specific researchers or institutions). We make an effort to attribute content to its source where appropriate and possible. If you believe any content on this Site infringes upon your copyright, please contact us.
+              </p>
+              <p>
+                You may use the content on Cosmic Navigator for personal, non-commercial, educational purposes, provided that you maintain all copyright and other proprietary notices.
+              </p>
+            </section>
 
-             <h2 className="text-xl font-semibold text-teal-300 mt-6 mb-3">5. Accuracy of Information</h2>
-            <p>
-             While we strive to provide accurate and up-to-date information, Cosmic Navigator makes no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability with respect to the website or the information, products, services, or related graphics contained on the website for any purpose. Any reliance you place on such information is therefore strictly at your own risk.
-            </p>
+             <section className="my-6 p-4 bg-gray-700/30 dark:bg-black/40 rounded-lg border border-gray-600/50 dark:border-gray-700/60">
+              <h2 className="flex items-center text-xl font-semibold text-teal-300 mt-0 mb-3"><ShieldCheck className="mr-2 h-5 w-5" />5. Accuracy of Information & Disclaimer</h2>
+              <p>
+               While Cosmic Navigator strives to provide accurate, up-to-date, and engaging educational information, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability with respect to the website or the information, products, services, or related graphics contained on the website for any purpose. Space science is a constantly evolving field, and new discoveries may alter previous understandings. Any reliance you place on such information is therefore strictly at your own risk. The content is not intended to be a substitute for professional scientific advice.
+              </p>
+            </section>
 
-            <h2 className="text-xl font-semibold text-teal-300 mt-6 mb-3">6. Links to Other Websites</h2>
-            <p>
-              Our Site may contain links to third-party web sites or services that are not owned or controlled by Cosmic Navigator. Cosmic Navigator has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party web sites or services. You further acknowledge and agree that Cosmic Navigator shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on or through any such web sites or services.
-            </p>
+            <section className="my-6 p-4 bg-gray-700/30 dark:bg-black/40 rounded-lg border border-gray-600/50 dark:border-gray-700/60">
+              <h2 className="flex items-center text-xl font-semibold text-teal-300 mt-0 mb-3"><Globe className="mr-2 h-5 w-5" />6. Links to Other Websites</h2>
+              <p>
+                Our Site may contain links to third-party websites or services (e.g., official space agency sites, research papers, educational resources) that are not owned or controlled by Cosmic Navigator. We provide these links for further exploration and educational enrichment. Cosmic Navigator has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third-party websites or services.
+              </p>
+            </section>
 
-            <h2 className="text-xl font-semibold text-teal-300 mt-6 mb-3">7. Limitation of Liability</h2>
-            <p>
-              In no event shall Cosmic Navigator, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from (i) your access to or use of or inability to access or use the Site; (ii) any conduct or content of any third party on the Site; (iii) any content obtained from the Site; and (iv) unauthorized access, use or alteration of your transmissions or content, whether based on warranty, contract, tort (including negligence) or any other legal theory, whether or not we have been informed of the possibility of such damage, and even if a remedy set forth herein is found to have failed of its essential purpose.
-            </p>
+            <section className="my-6 p-4 bg-gray-700/30 dark:bg-black/40 rounded-lg border border-gray-600/50 dark:border-gray-700/60">
+              <h2 className="flex items-center text-xl font-semibold text-teal-300 mt-0 mb-3"><AlertTriangle className="mr-2 h-5 w-5" />7. Limitation of Liability</h2>
+              <p>
+                In no event shall Cosmic Navigator, nor its creators or affiliates, be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from your access to or use of or inability to access or use the Site. The information is provided for educational purposes, and users should verify critical information from primary sources.
+              </p>
+            </section>
 
-            <h2 className="text-xl font-semibold text-teal-300 mt-6 mb-3">8. Changes to Terms</h2>
-            <p>
-              We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material we will try to provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.
-            </p>
+            <section className="my-6 p-4 bg-gray-700/30 dark:bg-black/40 rounded-lg border border-gray-600/50 dark:border-gray-700/60">
+              <h2 className="flex items-center text-xl font-semibold text-teal-300 mt-0 mb-3"><Scale className="mr-2 h-5 w-5" />8. Changes to Terms</h2>
+              <p>
+                We reserve the right, at our sole discretion, to modify or replace these Terms at any time. We will endeavor to provide notice of material changes. By continuing to access or use our Site after those revisions become effective, you agree to be bound by the revised terms.
+              </p>
+            </section>
 
-            <h2 className="text-xl font-semibold text-teal-300 mt-6 mb-3">9. Contact Us</h2>
-            <p>
-              If you have any questions about these Terms, please contact us via the methods provided on our <Link href="/contact" className="text-orange-400 hover:underline">Contact page</Link>.
-            </p>
+            <section className="my-6 p-4 bg-gray-700/30 dark:bg-black/40 rounded-lg border border-gray-600/50 dark:border-gray-700/60">
+              <h2 className="flex items-center text-xl font-semibold text-teal-300 mt-0 mb-3"><Mail className="mr-2 h-5 w-5" />9. Contact Us</h2>
+              <p>
+                If you have any questions about these Terms of Service, please contact us via the methods provided on our <Link href="/contact" className="text-orange-400 hover:underline">Contact page</Link>.
+              </p>
+            </section>
           </CardContent>
         </Card>
       </div>

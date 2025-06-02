@@ -8,7 +8,7 @@ import Autoplay from "embla-carousel-autoplay";
 import {Rocket, Telescope, Compass, ArrowRight, Sun, Moon, Globe, BookOpen, Atom, FlaskConical, GraduationCap, Orbit } from 'lucide-react';
 import type React from 'react';
 import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "@/components/ui/card";
-import SearchFilter from '@/components/SearchFilter'; // Import the SearchFilter component
+import SearchFilter from '@/components/SearchFilter';
 import {
   Carousel,
   CarouselContent,
@@ -21,7 +21,7 @@ import {
 import spaceMissionsData from './missions/spaceMissions.json';
 import activeTelescopesData from './telescopes/activeTelescopesData.json';
 import rocketData from './rockets/rocketData.json';
-
+// Removed featureData import as the section using it is removed.
 
 interface Mission {
   name: string;
@@ -49,8 +49,6 @@ const getDayOfYear = (date: Date): number => {
 
 const getDailyItem = <T,>(data: T[]): T => {
   if (!data || data.length === 0) {
-    // Return a default structure or handle error appropriately
-    // For now, returning an empty object cast to T, which might not be ideal for all T
     return {} as T;
   }
   const today = new Date();
@@ -58,6 +56,36 @@ const getDailyItem = <T,>(data: T[]): T => {
   const index = dayOfYear % data.length;
   return data[index];
 };
+
+const webPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Cosmic Navigator - Your Gateway to the Universe",
+  "description": "Welcome to Cosmic Navigator! Explore the wonders of space, from mighty rockets and advanced telescopes to historic missions and celestial phenomena. Start your cosmic journey today.",
+  "url": "https://cosmic-navigator.vercel.app/", 
+  "publisher": {
+    "@type": "Organization",
+    "name": "Cosmic Navigator",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://cosmic-navigator.vercel.app/space-icon.png" 
+    }
+  },
+  "mainEntityOfPage": {
+     "@type": "WebPage",
+     "@id": "https://cosmic-navigator.vercel.app/"
+  },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://cosmic-navigator.vercel.app/" 
+    }]
+  }
+};
+
 
 export default function HomePage() {
   const [dailyMission, setDailyMission] = useState<Mission | null>(null);
@@ -69,7 +97,6 @@ export default function HomePage() {
   );
 
   useEffect(() => {
-    // Ensure data arrays are not empty before calling getDailyItem
     if (spaceMissionsData && spaceMissionsData.length > 0) {
         setDailyMission(getDailyItem<Mission>(spaceMissionsData as Mission[]));
     }
@@ -91,7 +118,11 @@ export default function HomePage() {
 
   return (
      <div className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-background text-gray-100 dark:from-background dark:via-gray-900 dark:to-black">
-      {/* Hero Section with Search */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+        key="webpage-jsonld"
+      />
       <section className="relative py-16 md:py-24 text-center bg-gradient-to-br from-gray-900 via-indigo-900 to-black overflow-hidden">
         <div className="absolute inset-0 opacity-10 bg-[url('/star-pattern.svg')] bg-repeat animate-pulse"></div>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -108,7 +139,6 @@ export default function HomePage() {
       </section>
 
       <main className="container mx-auto px-4 py-8 sm:px-6 lg:px-8">
-        {/* Image Slider Section */}
         <section className="mb-12">
           <Carousel
             plugins={[autoplayPlugin.current]}
@@ -127,7 +157,7 @@ export default function HomePage() {
                       layout="fill"
                       objectFit="cover"
                       data-ai-hint={image.aiHint}
-                      priority={index === 0} // Prioritize loading the first image
+                      priority={index === 0}
                     />
                     <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
                       <h2 className="text-2xl md:text-4xl font-bold text-white text-center p-4">
@@ -143,22 +173,20 @@ export default function HomePage() {
           </Carousel>
         </section>
 
-
-        {/* Featured Content Grid */}
         <section className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {dailyMission && (
              <div className="group perspective block" style={{ perspective: '1000px' }}>
               <Card className="
                 bg-gray-800/60 dark:bg-black/70 
-                border border-transparent dark:border-gray-700/50 dark:hover:border-blue-500/60
-                shadow-lg dark:shadow-blue-900/30 
+                border border-transparent dark:border-gray-700/50 dark:hover:border-teal-500/60
+                shadow-lg dark:shadow-teal-900/30 
                 transition-all duration-500 ease-out
                 transform-style-3d 
-                group-hover:scale-105 group-hover:shadow-2xl dark:group-hover:shadow-blue-500/50 
+                group-hover:scale-105 group-hover:shadow-2xl dark:group-hover:shadow-teal-500/50 
                 group-hover:-rotate-y-1 group-hover:-translate-z-2 
                 relative overflow-hidden h-full flex flex-col justify-between
               ">
-                 <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-transparent to-teal-500/10 opacity-0 group-hover:opacity-50 transition-opacity duration-500 -z-10"></div>
+                 <div className="absolute inset-0 bg-gradient-to-br from-teal-500/10 via-transparent to-blue-500/10 opacity-0 group-hover:opacity-50 transition-opacity duration-500 -z-10"></div>
                <CardHeader className="relative z-10">
                  <div className="flex items-center gap-3 mb-2">
                     <Compass className="w-7 h-7 text-teal-400" />
@@ -172,7 +200,7 @@ export default function HomePage() {
                  </p>
                 </CardContent>
                 <div className="relative z-10 p-4 pt-0 mt-auto flex justify-end">
-                   <a href={dailyMission.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-blue-400 hover:text-blue-300 dark:text-teal-300 dark:hover:text-teal-200 transition-colors font-medium text-sm">
+                   <a href={dailyMission.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-teal-400 hover:text-teal-300 dark:text-teal-300 dark:hover:text-teal-200 transition-colors font-medium text-sm">
                      Learn More <ArrowRight className="ml-1.5 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
                     </a>
                 </div>
@@ -207,7 +235,7 @@ export default function HomePage() {
               </CardContent>
               <div className="relative z-10 p-4 pt-0 mt-auto flex justify-end">
                 <Link href={dailyTelescope.url || `/telescopes/${dailyTelescope.name.replace(/[^a-zA-Z0-9]/g, '-')}`} passHref legacyBehavior={!dailyTelescope.url?.startsWith('/')}>
-                  <a target={dailyTelescope.url && !dailyTelescope.url.startsWith('/') ? "_blank" : "_self"} rel="noopener noreferrer" className="inline-flex items-center text-blue-400 hover:text-blue-300 dark:text-purple-300 dark:hover:text-purple-200 transition-colors font-medium text-sm">
+                  <a target={dailyTelescope.url && !dailyTelescope.url.startsWith('/') ? "_blank" : "_self"} rel="noopener noreferrer" className="inline-flex items-center text-purple-400 hover:text-purple-300 dark:text-purple-300 dark:hover:text-purple-200 transition-colors font-medium text-sm">
                     Learn More <ArrowRight className="ml-1.5 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
                   </a>
                 </Link>
@@ -242,7 +270,7 @@ export default function HomePage() {
                 </p>
                 </CardContent>
                 <div className="relative z-10 p-4 pt-0 mt-auto flex justify-end">
-                <Link href={`/rockets/${dailyRocket.name.replace(/[^a-zA-Z0-9]/g, '-')}`} className="inline-flex items-center text-blue-400 hover:text-blue-300 dark:text-orange-300 dark:hover:text-orange-200 transition-colors font-medium text-sm">
+                <Link href={`/rockets/${dailyRocket.name.replace(/[^a-zA-Z0-9]/g, '-')}`} className="inline-flex items-center text-orange-400 hover:text-orange-300 dark:text-orange-300 dark:hover:text-orange-200 transition-colors font-medium text-sm">
                      Learn More <ArrowRight className="ml-1.5 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
                    </Link>
                 </div>
@@ -251,13 +279,28 @@ export default function HomePage() {
           )}
         </section>
 
-        {/* Explore Button Section */}
-         <section className="text-center mb-12">
-          <Link href="/explore" className="inline-block bg-gradient-to-r from-teal-500 to-blue-600 text-white font-semibold px-10 py-4 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 ease-in-out text-lg">
-             Explore All Features
-          </Link>
+         <section className="text-center my-16 md:my-24">
+            <Link
+              href="/explore"
+              className="
+                inline-flex items-center justify-center 
+                px-8 py-4 
+                text-lg font-semibold text-white 
+                bg-gradient-to-r from-purple-600 via-pink-500 to-orange-500 
+                hover:from-purple-700 hover:via-pink-600 hover:to-orange-600 
+                rounded-lg 
+                shadow-xl hover:shadow-2xl 
+                transform hover:scale-105 
+                transition-all duration-300 ease-in-out
+                group
+              "
+            >
+              Explore All Features
+              <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+            </Link>
          </section>
       </main>
     </div>
   );
 }
+    

@@ -62,25 +62,25 @@ const ObjectsPage = () => {
                 <div
                   className="
                     bg-gray-800/50 dark:bg-black/60 dark:hover:bg-gray-900/80
-                    p-6 rounded-xl shadow-lg dark:shadow-cyan-900/30 /* Adjusted shadow color */
+                    p-6 rounded-xl shadow-lg dark:shadow-cyan-900/30
                     transition-all duration-500 ease-out
                     transform-style-3d
-                    group-hover:scale-105 group-hover:shadow-2xl dark:group-hover:shadow-cyan-500/50 /* Adjusted shadow color */
+                    group-hover:scale-105 group-hover:shadow-2xl dark:group-hover:shadow-cyan-500/50
                     group-hover:-rotate-y-1 group-hover:-translate-z-2
-                    border border-transparent dark:border-gray-700/50 dark:hover:border-cyan-500/60 /* Adjusted border color */
+                    border border-transparent dark:border-gray-700/50 dark:hover:border-cyan-500/60
                     relative overflow-hidden h-full flex flex-col justify-between
                   "
                 >
                   {/* Subtle gradient background effect */}
                   <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-transparent to-blue-500/10 opacity-0 group-hover:opacity-50 transition-opacity duration-500 -z-10"></div>
 
-                  <div className="relative z-10"> {/* Content container */}
+                  <div className="relative z-10 flex flex-col flex-grow"> {/* Ensure content area can grow */}
                     <div className="mb-4 flex justify-between items-start">
-                       <div className="p-3 rounded-full bg-cyan-900/50 inline-block"> {/* Adjusted icon background */ }
-                          <IconComponent className="h-6 w-6 text-cyan-300" /> {/* Adjusted icon color */}
+                       <div className="p-3 rounded-full bg-cyan-900/50 inline-block">
+                          <IconComponent className="h-6 w-6 text-cyan-300" />
                        </div>
                        {obj.difficulty && (
-                         <Badge variant="outline" className="border-cyan-400/50 text-cyan-300 text-xs"> {/* Adjusted badge color */}
+                         <Badge variant="outline" className="border-cyan-400/50 text-cyan-300 text-xs">
                            {obj.difficulty}
                          </Badge>
                        )}
@@ -88,14 +88,14 @@ const ObjectsPage = () => {
                     <h3 className="text-xl font-semibold text-gray-100 dark:text-white mb-2">{obj.name}</h3>
                     <p className="text-gray-400 dark:text-gray-300 text-sm flex-grow mb-4 line-clamp-3">{obj.description}</p>
                     {obj.category && (
-                       <Badge variant="secondary" className="bg-gray-700/70 text-gray-300 text-xs">
+                       <Badge variant="secondary" className="text-xs"> {/* Rely on theme's secondary variant */}
                          {obj.category}
                        </Badge>
                     )}
                   </div>
 
                   <div className="relative z-10 mt-5 flex justify-end items-center">
-                    <span className="inline-flex items-center text-cyan-300 group-hover:text-cyan-200 font-medium text-sm transition-colors"> {/* Adjusted text color */}
+                    <span className="inline-flex items-center text-cyan-300 group-hover:text-cyan-200 font-medium text-sm transition-colors">
                       Know More
                       <ArrowRight className="h-4 w-4 ml-1.5 transition-transform duration-300 group-hover:translate-x-1" />
                     </span>

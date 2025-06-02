@@ -1,160 +1,112 @@
 // src/app/science-discoveries/[discoveryId]/page.tsx
-'use client';
+// SERVER COMPONENT
 
-import React from 'react';
-import { useParams, useRouter } from 'next/navigation';
-import Image from 'next/image';
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { ArrowLeft, CalendarDays, CheckCircle, ExternalLink, Info, Microscope, RadioTower, Users } from 'lucide-react'; 
+import type { Metadata } from 'next';
+import { notFound } from 'next/navigation';
 import breakthroughData from '../breakthroughData.json';
-import Link from 'next/link';
+import DiscoveryDetailClientPage from './DiscoveryDetailClientPage'; // Ensure this path is correct
+import type { Discovery } from './DiscoveryDetailClientPage'; // Import type
 
-interface Discovery {
-  title: string;
-  mission: string;
-  year: number;
-  description: string;
-  image: string; 
-  source: string;
-  aiHint?: string;
-  longDescription?: string; 
-  externalLink?: string; 
-}
+const siteUrl = 'https://cosmic-navigator.vercel.app';
 
-const DiscoveryDetailPage = () => {
-  const params = useParams();
-  const router = useRouter();
-  const discoveryId = params.discoveryId as string;
-
-  const discovery: Discovery | undefined = breakthroughData.find(
-    item => item.title.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]+/g, '') === discoveryId
+export async function generateMetadata({ params }: { params: { discoveryId: string } }): Promise<Metadata> {
+  const slug = params.discoveryId;
+  const discovery = breakthroughData.find(
+    (item): item is Discovery => item.title.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]+/g, '') === slug
   );
 
   if (!discovery) {
-    return (
-      <div className="container mx-auto py-10 px-4 min-h-screen flex items-center justify-center">
-        <Card className="dark:bg-gray-800 bg-white shadow-xl border dark:border-gray-700 w-full max-w-lg text-center">
-          <CardHeader>
-            <CardTitle className="text-3xl font-bold text-destructive dark:text-red-500">
-              Discovery Not Found
-            </CardTitle>
-            <CardDescription className="text-lg text-muted-foreground dark:text-gray-400 mt-2">
-              Sorry, the cosmic breakthrough you're searching for is still a mystery to us.
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <Button variant="outline" className="mt-4" onClick={() => router.back()}>
-              <ArrowLeft className="mr-2 h-4 w-4" /> Go Back
-            </Button>
-          </CardContent>
-        </Card>
-      </div>
-    );
+    return {
+      title: 'Discovery Not Found - Cosmic Navigator',
+      description: 'Detailed information for the requested scientific discovery could not be found.',
+    };
   }
 
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-indigo-800 to-purple-900 text-gray-100 py-12">
-      <div className="container mx-auto px-4">
-        {/* Back Button */}
-        <Button variant="ghost" onClick={() => router.back()} className="mb-8 text-teal-300 hover:text-teal-200 hover:bg-gray-700/50">
-          <ArrowLeft className="mr-2 h-5 w-5" /> Back to Discoveries
-        </Button>
+  const title = `${discovery.title} - Science Discovery | Cosmic Navigator`;
+  const description = discovery.longDescription?.substring(0, 160) || discovery.description.substring(0, 160) || `Learn about the significant scientific discovery: ${discovery.title}.`;
+  const pageUrl = `${siteUrl}/science-discoveries/${slug}`;
+  const imageUrl = discovery.image || `https://placehold.co/1200x630.png?text=${encodeURIComponent(discovery.title)}`;
+  const keywordsList = [discovery.title, discovery.mission, discovery.source, 'science discovery', 'space breakthrough', 'astronomy', 'cosmology', 'Cosmic Navigator'];
 
-        {/* Hero Section */}
-        <section className="mb-12 text-center animate-fade-in p-8 bg-gray-800/50 dark:bg-black/60 rounded-xl shadow-2xl border border-gray-700/50 dark:border-gray-800/60">
-          <div className="relative w-full h-64 md:h-80 rounded-lg overflow-hidden mb-6 shadow-lg">
-            <Image
-              src={discovery.image || `https://picsum.photos/seed/${discovery.title.replace(/\s+/g, '-')}/1200/400`} 
-              alt={discovery.title}
-              layout="fill"
-              objectFit="cover"
-              className="opacity-90"
-              data-ai-hint={discovery.aiHint || 'scientific discovery space'}
-              priority
-            />
-             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/10"></div>
-          </div>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-cyan-500 to-blue-500 mb-3">
-            {discovery.title}
-          </h1>
-          <p className="text-md sm:text-lg text-cyan-200/80 dark:text-cyan-300/80 max-w-3xl mx-auto italic font-mono">
-            A pivotal moment in our understanding of the cosmos.
-          </p>
-        </section>
+  return {
+    title,
+    description,
+    keywords: keywordsList,
+    alternates: {
+      canonical: pageUrl,
+    },
+    openGraph: {
+      title,
+      description,
+      url: pageUrl,
+      siteName: 'Cosmic Navigator',
+      images: [{ url: imageUrl, width: 1200, height: 630, alt: discovery.title }],
+      type: 'article',
+      section: 'Science & Technology',
+      publishedTime: discovery.year ? new Date(discovery.year, 0, 1).toISOString() : new Date().toISOString(), // Assuming year only, use Jan 1st
+      modifiedTime: new Date().toISOString(),
+      authors: [discovery.source || `${siteUrl}/about`], // Use source or a general about page
+      tags: [discovery.mission, discovery.source, "Science"],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [imageUrl],
+    },
+  };
+}
 
-        {/* Main Content Area */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* Left Column: Key Details */}
-          <aside className="lg:col-span-1 space-y-6">
-            <Card className="bg-gray-800/60 dark:bg-black/70 border border-gray-700/50 dark:border-gray-800/60 shadow-xl">
-              <CardHeader>
-                <CardTitle className="text-xl font-semibold text-gray-100 flex items-center">
-                  <Info className="mr-2 h-5 w-5 text-teal-400" />
-                  Key Information
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-3 text-sm">
-                <div className="flex items-center">
-                  <RadioTower className="mr-2 h-4 w-4 text-teal-400/80" />
-                  <span className="font-medium text-gray-400">Mission/Instrument:</span>
-                  <span className="ml-1.5 text-gray-200">{discovery.mission}</span>
-                </div>
-                <div className="flex items-center">
-                  <CalendarDays className="mr-2 h-4 w-4 text-teal-400/80" />
-                  <span className="font-medium text-gray-400">Year of Discovery:</span>
-                  <span className="ml-1.5 text-gray-200">{discovery.year}</span>
-                </div>
-                <div className="flex items-center">
-                  <Users className="mr-2 h-4 w-4 text-teal-400/80" />
-                  <span className="font-medium text-gray-400">Primary Source/Agency:</span>
-                  <span className="ml-1.5 text-gray-200">{discovery.source}</span>
-                </div>
-                 {discovery.externalLink && (
-                  <div className="pt-2">
-                     <a href={discovery.externalLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-orange-400 hover:text-orange-300 transition-colors font-medium text-xs">
-                      Official Source <ExternalLink className="ml-1.5 h-3.5 w-3.5" />
-                    </a>
-                  </div>
-                )}
-              </CardContent>
-            </Card>
-             <Card className="bg-gray-800/60 dark:bg-black/70 border border-gray-700/50 dark:border-gray-800/60 shadow-xl">
-              <CardHeader>
-                <CardTitle className="text-xl font-semibold text-gray-100 flex items-center">
-                  <Microscope className="mr-2 h-5 w-5 text-teal-400" />
-                  Impact & Significance
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm text-gray-300 dark:text-gray-200 leading-relaxed">
-                  {discovery.description} 
-                </p>
-              </CardContent>
-            </Card>
-          </aside>
-
-          {/* Right Column: Detailed Description */}
-          <main className="lg:col-span-2">
-            <Card className="bg-gray-800/60 dark:bg-black/70 border border-gray-700/50 dark:border-gray-800/60 shadow-xl">
-              <CardHeader>
-                <CardTitle className="text-2xl font-semibold text-gray-100 flex items-center">
-                  <CheckCircle className="mr-2 h-6 w-6 text-teal-400" />
-                  Detailed Overview
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="text-gray-300 dark:text-gray-200 leading-relaxed prose prose-invert prose-base max-w-none prose-p:text-gray-300 dark:prose-p:text-gray-200">
-                <p>{discovery.longDescription || discovery.description}</p>
-                <p className="mt-4 italic">
-                  This discovery opened new avenues for research and significantly advanced our understanding of {discovery.title.toLowerCase().includes('mars') ? 'Martian geology and potential habitability' : discovery.title.toLowerCase().includes('exoplanet') ? 'planetary systems beyond our own' : discovery.title.toLowerCase().includes('gravitational') ? 'the fabric of spacetime and extreme cosmic events' : 'the early universe and its fundamental properties'}.
-                </p>
-              </CardContent>
-            </Card>
-          </main>
-        </div>
-      </div>
-    </div>
+export default async function DiscoveryDetailPageServer({ params }: { params: { discoveryId: string } }) {
+  const discoveryIdSlug = params.discoveryId;
+  
+  const discovery = breakthroughData.find(
+    (item): item is Discovery => item.title.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]+/g, '') === discoveryIdSlug
   );
-};
 
-export default DiscoveryDetailPage;
+  if (!discovery) {
+    notFound();
+  }
+  
+  const pageUrl = `${siteUrl}/science-discoveries/${discoveryIdSlug}`;
+  const imageUrl = discovery.image || `https://placehold.co/1200x630.png?text=${encodeURIComponent(discovery.title)}`;
+
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article", // or NewsArticle, TechArticle
+    "headline": discovery.title,
+    "name": discovery.title,
+    "description": discovery.longDescription || discovery.description,
+    "image": imageUrl,
+    "author": {
+      "@type": "Organization", // Or Person if applicable
+      "name": discovery.source || "Cosmic Navigator Team"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Cosmic Navigator",
+      "logo": {
+        "@type": "ImageObject",
+        "url": `${siteUrl}/space-icon.png`
+      }
+    },
+    "datePublished": discovery.year ? new Date(discovery.year, 0, 1).toISOString() : new Date().toISOString(),
+    "dateModified": new Date().toISOString(),
+    "mainEntityOfPage": {
+       "@type": "WebPage",
+       "@id": pageUrl
+    },
+    "keywords": [discovery.title, discovery.mission, discovery.source, "science discovery", "space breakthrough"].join(", ")
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        key="discovery-article-jsonld"
+      />
+      <DiscoveryDetailClientPage discovery={discovery} />
+    </>
+  );
+}

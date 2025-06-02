@@ -1,9 +1,11 @@
+
 // src/app/rockets/[rocketName]/page.tsx
 'use client';
 
+import type { Metadata } from 'next';
 import React from 'react';
 import {useParams} from 'next/navigation';
-import rocketData from '@/app/rockets/rocketData.json';
+import rocketDataJson from '@/app/rockets/rocketData.json'; // Renamed to avoid conflict
 import {Badge} from '@/components/ui/badge';
 import {Button} from "@/components/ui/button";
 import {
@@ -32,12 +34,91 @@ interface Rocket {
   wikiLink: string;
 }
 
+const siteUrl = 'https://cosmic-navigator.vercel.app';
+
+// Dynamically generate metadata
+export async function generateMetadata({ params }: { params: { rocketName: string } }): Promise<Metadata> {
+  const slug = params.rocketName;
+  const rocket = rocketDataJson.find(
+    (r: Rocket) => r.name.replace(/[^a-zA-Z0-9]/g, '-') === slug
+  );
+
+  if (!rocket) {
+    return {
+      title: 'Rocket Not Found - Cosmic Navigator',
+      description: 'Detailed information for the requested rocket could not be found.',
+    };
+  }
+
+  const title = `${rocket.name} - Rocket Details | Cosmic Navigator`;
+  const description = `Discover details about the ${rocket.name} launch vehicle, including its country of origin (${rocket.country}), type (${rocket.type}), launch history, and capabilities. ${rocket.description.substring(0, 120)}...`;
+  const pageUrl = `${siteUrl}/rockets/${slug}`;
+  // Placeholder - Ideally, each rocket would have its own image URL
+  const imageUrl = `${siteUrl}/og-rocket-placeholder.png`;
+
+
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": rocket.name,
+    "description": rocket.description,
+    "image": imageUrl,
+    "author": {
+      "@type": "Organization",
+      "name": "Cosmic Navigator Team"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Cosmic Navigator",
+      "logo": {
+        "@type": "ImageObject",
+        "url": `${siteUrl}/space-icon.png`
+      }
+    },
+    "datePublished": `${rocket.launchYear}-01-01T00:00:00Z`, // Assuming launch year is a good proxy
+    "dateModified": new Date().toISOString(), // Or a more specific modification date if available
+    "mainEntityOfPage": {
+       "@type": "WebPage",
+       "@id": pageUrl
+    }
+  };
+
+  return {
+    title: title,
+    description: description,
+    keywords: [rocket.name, rocket.type, rocket.country, rocket.owner, 'rocket', 'launch vehicle', 'spacecraft specs', 'rocket history', 'space launch systems'],
+    alternates: {
+      canonical: pageUrl,
+    },
+    openGraph: {
+      title: title,
+      description: description,
+      url: pageUrl,
+      images: [{ url: imageUrl, width:1200, height:630, alt: `${rocket.name} rocket` }],
+      type: 'article',
+      publishedTime: `${rocket.launchYear}-01-01T00:00:00Z`,
+      modifiedTime: new Date().toISOString(),
+      authors: [`${siteUrl}/about`], // Link to an about page or team page
+    },
+    twitter: {
+      title: title,
+      description: description,
+      images: [imageUrl],
+    },
+    // Adding the script tag for JSON-LD structured data
+    // This needs to be rendered in the component itself, or handled by a higher-order component/layout.
+    // Next.js metadata API doesn't directly inject arbitrary scripts in head this way.
+    // We will add the script in the component's JSX.
+  };
+}
+
+
 const RocketDetailPage = () => {
   const params = useParams();
-  const rocketName = params.rocketName;
+  const rocketNameSlug = params.rocketName as string;
 
-  const rocket: Rocket | undefined = rocketData.find(
-    rocket => rocket.name.replace(/[^a-zA-Z0-9]/g, '-') === rocketName
+  const rocket: Rocket | undefined = rocketDataJson.find(
+    (r: Rocket) => r.name.replace(/[^a-zA-Z0-9]/g, '-') === rocketNameSlug
   );
 
   if (!rocket) {
@@ -56,6 +137,37 @@ const RocketDetailPage = () => {
       </div>
     );
   }
+  
+  const pageUrl = `${siteUrl}/rockets/${rocketNameSlug}`;
+  // Placeholder - Ideally, each rocket would have its own image URL
+  const imageUrl = `${siteUrl}/og-rocket-placeholder.png`;
+
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": rocket.name,
+    "description": rocket.description,
+    "image": imageUrl, // You should replace this with an actual image URL for the rocket
+    "author": {
+      "@type": "Organization",
+      "name": "Cosmic Navigator Team"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Cosmic Navigator",
+      "logo": {
+        "@type": "ImageObject",
+        "url": `${siteUrl}/space-icon.png`
+      }
+    },
+    "datePublished": `${rocket.launchYear}-01-01T00:00:00Z`,
+    "dateModified": new Date().toISOString(),
+    "mainEntityOfPage": {
+       "@type": "WebPage",
+       "@id": pageUrl
+    }
+  };
+
 
   const detailItems = [
     { label: "Country", value: rocket.country, icon: Flag },
@@ -73,69 +185,76 @@ const RocketDetailPage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 via-indigo-900 to-black text-gray-100 py-10">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <Card className="dark:bg-gray-800/70 bg-white/90 shadow-2xl border dark:border-gray-700/50 rounded-xl overflow-hidden transform-style-3d perspective">
-          <CardHeader className="bg-gradient-to-br from-orange-600/20 via-red-600/20 to-pink-600/20 p-8 border-b dark:border-gray-700/50">
-            <CardTitle className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-red-500 to-pink-500 text-center tracking-tight">
-              {rocket.name}
-            </CardTitle>
-            <CardDescription className="text-center text-orange-200/80 dark:text-red-300/80 mt-2 text-lg italic">
-              A detailed look into one of humanity's powerful launch vehicles.
-            </CardDescription>
-          </CardHeader>
-          
-          <CardContent className="p-6 md:p-8 space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-              {detailItems.map(item => (
-                <div key={item.label} className="bg-gray-700/30 dark:bg-black/40 p-4 rounded-lg shadow-md flex items-start space-x-3">
-                  <item.icon className="h-6 w-6 text-orange-400 mt-1 shrink-0" />
-                  <div>
-                    <p className="text-sm font-semibold text-orange-300">{item.label}:</p>
-                    {item.badge ? (
-                      <Badge variant={(item.badgeVariant as any) || 'outline'} className={item.badgeClass || 'border-orange-500/50 text-orange-200 bg-orange-900/30 mt-1'}>
-                        {item.value}
-                      </Badge>
-                    ) : (
-                      <p className="text-gray-200 dark:text-gray-100">{item.value}</p>
-                    )}
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <Separator className="my-6 bg-gray-700/50 dark:bg-gray-600/50" />
-
-            <div>
-              <h3 className="text-2xl font-semibold text-orange-400 mb-3 flex items-center"><Info className="mr-2 h-6 w-6"/>Description</h3>
-              <p className="text-gray-300 dark:text-gray-200 leading-relaxed text-justify bg-gray-700/20 dark:bg-black/30 p-4 rounded-md">
-                {rocket.description}
-              </p>
-            </div>
-
-            <Separator className="my-6 bg-gray-700/50 dark:bg-gray-600/50" />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        key="rocket-article-jsonld"
+      />
+      <div className="min-h-screen bg-gradient-to-b from-gray-900 via-indigo-900 to-black text-gray-100 py-10">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <Card className="dark:bg-gray-800/70 bg-white/90 shadow-2xl border dark:border-gray-700/50 rounded-xl overflow-hidden transform-style-3d perspective">
+            <CardHeader className="bg-gradient-to-br from-orange-600/20 via-red-600/20 to-pink-600/20 p-8 border-b dark:border-gray-700/50">
+              <CardTitle className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-red-500 to-pink-500 text-center tracking-tight">
+                {rocket.name}
+              </CardTitle>
+              <CardDescription className="text-center text-orange-200/80 dark:text-red-300/80 mt-2 text-lg italic">
+                A detailed look into one of humanity's powerful launch vehicles.
+              </CardDescription>
+            </CardHeader>
             
-            <div className="text-center mt-8">
-            <Button
-              size="lg"
-              asChild
-              className="
-                bg-gradient-to-r from-orange-500 to-red-600 text-white 
-                hover:from-orange-600 hover:to-red-700 
-                shadow-lg hover:shadow-xl 
-                transition-all duration-300 transform hover:scale-105 active:scale-95
-                px-10 py-3 text-base rounded-lg group
-              "
-            >
-              <a href={rocket.wikiLink} target="_blank" rel="noopener noreferrer">
-                Explore on Wikipedia <ExternalLink className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-              </a>
-            </Button>
-            </div>
-          </CardContent>
-        </Card>
+            <CardContent className="p-6 md:p-8 space-y-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                {detailItems.map(item => (
+                  <div key={item.label} className="bg-gray-700/30 dark:bg-black/40 p-4 rounded-lg shadow-md flex items-start space-x-3">
+                    <item.icon className="h-6 w-6 text-orange-400 mt-1 shrink-0" />
+                    <div>
+                      <p className="text-sm font-semibold text-orange-300">{item.label}:</p>
+                      {item.badge ? (
+                        <Badge variant={(item.badgeVariant as any) || 'outline'} className={item.badgeClass || 'border-orange-500/50 text-orange-200 bg-orange-900/30 mt-1'}>
+                          {item.value}
+                        </Badge>
+                      ) : (
+                        <p className="text-gray-200 dark:text-gray-100">{item.value}</p>
+                      )}
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <Separator className="my-6 bg-gray-700/50 dark:bg-gray-600/50" />
+
+              <div>
+                <h3 className="text-2xl font-semibold text-orange-400 mb-3 flex items-center"><Info className="mr-2 h-6 w-6"/>Description</h3>
+                <div className="text-gray-300 dark:text-gray-200 leading-relaxed text-justify bg-gray-700/20 dark:bg-black/30 p-4 rounded-md prose prose-sm prose-invert max-w-none">
+                  <p>{rocket.description}</p>
+                </div>
+              </div>
+
+              <Separator className="my-6 bg-gray-700/50 dark:bg-gray-600/50" />
+              
+              <div className="text-center mt-8">
+              <Button
+                size="lg"
+                asChild
+                className="
+                  bg-gradient-to-r from-orange-500 to-red-600 text-white 
+                  hover:from-orange-600 hover:to-red-700 
+                  shadow-lg hover:shadow-xl 
+                  transition-all duration-300 transform hover:scale-105 active:scale-95
+                  px-10 py-3 text-base rounded-lg group
+                "
+              >
+                <a href={rocket.wikiLink} target="_blank" rel="noopener noreferrer">
+                  Explore on Wikipedia <ExternalLink className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                </a>
+              </Button>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

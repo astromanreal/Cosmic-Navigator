@@ -30,10 +30,6 @@ const SiteFooter = () => {
             </Link>
           </div>
         </div>
-        <div className="text-center text-xs mt-6 pt-6 border-t border-gray-700/30 dark:border-gray-800/40">
-          <p>Cosmic Navigator is a project dedicated to making space exploration accessible and engaging for everyone.</p>
-          <p className="mt-1">Built with Next.js & Tailwind CSS.</p>
-        </div>
       </div>
     </footer>
   );

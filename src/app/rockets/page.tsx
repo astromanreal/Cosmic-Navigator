@@ -1,3 +1,4 @@
+
 // src/app/rockets/page.tsx
 'use client';
 
@@ -16,7 +17,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
-import { RocketIcon, ArrowRight, ChevronRight, ExternalLink } from 'lucide-react'; // Import RocketIcon and ArrowRight
+import { RocketIcon, ExternalLink } from 'lucide-react';
 
 interface Rocket {
   id: number;
@@ -38,7 +39,7 @@ interface Rocket {
 const RocketsPage = () => {
   const [rockets, setRockets] = useState<Rocket[]>([]);
   const [sortBy, setSortBy] = useState<'type' | 'year' | 'owner'>('type');
-  const [filterTerm, setFilterTerm] = useState(''); // Combined filter term
+  const [filterTerm, setFilterTerm] = useState('');
 
   useEffect(() => {
     setRockets(rocketData);
@@ -75,7 +76,7 @@ const RocketsPage = () => {
         groupKey = rocket.type;
       } else if (sortBy === 'owner') {
         groupKey = rocket.owner;
-      } else { // 'year'
+      } else { 
         groupKey = rocket.launchYear.toString();
       }
       if (!acc[groupKey]) {
@@ -94,52 +95,27 @@ const RocketsPage = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 via-indigo-900 to-black text-gray-100">
-      <div className="container mx-auto py-16 px-4">
-      {/* New Hero Section */}
-      <section className="relative text-center mb-20 py-20 md:py-32 rounded-xl overflow-hidden bg-gradient-to-br from-gray-900 via-blue-900/80 to-indigo-900 shadow-2xl transform-style-3d perspective">
-        <div className="absolute inset-0 opacity-10 bg-[url('/star-pattern.svg')] bg-repeat animate-pulse"></div>
-        <div className="absolute inset-0 bg-black/30"></div> {/* Dark overlay for better text contrast */}
-
-        <div className="relative z-10 flex flex-col items-center justify-center h-full animate-fade-in">
-          <RocketIcon className="w-20 h-20 md:w-28 md:h-28 text-orange-400 mb-8 drop-shadow-[0_0_15px_rgba(251,146,60,0.5)] animate-pulse" />
-          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-red-500 to-pink-500 mb-6">
-            Igniting Discovery: The World of Rockets
-          </h1>
-          <p className="text-lg sm:text-xl text-gray-300 dark:text-gray-200 italic mb-8 max-w-3xl mx-auto font-mono">
-            "Rockets are the key to the treasures of the universe. They are the chariots that will carry humanity to the stars." - Krafft Ehricke
-          </p>
-          <p className="text-base text-gray-300 dark:text-gray-400 max-w-4xl mx-auto mb-12 leading-relaxed">
-            Rockets are marvels of engineering, embodying humanity's relentless drive to explore the unknown. These powerful machines defy gravity, carrying satellites that connect our world, telescopes that peer into distant galaxies, and astronauts on daring missions to other celestial bodies. From the thunderous roar of launch to the silent glide through space, rockets are the indispensable tools that expand our horizons and unlock the secrets of the cosmos.
-          </p>
-
-          <a
-            href="https://liftoff-lab.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="
-              group relative inline-flex items-center justify-center px-8 py-4 text-lg font-semibold 
-              text-white bg-gradient-to-r from-orange-500 to-red-600 rounded-lg 
-              shadow-2xl hover:shadow-red-500/50
-              transition-all duration-300 ease-out 
-              transform hover:scale-105 active:scale-95
-              focus:outline-none focus:ring-4 focus:ring-red-500/50
-              overflow-hidden transform-style-3d hover:-translate-y-1
-            "
-            style={{ perspective: '1000px' }}
-          >
-            <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-red-600 to-orange-500 opacity-0 group-hover:opacity-20 transition-opacity duration-300 -z-10"></span>
-            <span className="relative z-10 flex items-center">
-              Explore Liftoff Lab Project <ExternalLink className="ml-2.5 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
-            </span>
-            {/* 3D Button Effect Elements */}
-            <span className="absolute bottom-0 left-0 w-full h-1 bg-red-700/50 transform-style-3d group-hover:h-2 transition-all duration-300"></span>
-            <span className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-orange-300/50 to-transparent group-hover:animate-pulse"></span>
-          </a>
+      <div className="container mx-auto py-10 px-4">
+        <div className="text-center mb-12">
+            <h1 className="text-3xl sm:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-red-500 to-pink-500 mb-3">
+              Launch Vehicles
+            </h1>
+            <p className="text-sm text-gray-300 dark:text-gray-400 max-w-2xl mx-auto">
+              Discover the power behind space exploration with our catalog of rockets. From historic workhorses to cutting-edge launchers, delve into the specifications and stories of these magnificent machines.
+            </p>
+            <p className="text-sm text-gray-300 dark:text-gray-400 max-w-2xl mx-auto mt-3">
+              For an even more interactive and detailed dive into rocket science and launch history, be sure to visit our specialized{' '}
+              <a
+                href="https://liftoff-lab.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-orange-400 hover:text-orange-300 hover:underline"
+              >
+                Liftoff Lab Project <ExternalLink className="inline-block h-3.5 w-3.5 ml-0.5" />
+              </a>.
+            </p>
         </div>
-      </section>
 
-
-      {/* Sorting Controls */}
        <div className="mb-6 flex flex-col sm:flex-row items-center justify-center gap-4 p-4 bg-gray-800/30 dark:bg-black/40 rounded-lg shadow-md">
          <label htmlFor="sort" className="dark:text-white text-gray-200 font-medium text-sm">Sort by:</label>
          <select
@@ -162,7 +138,6 @@ const RocketsPage = () => {
         />
        </div>
 
-        {/* Jump Links */}
       <div className="mb-8">
         <ScrollArea className="max-w-full overflow-x-auto pb-2">
           <div className="flex justify-center space-x-2 py-2">
@@ -197,14 +172,12 @@ const RocketsPage = () => {
         </ScrollArea>
       </div>
 
-
-      {/* Rocket List */}
       <div className="space-y-12">
       {Object.entries(groupedRockets)
         .sort(([keyA], [keyB]) => {
           if (sortBy === 'year') return parseInt(keyB) - parseInt(keyA);
-          if (sortBy === 'owner') return keyA.localeCompare(keyB); // Alphabetical for owner
-          return keyA.localeCompare(keyB); // Alphabetical for type
+          if (sortBy === 'owner') return keyA.localeCompare(keyB);
+          return keyA.localeCompare(keyB);
         })
         .map(([groupKey, rocketsInGroup]) => {
          const groupId = sortBy === 'owner'
@@ -283,3 +256,4 @@ const RocketsPage = () => {
 };
 
 export default RocketsPage;
+

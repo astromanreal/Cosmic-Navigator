@@ -1,247 +1,132 @@
+
 // src/app/objects/[id]/page.tsx
-'use client';
+// This is a SERVER COMPONENT
 
-import React from 'react';
-import { useParams } from 'next/navigation';
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import type { Metadata } from 'next';
 import objectData from '../objectData.json';
-import Link from 'next/link';
-import { Badge } from '@/components/ui/badge';
-import { ArrowRight, BookOpen, BrainCircuit, CheckCircle, FlaskConical, Info, Lightbulb, LinkIcon, Microscope, Sigma, Sparkles, Waves, Atom } from 'lucide-react'; // Added Atom
-import type { LucideIcon } from 'lucide-react';
+import type { LucideIcon } from 'lucide-react'; 
+import ObjectDetailClientPage from './ObjectDetailClientPage';
+import { notFound } from 'next/navigation';
 
-interface Article {
-  title: string;
-  description: string;
-}
+// Interface definitions
+export interface CoreConcept { name: string; description: string; }
+export interface NotableExample { name: string; type: string; location?: string; achievement?: string; description?: string; }
+export interface Resources { learnMore?: string; video?: string; nasa?: string; esa?: string; [key: string]: string | undefined; }
 
-interface SpaceObject { // Changed Topic to SpaceObject for clarity
+export interface SpaceObject {
   id: string;
   name: string;
   description: string;
-  content: string;
   category: string;
   difficulty: string;
-  status: string;
-  relatedTopics: string[]; // Kept as relatedTopics for consistency with JSON, but refers to related objects
-  articles: Article[];
+  quote?: string;
+  keywords?: string[];
+  coreConcepts?: CoreConcept[];
+  notableExamples?: NotableExample[];
+  applications?: string[];
+  resources?: Resources;
+  content?: string;
+  status?: string;
+  relatedTopics?: string[];
+  articles?: { title: string; description: string; }[];
+  image?: string;
+  aiHint?: string;
 }
 
-const categoryIcons: { [key: string]: LucideIcon } = {
-  Astrophysics: Sparkles,
-  Cosmology: BrainCircuit,
-  Relativity: Waves,
-  'Quantum Physics': Atom,
-  'Theoretical Physics': Sigma,
-  Astrobiology: Microscope,
-  'Philosophy of Science': Lightbulb,
-  Astronomy: Sparkles,
-};
+const siteUrl = 'https://cosmic-navigator.vercel.app';
 
-const difficultyColors: { [key: string]: string } = {
-  Beginner: 'bg-green-500/20 text-green-300 border-green-500/50',
-  Intermediate: 'bg-yellow-500/20 text-yellow-300 border-yellow-500/50',
-  Advanced: 'bg-red-500/20 text-red-300 border-red-500/50',
-};
-
-const statusIcons: { [key: string]: LucideIcon } = {
-  Established: CheckCircle,
-  Observed: CheckCircle,
-  Theoretical: FlaskConical,
-  Hypothetical: Lightbulb,
-  Speculative: Lightbulb,
-};
-
-
-const ObjectDetailPage = () => {
-  const params = useParams();
-  const objectId = params.id as string;
-
-  const spaceObject: SpaceObject | undefined = objectData.find( // Changed topic to spaceObject
-    item => item.id === objectId
+export async function generateMetadata({ params }: { params: { id: string } }): Promise<Metadata> {
+  const objectId = params.id;
+  const spaceObject = objectData.find(
+    (item): item is SpaceObject => item.id === objectId
   );
 
   if (!spaceObject) {
-    return (
-      <div className="container mx-auto py-10 px-4 min-h-screen flex items-center justify-center">
-        <Card className="dark:bg-gray-800 bg-white shadow-xl border dark:border-gray-700 w-full max-w-lg text-center">
-          <CardHeader>
-            <CardTitle className="text-3xl font-bold text-destructive dark:text-red-500">
-              Object Not Found
-            </CardTitle>
-            <CardDescription className="text-lg text-muted-foreground dark:text-gray-400 mt-2">
-              Sorry, the cosmic entity you're searching for seems to have drifted beyond our sensors.
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <Link href="/objects">
-              <Button variant="outline" className="mt-4">
-                Back to Objects
-              </Button>
-            </Link>
-          </CardContent>
-        </Card>
-      </div>
-    );
+    return {
+      title: 'Object Not Found - Cosmic Navigator',
+      description: 'Detailed information for the requested cosmic object could not be found.',
+    };
   }
 
-  const relatedObjectsData = objectData.filter( // Changed relatedTopicsData to relatedObjectsData
+  const title = `${spaceObject.name} - ${spaceObject.category} | Cosmic Navigator`;
+  const description = spaceObject.description || `Learn about ${spaceObject.name}, a fascinating object in the category of ${spaceObject.category}. Discover its core concepts, notable examples, and significance.`;
+  
+  let imageUrl = `${siteUrl}/og-image.png`; 
+  if (spaceObject.image) {
+    if (spaceObject.image.startsWith('http')) {
+        imageUrl = spaceObject.image;
+    } else {
+        imageUrl = `https://placehold.co/1200x630.png?text=${encodeURIComponent(spaceObject.name)}`;
+    }
+  } else {
+    imageUrl = `https://placehold.co/1200x630.png?text=${encodeURIComponent(spaceObject.name)}`;
+  }
+  
+  const pageUrl = `${siteUrl}/objects/${objectId}`;
+  const keywordsList = [
+    spaceObject.name,
+    spaceObject.category,
+    'Cosmic Navigator',
+    'space exploration',
+    'astronomy',
+    ...(spaceObject.keywords || [])
+  ];
+
+  return {
+    title,
+    description,
+    keywords: keywordsList,
+    alternates: {
+      canonical: pageUrl,
+    },
+    openGraph: {
+      title,
+      description,
+      url: pageUrl,
+      siteName: 'Cosmic Navigator',
+      images: [
+        {
+          url: imageUrl,
+          width: 1200,
+          height: 630,
+          alt: spaceObject.name,
+        },
+      ],
+      locale: 'en_US',
+      type: 'article', 
+      section: spaceObject.category,
+      tags: spaceObject.keywords,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [imageUrl],
+    },
+  };
+}
+
+export default async function ObjectDetailPageServer({ params }: { params: { id: string } }) {
+  const objectId = params.id;
+  const spaceObject = objectData.find(
+    (item): item is SpaceObject => item.id === objectId
+  );
+
+  if (!spaceObject) {
+    notFound();
+  }
+
+  const relatedObjectsData = objectData.filter(
     (related) =>
-      spaceObject.relatedTopics.includes(related.id) && related.id !== spaceObject.id
-  );
-
-  const CategoryIcon = categoryIcons[spaceObject.category] || Sparkles;
-  const StatusIcon = statusIcons[spaceObject.status] || Info;
-
+      spaceObject.relatedTopics?.includes(related.id) && related.id !== spaceObject.id
+  ) as SpaceObject[];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-indigo-900 to-black text-gray-100 py-12">
-      <div className="container mx-auto px-4">
-        {/* Hero Section */}
-        <section className="mb-12 text-center animate-fade-in">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 mb-4">
-            {spaceObject.name}
-          </h1>
-          <p className="text-lg sm:text-xl text-gray-300 dark:text-gray-400 max-w-3xl mx-auto italic">
-            {spaceObject.description}
-          </p>
-        </section>
-
-        <div className="flex flex-col lg:flex-row gap-8">
-          {/* Main Content Area */}
-          <main className="lg:w-2/3 space-y-8">
-            {/* Key Details Card */}
-            <Card className="bg-gray-800/50 dark:bg-black/60 border border-gray-700/50 dark:border-gray-800/60 shadow-xl">
-              <CardHeader>
-                <CardTitle className="text-2xl font-semibold text-gray-100 flex items-center">
-                  <Info className="mr-2 h-6 w-6 text-cyan-400" />
-                  Key Details
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4 text-base">
-                <div className="flex items-center gap-2">
-                  <CategoryIcon className="h-5 w-5 text-purple-400" />
-                  <span className="font-medium text-gray-400">Category:</span>
-                  <Badge variant="secondary" className="bg-purple-500/20 text-purple-300 border-purple-500/50 text-sm py-1 px-3">{spaceObject.category}</Badge>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Sigma className="h-5 w-5 text-yellow-400" /> {/* Placeholder for difficulty */}
-                  <span className="font-medium text-gray-400">Difficulty:</span>
-                  <Badge variant="outline" className={`${difficultyColors[spaceObject.difficulty] || 'border-gray-500/50'} text-sm py-1 px-3`}>{spaceObject.difficulty}</Badge>
-                </div>
-                <div className="flex items-center gap-2">
-                  <StatusIcon className="h-5 w-5 text-green-400" />
-                  <span className="font-medium text-gray-400">Status:</span>
-                  <Badge variant="outline" className={`${spaceObject.status === 'Established' || spaceObject.status === 'Observed' ? 'bg-green-500/20 text-green-300 border-green-500/50' : 'bg-orange-500/20 text-orange-300 border-orange-500/50'} text-sm py-1 px-3`}>{spaceObject.status}</Badge>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Overview Content */}
-            <Card className="bg-gray-800/50 dark:bg-black/60 border border-gray-700/50 dark:border-gray-800/60 shadow-xl">
-              <CardHeader>
-                <CardTitle className="text-2xl font-semibold text-gray-100 flex items-center">
-                  <BookOpen className="mr-2 h-6 w-6 text-cyan-400" />
-                  Overview
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="text-gray-300 dark:text-gray-200 leading-relaxed prose prose-invert prose-base max-w-none">
-                <p>{spaceObject.content}</p>
-              </CardContent>
-            </Card>
-
-            {/* Further Reading (Articles) */}
-            {spaceObject.articles && spaceObject.articles.length > 0 && (
-              <Card className="bg-gray-800/50 dark:bg-black/60 border border-gray-700/50 dark:border-gray-800/60 shadow-xl">
-                <CardHeader>
-                  <CardTitle className="text-2xl font-semibold text-gray-100 flex items-center">
-                    <LinkIcon className="mr-2 h-6 w-6 text-cyan-400" />
-                    Further Reading
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  {spaceObject.articles.map((article, index) => (
-                    <div key={index} className="p-4 rounded-lg bg-gray-700/30 dark:bg-black/40 border border-gray-600/50 dark:border-gray-700/60 hover:shadow-lg transition-shadow hover:border-cyan-500/50">
-                      <h3 className="text-lg font-semibold text-pink-400 mb-1">{article.title}</h3>
-                      <p className="text-sm text-gray-300 dark:text-gray-400 line-clamp-3">{article.description}</p>
-                    </div>
-                  ))}
-                </CardContent>
-              </Card>
-            )}
-          </main>
-
-          {/* Related Objects Sidebar */}
-          {relatedObjectsData.length > 0 && (
-            <aside className="lg:w-1/3 space-y-6">
-              <h2 className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500 mb-4">
-                Related Cosmic Wonders
-              </h2>
-              <div className="space-y-4">
-                {relatedObjectsData.map((relatedObj) => {
-                  const RelatedIcon = categoryIcons[relatedObj.category] || Sparkles;
-                  return (
-                  <Link
-                    href={`/objects/${relatedObj.id}`}
-                    key={relatedObj.id}
-                    className="group perspective block"
-                    style={{ perspective: '1000px' }}
-                  >
-                    <Card
-                      className="
-                        bg-gray-700/40 dark:bg-black/50 dark:hover:bg-gray-800/70
-                        border border-gray-600/50 dark:border-gray-700/60
-                        shadow-lg hover:shadow-pink-500/30
-                        transition-all duration-300 transform-style-3d
-                        group-hover:scale-105 group-hover:-rotate-y-1 group-hover:-translate-z-1
-                        overflow-hidden
-                      "
-                    >
-                       <CardHeader className="pb-2 pt-4 px-4 flex flex-row items-center justify-between">
-                        <CardTitle className="text-lg font-semibold text-pink-300 group-hover:text-pink-200 transition-colors">{relatedObj.name}</CardTitle>
-                        <RelatedIcon className="h-5 w-5 text-pink-400/70 group-hover:text-pink-300 transition-colors" />
-                      </CardHeader>
-                      <CardContent className="px-4 pb-4">
-                        <p className="text-xs text-gray-400 dark:text-gray-500 line-clamp-2 mb-2">{relatedObj.description}</p>
-                        <Badge variant="outline" className={`${difficultyColors[relatedObj.difficulty] || 'border-gray-500/50'} text-xs mr-1`}>{relatedObj.difficulty}</Badge>
-                        <Badge variant="secondary" className="bg-gray-600/50 text-gray-300 text-xs">{relatedObj.category}</Badge>
-                         <div className="flex justify-end mt-2">
-                            <span className="inline-flex items-center text-orange-400 group-hover:text-orange-300 text-xs font-medium">
-                                Explore <ArrowRight className="ml-1 h-3 w-3 transition-transform duration-200 group-hover:translate-x-0.5" />
-                            </span>
-                         </div>
-                      </CardContent>
-                    </Card>
-                  </Link>
-                );
-                })}
-              </div>
-            </aside>
-          )}
-        </div>
-      </div>
-    </div>
+    <ObjectDetailClientPage
+      spaceObject={spaceObject}
+      relatedObjectsData={relatedObjectsData}
+      objectId={objectId}
+      siteUrl={siteUrl}
+    />
   );
-};
-
-export default ObjectDetailPage;
-
-// Helper button component (if not already globally available)
-const Button: React.FC<React.ButtonHTMLAttributes<HTMLButtonElement> & {variant?: string}> = ({ children, className, variant, ...props }) => {
-  // Basic styling, can be expanded
-  const baseStyle = "px-4 py-2 rounded-md font-medium transition-colors";
-  const variantStyle = variant === "outline"
-    ? "border border-primary text-primary hover:bg-primary/10"
-    : "bg-primary text-primary-foreground hover:bg-primary/90";
-  return (
-    <button className={`${baseStyle} ${variantStyle} ${className}`} {...props}>
-      {children}
-    </button>
-  );
-};
+}

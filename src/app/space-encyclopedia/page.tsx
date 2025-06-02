@@ -1,3 +1,4 @@
+
 'use client';
 
 import Link from 'next/link';
@@ -10,7 +11,7 @@ interface EncyclopediaEntry {
   title: string;
   type: string;
   summary: string;
-  image: string; // Assuming image will be used later
+  image: string; 
   related: string[];
   glossary: string[];
 }
@@ -30,7 +31,7 @@ const SpaceEncyclopedia = () => {
             Space Encyclopedia (A-Z)
           </h1>
           <p className="text-lg sm:text-xl text-gray-300 dark:text-gray-400 italic mb-6 max-w-3xl mx-auto font-mono">
-            "The universe is a vast and complex place, full of wonders and mysteries."
+            "The universe is a vast and complex place, full of wonders and mysteries." - Anonymous Astronomer
           </p>
           <p className="text-base text-gray-400 dark:text-gray-300 max-w-3xl mx-auto">
             Navigate through an organized compendium of cosmic knowledge. Explore space science topics, missions, celestial bodies, and fundamental concepts from A to Z.

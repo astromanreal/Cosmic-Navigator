@@ -4,320 +4,619 @@
     "id": "black-holes",
     "name": "Black Holes",
     "description": "Explore the mysteries of black holes and their impact on the cosmos.",
-    "content": "Black holes are regions of spacetime exhibiting such strong gravitational effects that nothing—not even particles and electromagnetic radiation such as light—can escape from inside it. The theory of general relativity predicts that a sufficiently compact mass can deform spacetime to form a black hole. The boundary of the region from which no escape is possible is called the event horizon. Although crossing the event horizon has enormous effect on the fate of the object crossing it, it appears to have no locally detectable features.",
     "category": "Astrophysics",
     "difficulty": "Intermediate",
-    "status": "Established",
-    "relatedTopics": ["gravity", "supernovae"],
-    "articles": [
+    "quote": "Somewhere, something incredible is waiting to be known. - Carl Sagan",
+    "keywords": ["black holes", "event horizon", "singularity", "spacetime", "gravity", "Hawking radiation"],
+    "coreConcepts": [
       {
-        "title": "Journey Into Darkness: Understanding the Phenomenon of Black Holes",
-        "description": "Dive deep into the enigmatic world of black holes—cosmic giants that defy our understanding of physics. Discover how they form, what lies beyond the event horizon, and why these celestial objects are crucial to decoding the universe."
+        "name": "Event Horizon",
+        "description": "The boundary around a black hole beyond which nothing, not even light, can escape. It's the point of no return."
       },
       {
-        "title": "The Event Horizon Explained: A One-Way Door to the Unknown",
-        "description": "Learn what the event horizon really is and why it's the defining boundary of a black hole. This article explores what happens when matter crosses this cosmic line of no return."
+        "name": "Singularity",
+        "description": "A point at the center of a black hole where matter is crushed to infinite density and spacetime curvature is infinite. Our current laws of physics break down here."
       },
       {
-        "title": "Can We See the Invisible? Imaging a Black Hole",
-        "description": "Uncover how astronomers captured the first image of a black hole using the Event Horizon Telescope, and what this groundbreaking achievement tells us about our universe."
+        "name": "Hawking Radiation",
+        "description": "A theoretical prediction by Stephen Hawking that black holes can emit particles and radiation due to quantum effects near the event horizon, causing them to slowly lose mass and eventually evaporate."
       },
       {
-        "title": "Spaghettification: What Happens If You Fall Into a Black Hole?",
-        "description": "Get ready for a wild ride as we explain the concept of spaghettification—what you’d experience if you ever fell into a black hole, according to physics."
+        "name": "Types of Black Holes",
+        "description": "Stellar black holes form from the collapse of massive stars. Supermassive black holes (SMBHs) reside at the centers of most galaxies. Intermediate-mass black holes (IMBHs) are a more elusive class. Primordial black holes are hypothetical and may have formed in the early universe."
       },
       {
-        "title": "Hawking Radiation: Do Black Holes Really Evaporate?",
-        "description": "Explore Stephen Hawking’s revolutionary idea that black holes can emit radiation and gradually lose mass over time—challenging everything we thought we knew."
+        "name": "Spaghettification",
+        "description": "The extreme tidal forces near a black hole would stretch an object vertically while compressing it horizontally, like stretching spaghetti. This occurs because the gravitational pull on the part of an object closer to the black hole is significantly stronger than on the part farther away."
       }
-    ]
-  },  
+    ],
+    "notableExamples": [
+      {
+        "name": "Sagittarius A* (Sgr A*)",
+        "type": "Supermassive Black Hole",
+        "location": "At the center of our Milky Way Galaxy, about 26,000 light-years away."
+      },
+      {
+        "name": "M87*",
+        "type": "Supermassive Black Hole",
+        "location": "At the center of the Messier 87 galaxy.",
+        "achievement": "The first black hole to be directly imaged by the Event Horizon Telescope, with the image released in 2019."
+      },
+      {
+        "name": "Cygnus X-1",
+        "type": "Stellar Black Hole",
+        "location": "In the constellation Cygnus, about 6,070 light-years away.",
+        "achievement": "One of the first widely accepted black hole candidates and a strong X-ray source."
+      }
+    ],
+    "applications": [
+      "Studying black holes helps us test the limits of Einstein's theory of general relativity and explore extreme physics.",
+      "They play a crucial role in the formation and evolution of galaxies, influencing star formation and galactic dynamics.",
+      "Black holes are laboratories for understanding fundamental concepts like gravity, spacetime, and quantum mechanics in strong gravitational fields.",
+      "Observations of black holes and their environments provide insights into accretion processes and the behavior of matter under extreme conditions."
+    ],
+    "resources": {
+      "learnMore": "https://en.wikipedia.org/wiki/Black_hole",
+      "video": "https://www.youtube.com/watch?v=e-P5IFTqB98",
+      "nasa": "https://science.nasa.gov/astrophysics/focus-areas/black-holes"
+    },
+    "status": "Established",
+    "relatedTopics": ["supernovae", "galaxies", "neutron-stars", "general-relativity"]
+  },
   {
     "id": "galaxies",
     "name": "Galaxies",
     "description": "Explore the different types of galaxies and their formation.",
-    "content": "Galaxies are vast collections of stars, stellar remnants, interstellar gas, dust, and dark matter, all bound together by gravity. They range in size from dwarfs with just a few million stars to giants with trillions. Galaxies are organized into a hierarchy of larger structures, called groups, clusters, and superclusters.",
     "category": "Astrophysics",
     "difficulty": "Beginner",
-    "status": "Established",
-    "relatedTopics": ["stars", "nebulae"],
-    "articles": [
+    "quote": "Somewhere, something incredible is waiting to be known. - Carl Sagan",
+    "keywords": ["galaxies", "spiral galaxies", "elliptical galaxies", "irregular galaxies", "dark matter", "galactic evolution"],
+    "coreConcepts": [
       {
-        "title": "What Are Galaxies? A Beginner’s Guide to Cosmic Cities",
-        "description": "Take your first steps into the universe by understanding what galaxies are, how they form, and why they matter in the grand architecture of the cosmos."
+        "name": "Types of Galaxies",
+        "description": "Galaxies are classified into spiral, elliptical, and irregular based on their shape and structure."
       },
       {
-        "title": "Spiral, Elliptical, and Irregular: Types of Galaxies Explained",
-        "description": "Learn how astronomers classify galaxies based on their shape and structure, and what these forms reveal about their history and evolution."
+        "name": "Spiral Galaxies",
+        "description": "Galaxies with a flat, rotating disk containing stars, gas, and dust, along with a central bulge. Example: Milky Way."
       },
       {
-        "title": "Our Home in the Universe: The Milky Way Galaxy",
-        "description": "Discover fascinating facts about the Milky Way—our galactic neighborhood—its size, structure, and how we fit into the bigger picture."
+        "name": "Elliptical Galaxies",
+        "description": "Galaxies with an ellipsoidal shape and little interstellar matter. Often consist of older stars."
       },
       {
-        "title": "Galactic Collisions: When Galaxies Crash and Merge",
-        "description": "Explore how galactic collisions reshape the cosmos, creating bursts of star formation and leading to the birth of new galactic forms."
+        "name": "Irregular Galaxies",
+        "description": "Galaxies with no distinct shape, often chaotic in appearance, possibly due to gravitational interactions."
       },
       {
-        "title": "The Role of Dark Matter in Galaxies",
-        "description": "Unveil the hidden force holding galaxies together—dark matter. Learn how it shapes galaxies and the mystery it continues to pose for scientists."
+        "name": "Galactic Evolution",
+        "description": "The process by which galaxies form and change over billions of years through mergers and star formation."
       }
-    ]
+    ],
+    "notableExamples": [
+      {
+        "name": "Milky Way",
+        "type": "Spiral Galaxy",
+        "description": "The galaxy that contains our Solar System."
+      },
+      {
+        "name": "Andromeda",
+        "type": "Spiral Galaxy",
+        "description": "The closest spiral galaxy to the Milky Way; expected to merge with it in ~4 billion years."
+      },
+      {
+        "name": "Messier 87 (M87)",
+        "type": "Elliptical Galaxy",
+        "description": "A giant elliptical galaxy known for housing a supermassive black hole imaged in 2019."
+      }
+    ],
+    "applications": [
+      "Understanding galaxy formation helps us explore the structure of the universe.",
+      "Galaxies provide insights into dark matter and cosmological theories."
+    ],
+    "resources": {
+      "learnMore": "https://en.wikipedia.org/wiki/Galaxy",
+      "video": "https://www.youtube.com/watch?v=udAL48P5NJU",
+      "nasa": "https://science.nasa.gov/astrophysics/focus-areas/what-are-galaxies"
+    },
+    "status": "Established",
+    "relatedTopics": ["stars", "nebulae", "black-holes"]
   },
   {
     "id": "interstellar-medium",
     "name": "Interstellar Medium",
     "description": "Learn about the matter and radiation that exist between stars.",
-    "content": "The interstellar medium (ISM) is the matter and radiation that exist in the space between star systems in a galaxy. It includes gas in ionic, atomic, and molecular form, as well as dust and cosmic rays. The ISM plays a crucial role in the formation of stars and the cycling of matter in galaxies.",
     "category": "Astrophysics",
     "difficulty": "Intermediate",
-    "status": "Established",
-    "relatedTopics": ["nebulae", "stars"],
-    "articles": [
+    "quote": "Somewhere, something incredible is waiting to be known. - Carl Sagan",
+    "keywords": ["interstellar medium", "ISM", "gas", "dust", "plasma", "cosmic rays", "nebulae", "star formation"],
+    "coreConcepts": [
       {
-        "title": "What is the Interstellar Medium? A Deep Dive Into the Space Between Stars",
-        "description": "Discover the hidden contents of the vast space between stars—from glowing gases to cosmic dust—and learn how it fuels star formation and galactic evolution."
+        "name": "Definition of ISM",
+        "description": "The interstellar medium is the matter that exists in the space between stars within a galaxy, including gas, dust, and cosmic rays."
       },
       {
-        "title": "The Life Cycle of Matter: How the ISM Feeds Stars and Recycles Galaxies",
-        "description": "Explore how the interstellar medium acts as both a cradle and a grave for stellar material, constantly renewing the galaxy's building blocks."
+        "name": "Components of ISM",
+        "description": "It includes neutral hydrogen, ionized gases, molecules, interstellar dust, and magnetic fields."
       },
       {
-        "title": "Clouds in Space: The Role of Molecular Clouds in Star Birth",
-        "description": "Molecular clouds are dense, cold regions of the ISM where stars are born. Learn how these cosmic nurseries work and how astronomers study them."
+        "name": "Phases of ISM",
+        "description": "Composed of multiple phases: hot ionized medium (HIM), warm ionized medium (WIM), warm neutral medium (WNM), and cold neutral medium (CNM)."
       },
       {
-        "title": "Dust in the Wind: The Mysterious Role of Interstellar Dust",
-        "description": "Interstellar dust may be tiny, but it has a huge impact on astronomy. Discover how it shapes what we see—and don't see—in space."
+        "name": "Role in Star Formation",
+        "description": "Dense regions of the ISM, such as molecular clouds, collapse under gravity to form stars."
       },
       {
-        "title": "Listening to the Cosmos: How We Observe the Interstellar Medium",
-        "description": "From radio waves to infrared light, learn about the tools and techniques scientists use to study the ISM and unlock the secrets of the galaxy."
+        "name": "Interaction with Light",
+        "description": "Dust in the ISM can absorb and scatter light, affecting how we observe stars and galaxies."
       }
-    ]
+    ],
+    "notableExamples": [
+      {
+        "name": "Orion Molecular Cloud Complex",
+        "type": "Molecular Cloud",
+        "description": "A nearby region rich in star-forming activity within the interstellar medium."
+      },
+      {
+        "name": "Local Bubble",
+        "type": "Low-density Region",
+        "description": "A cavity in the interstellar medium surrounding the Solar System filled with hot, ionized gas."
+      }
+    ],
+    "applications": [
+      "Understanding the ISM helps us trace the life cycle of stars and the chemical evolution of galaxies.",
+      "It plays a crucial role in astrophysical processes like shock waves and supernova remnants."
+    ],
+    "resources": {
+      "learnMore": "https://en.wikipedia.org/wiki/Interstellar_medium",
+      "video": "https://www.youtube.com/watch?v=5EqivzfzT64",
+      "nasa": "https://science.nasa.gov/astrophysics/focus-areas/what-is-the-interstellar-medium"
+    },
+    "status": "Established",
+    "relatedTopics": ["nebulae", "stars"]
   },
   {
     "id": "gamma-ray-bursts",
     "name": "Gamma-Ray Bursts",
     "description": "Uncover the secrets of these powerful cosmic explosions.",
-    "content": "Gamma-ray bursts (GRBs) are the most luminous electromagnetic events known to occur in the universe. They are characterized by intense bursts of gamma rays, which are the most energetic form of light. GRBs are associated with the collapse of massive stars and the merger of neutron stars.",
     "category": "Astrophysics",
     "difficulty": "Intermediate",
     "status": "Observed",
-    "relatedTopics": ["supernovae", "black-holes"],
-    "articles": [
+    "quote": "Somewhere, something incredible is waiting to be known. - Carl Sagan",
+    "keywords": ["gamma-ray bursts", "GRBs", "cosmic explosions", "high-energy astrophysics", "afterglow", "relativistic jets", "collapsars"],
+    "coreConcepts": [
       {
-        "title": "Gamma-Ray Bursts: The Brightest Explosions in the Universe",
-        "description": "Explore the extraordinary phenomenon of gamma-ray bursts—cosmic flashes so powerful they outshine entire galaxies for brief moments."
+        "name": "What are Gamma-Ray Bursts?",
+        "description": "GRBs are brief, intense flashes of gamma radiation coming from distant galaxies, considered the most energetic explosions in the universe."
       },
       {
-        "title": "What Causes Gamma-Ray Bursts? Death of Stars and Violent Mergers",
-        "description": "Unravel the origins of GRBs, from the explosive collapse of massive stars to the cataclysmic collisions of neutron stars."
+        "name": "Types of GRBs",
+        "description": "Classified into short GRBs (<2 seconds, likely from neutron star mergers) and long GRBs (>2 seconds, typically from collapsing massive stars)."
       },
       {
-        "title": "Short vs. Long GRBs: Understanding the Two Main Types",
-        "description": "Dive into the classification of gamma-ray bursts and learn what differentiates short bursts from their longer counterparts—and why it matters."
+        "name": "Origin",
+        "description": "They originate from catastrophic cosmic events such as supernovae or mergers of compact objects like neutron stars or black holes."
       },
       {
-        "title": "Catching Cosmic Fireworks: How We Detect Gamma-Ray Bursts",
-        "description": "Discover how space telescopes like Swift and Fermi detect and analyze GRBs in real time, helping scientists unlock the secrets of the universe."
+        "name": "Afterglow",
+        "description": "Following the burst, a longer-lasting afterglow is emitted in X-ray, ultraviolet, optical, infrared, and radio wavelengths."
       },
       {
-        "title": "Do Gamma-Ray Bursts Threaten Earth?",
-        "description": "Could a nearby gamma-ray burst pose a danger to our planet? Learn about the risks, realities, and the science behind this high-energy threat."
+        "name": "Scientific Importance",
+        "description": "They serve as probes of the early universe and help in understanding the formation of black holes and neutron stars."
       }
-    ]
+    ],
+    "notableExamples": [
+      {
+        "name": "GRB 090423",
+        "type": "Long GRB",
+        "description": "One of the most distant gamma-ray bursts ever observed, giving insight into the early universe."
+      },
+      {
+        "name": "GRB 170817A",
+        "type": "Short GRB",
+        "description": "The first GRB confirmed to be associated with a gravitational wave event (neutron star merger)."
+      }
+    ],
+    "applications": [
+      "Help in understanding the death of massive stars and the birth of black holes.",
+      "Used to study the structure and expansion of the early universe."
+    ],
+    "resources": {
+      "learnMore": "https://en.wikipedia.org/wiki/Gamma-ray_burst",
+      "video": "https://www.youtube.com/watch?v=y13KtdDqg6c",
+      "nasa": "https://www.nasa.gov/mission_pages/swift/bursts/index.html"
+    },
+    "relatedTopics": ["supernovae", "black-holes", "neutron-stars"]
   },
   {
     "id": "nebulae",
     "name": "Nebulae",
     "description": "Witness the beauty of nebulae, stellar nurseries, and cosmic clouds.",
-    "content": "Nebulae are vast clouds of gas and dust in space. They are often sites of star formation, where gravity causes the gas and dust to collapse and form new stars. Nebulae are also the remnants of dying stars, such as planetary nebulae and supernova remnants.",
     "category": "Astrophysics",
     "difficulty": "Beginner",
     "status": "Observed",
-    "relatedTopics": ["stars", "interstellar-medium"],
-    "articles": [
+    "quote": "Somewhere, something incredible is waiting to be known. - Carl Sagan",
+    "keywords": ["nebula", "interstellar clouds", "star formation", "emission nebula", "reflection nebula", "planetary nebula", "supernova remnants"],
+    "coreConcepts": [
       {
-        "title": "What Are Nebulae? A Glimpse into Cosmic Clouds",
-        "description": "Dive into the colorful and mysterious world of nebulae—vast clouds of gas and dust that both give birth to stars and mark their spectacular ends."
+        "name": "What is a Nebula?",
+        "description": "A nebula is a vast cloud of gas and dust in space, often serving as a stellar nursery where new stars are born."
       },
       {
-        "title": "Stellar Nurseries: Where Stars Are Born",
-        "description": "Learn how certain nebulae, like the Orion Nebula, serve as stellar nurseries where gravity pulls gas and dust together to create new stars."
+        "name": "Types of Nebulae",
+        "description": "Includes emission nebulae (glowing due to ionized gas), reflection nebulae (scattering starlight), planetary nebulae (dying stars' outer layers), and supernova remnants."
       },
       {
-        "title": "The Death of Stars: Nebulae as Cosmic Remnants",
-        "description": "Explore how dying stars leave behind stunning nebulae, from the elegant shapes of planetary nebulae to the chaotic aftermath of supernova explosions."
+        "name": "Role in Star Formation",
+        "description": "Dense regions within nebulae collapse under gravity, initiating the process of star birth."
       },
       {
-        "title": "Types of Nebulae: Emission, Reflection, Dark, and More",
-        "description": "Discover the different types of nebulae and how their appearances vary based on how they interact with nearby stars and light."
+        "name": "Color and Composition",
+        "description": "Colors are often due to hydrogen (red), oxygen (green/blue), and other elements; composition reveals chemical enrichment of the universe."
       },
       {
-        "title": "The Art of the Cosmos: Why Nebulae Are So Colorful",
-        "description": "Uncover the science behind the brilliant colors captured in nebula images and how astronomers use different wavelengths to reveal their secrets."
+        "name": "Observation and Study",
+        "description": "Nebulae are studied using optical and radio telescopes, helping scientists learn about stellar life cycles and galactic evolution."
       }
-    ]
+    ],
+    "notableExamples": [
+      {
+        "name": "Orion Nebula (M42)",
+        "type": "Emission Nebula",
+        "description": "A bright stellar nursery visible to the naked eye, located in the Orion constellation."
+      },
+      {
+        "name": "Crab Nebula",
+        "type": "Supernova Remnant",
+        "description": "The remnant of a supernova explosion recorded in 1054 AD, containing a pulsar at its center."
+      },
+      {
+        "name": "Helix Nebula",
+        "type": "Planetary Nebula",
+        "description": "A dying star’s outer layers ejected into space, often called the ‘Eye of God’."
+      }
+    ],
+    "applications": [
+      "Provides insight into the process of star birth and death.",
+      "Helps in understanding the chemical evolution of galaxies.",
+      "Stunning visuals make them popular in astronomy outreach and education."
+    ],
+    "resources": {
+      "learnMore": "https://en.wikipedia.org/wiki/Nebula",
+      "video": "https://www.youtube.com/watch?v=JC2QXkQE1zQ",
+      "nasa": "https://www.nasa.gov/mission_pages/hubble/science/nebulae.html"
+    },
+    "relatedTopics": ["stars", "interstellar-medium"]
   },
   {
     "id": "planets-beyond",
     "name": "Planets Beyond the Solar System",
     "description": "Discover the exoplanets that orbit distant stars.",
-    "content": "Exoplanets are planets that orbit stars other than the Sun. They are found using a variety of techniques, such as the transit method and the radial velocity method. Exoplanets exhibit a wide range of properties, including rocky planets, gas giants, and ice giants.",
     "category": "Astronomy",
     "difficulty": "Intermediate",
     "status": "Observed",
-    "relatedTopics": ["stars", "habitable-zones"],
-    "articles": [
+    "quote": "Somewhere, something incredible is waiting to be known. - Carl Sagan",
+    "keywords": ["exoplanets", "extrasolar planets", "planet detection", "habitable zone", "transit method", "radial velocity", "alien worlds"],
+    "coreConcepts": [
       {
-        "title": "What Are Exoplanets? A New Frontier in Astronomy",
-        "description": "Take a journey into the cosmos to learn what exoplanets are, how they’re discovered, and why they’re reshaping our understanding of planetary systems."
+        "name": "What are Exoplanets?",
+        "description": "Exoplanets are planets that orbit stars outside our solar system, varying widely in size, composition, and orbit."
       },
       {
-        "title": "Methods of Discovery: How Scientists Detect Distant Worlds",
-        "description": "Explore the innovative techniques used to detect exoplanets, from the subtle dimming of a star to the wobble in its motion."
+        "name": "Detection Methods",
+        "description": "Primarily discovered using the transit method (measuring dips in starlight) and the radial velocity method (detecting star wobbles)."
       },
       {
-        "title": "Types of Exoplanets: From Super-Earths to Hot Jupiters",
-        "description": "Dive into the diversity of alien worlds—some rocky like Earth, others massive and gaseous, orbiting perilously close to their stars."
+        "name": "Habitability",
+        "description": "Some exoplanets lie in the ‘habitable zone’—the region where conditions might support liquid water and potentially life."
       },
       {
-        "title": "The Hunt for Life: Exoplanets in the Habitable Zone",
-        "description": "Discover what makes a planet potentially habitable and how scientists search for worlds where life as we know it could exist."
+        "name": "Types of Exoplanets",
+        "description": "Includes gas giants, super-Earths, terrestrial planets, and rogue planets (not bound to any star)."
       },
       {
-        "title": "TESS and Kepler: Space Telescopes Changing the Game",
-        "description": "Learn how space missions like TESS and Kepler have revolutionized exoplanet science, uncovering thousands of planets and expanding the catalog daily."
+        "name": "Significance",
+        "description": "Studying exoplanets enhances understanding of planetary system formation, and the potential for life beyond Earth."
       }
-    ]
-  },  
+    ],
+    "notableExamples": [
+      {
+        "name": "Kepler-186f",
+        "type": "Earth-size exoplanet",
+        "description": "One of the first Earth-sized planets discovered in a star's habitable zone."
+      },
+      {
+        "name": "TRAPPIST-1 System",
+        "type": "Multi-planet system",
+        "description": "Contains seven Earth-sized planets, with several potentially in the habitable zone."
+      },
+      {
+        "name": "51 Pegasi b",
+        "type": "Gas giant",
+        "description": "The first exoplanet discovered orbiting a sun-like star."
+      }
+    ],
+    "applications": [
+      "Helps assess the frequency and diversity of planetary systems in the galaxy.",
+      "Offers clues about conditions required for life.",
+      "Informs future missions focused on direct imaging and atmosphere analysis."
+    ],
+    "resources": {
+      "learnMore": "https://exoplanets.nasa.gov/",
+      "video": "https://www.youtube.com/watch?v=1DlRZi-aG9Y",
+      "esa": "https://www.esa.int/Science_Exploration/Space_Science/Cheops"
+    },
+    "relatedTopics": ["stars", "habitable-zones"]
+  },
   {
     "id": "stars",
     "name": "Stars",
     "description": "Study the life cycle of stars, from birth to death.",
-    "content": "Stars are massive, luminous spheres of plasma held together by their own gravity. They generate energy through nuclear fusion in their cores, converting hydrogen into helium and heavier elements. Stars come in a variety of types, including main sequence stars, red giants, and white dwarfs.",
     "category": "Astrophysics",
     "difficulty": "Beginner",
     "status": "Established",
-    "relatedTopics": ["nebulae", "supernovae"],
-    "articles": [
+    "quote": "Somewhere, something incredible is waiting to be known. - Carl Sagan",
+    "keywords": ["stellar evolution", "star formation", "main sequence", "red giant", "white dwarf", "neutron star", "supernova", "stellar core"],
+    "coreConcepts": [
       {
-        "title": "How Stars Are Born: From Clouds of Gas to Glowing Spheres",
-        "description": "Learn how stars emerge from dense regions of nebulae, forming under the influence of gravity and igniting through nuclear fusion."
+        "name": "What is a Star?",
+        "description": "A star is a luminous ball of gas, primarily hydrogen and helium, held together by gravity and powered by nuclear fusion."
       },
       {
-        "title": "Types of Stars: A Guide to the Cosmic Zoo",
-        "description": "Explore the different types of stars—main sequence, red giants, white dwarfs, and more—and what makes each one unique."
+        "name": "Birth of Stars",
+        "description": "Stars form in nebulae when regions of gas and dust collapse under gravity, igniting nuclear fusion in the core."
       },
       {
-        "title": "A Star's Life Cycle: From Birth to Supernova or Fade Away",
-        "description": "Follow the epic journey of a star, from its formation in a nebula to its dramatic end as a white dwarf, neutron star, or black hole."
+        "name": "Main Sequence Phase",
+        "description": "During this longest phase, stars fuse hydrogen into helium, producing energy and stabilizing their structure."
       },
       {
-        "title": "What Makes Stars Shine? The Science of Nuclear Fusion",
-        "description": "Delve into the core of a star to understand how nuclear fusion powers their light and drives the creation of elements."
+        "name": "Stellar Evolution",
+        "description": "Depending on their mass, stars evolve into red giants, supergiants, or undergo supernovae before becoming white dwarfs, neutron stars, or black holes."
       },
       {
-        "title": "Measuring Starlight: How We Learn About Stars from Afar",
-        "description": "Discover how astronomers use light—its color, intensity, and spectrum—to determine the size, temperature, and composition of stars."
+        "name": "Stellar Death",
+        "description": "Low-mass stars shed outer layers to form planetary nebulae and become white dwarfs, while massive stars explode as supernovae, leaving behind neutron stars or black holes."
       }
-    ]
-  },  
+    ],
+    "notableExamples": [
+      {
+        "name": "The Sun",
+        "type": "G-type main-sequence star",
+        "description": "Our closest star, currently in its stable main sequence phase, about 4.6 billion years old."
+      },
+      {
+        "name": "Betelgeuse",
+        "type": "Red supergiant",
+        "description": "A massive star nearing the end of its life, expected to go supernova in the distant future."
+      },
+      {
+        "name": "Sirius A",
+        "type": "Main-sequence star",
+        "description": "The brightest star in the night sky, part of a binary system with a white dwarf companion."
+      }
+    ],
+    "applications": [
+      "Understanding the origin of elements through nuclear fusion in stars.",
+      "Studying star life cycles informs models of galaxy formation and evolution.",
+      "Helps in estimating the age and development of star systems and galaxies."
+    ],
+    "resources": {
+      "learnMore": "https://en.wikipedia.org/wiki/Star",
+      "video": "https://www.youtube.com/watch?v=PM9CQDlQI0A",
+      "nasa": "https://science.nasa.gov/astrophysics/focus-areas/how-do-stars-form-and-evolve/"
+    },
+    "relatedTopics": ["nebulae", "supernovae"]
+  },
   {
     "id": "supernovae",
     "name": "Supernovae",
     "description": "Investigate the explosive demise of stars and their role in the universe.",
-    "content": "Supernovae are among the most energetic events in the universe, marking the explosive death of a star. They are responsible for the creation and dispersal of heavy elements into the interstellar medium. Supernovae can leave behind neutron stars or black holes.",
     "category": "Astrophysics",
     "difficulty": "Intermediate",
     "status": "Observed",
-    "relatedTopics": ["stars", "neutron-stars", "black-holes"],
-    "articles": [
+    "quote": "Somewhere, something incredible is waiting to be known. - Carl Sagan",
+    "keywords": ["supernova", "stellar explosion", "core-collapse", "white dwarf", "Type Ia", "Type II", "neutron star", "black hole", "nucleosynthesis"],
+    "coreConcepts": [
       {
-        "title": "What Is a Supernova? Understanding Stellar Explosions",
-        "description": "Discover how supernovae signal the death of massive stars and play a crucial role in spreading the elements necessary for life across the universe."
+        "name": "What is a Supernova?",
+        "description": "A supernova is a powerful explosion that occurs during the final stages of a star’s life, releasing enormous energy and matter into space."
       },
       {
-        "title": "The Types of Supernovae: Core Collapse vs. Thermonuclear",
-        "description": "Explore the two main types of supernovae, how they differ, and the fascinating processes that lead to these cataclysmic blasts."
+        "name": "Types of Supernovae",
+        "description": "Type I supernovae occur in binary systems (often involving white dwarfs), while Type II result from the core collapse of massive stars."
       },
       {
-        "title": "After the Bang: What Supernovae Leave Behind",
-        "description": "Learn about the cosmic remnants of supernovae—neutron stars, pulsars, and black holes—and their lasting impact on the cosmos."
+        "name": "Core-Collapse Supernova",
+        "description": "In massive stars, fusion ceases at iron, leading to core collapse under gravity and a rebound explosion—this is a Type II supernova."
       },
       {
-        "title": "Supernovae and the Birth of Elements",
-        "description": "Find out how supernovae forge and disperse heavy elements like iron and gold, seeding future generations of stars and planets."
+        "name": "Thermonuclear Supernova",
+        "description": "Type Ia supernovae arise from runaway nuclear fusion in white dwarfs that exceed the Chandrasekhar limit after gaining mass from a companion."
       },
       {
-        "title": "Detecting Supernovae: How We Witness Stellar Deaths from Afar",
-        "description": "From telescopes on Earth to space-based observatories, see how astronomers catch and study these brilliant explosions across the sky."
+        "name": "Role in the Universe",
+        "description": "Supernovae spread heavy elements into space, trigger star formation, and can leave behind neutron stars or black holes."
       }
-    ]
-  },  
+    ],
+    "notableExamples": [
+      {
+        "name": "SN 1987A",
+        "type": "Core-collapse supernova",
+        "description": "The closest observed supernova in modern times, located in the Large Magellanic Cloud."
+      },
+      {
+        "name": "Kepler’s Supernova (SN 1604)",
+        "type": "Type Ia",
+        "description": "A historic supernova observed in 1604, one of the brightest in recorded history."
+      },
+      {
+        "name": "Tycho's Supernova (SN 1572)",
+        "type": "Type Ia",
+        "description": "Another historically significant supernova visible to the naked eye."
+      }
+    ],
+    "applications": [
+      "Used as cosmic distance markers (Type Ia supernovae are standard candles).",
+      "Play a key role in distributing elements necessary for planet and life formation.",
+      "Help in studying high-energy astrophysical processes and the dynamics of stellar death."
+    ],
+    "resources": {
+      "learnMore": "https://www.nasa.gov/mission_pages/chandra/multimedia/supernova.html",
+      "video": "https://www.youtube.com/watch?v=9vZd7ZrMFFk",
+      "esa": "https://www.esa.int/Science_Exploration/Space_Science/Supernovae"
+    },
+    "relatedTopics": ["stars", "neutron-stars", "black-holes"]
+  },
   {
     "id": "types-of-stars",
     "name": "Types of Stars",
     "description": "Explore the different classifications and characteristics of stars.",
-    "content": "Stars are classified based on their temperature, luminosity, and spectral characteristics. The main types of stars include O, B, A, F, G, K, and M stars, as well as white dwarfs, neutron stars, and black holes. Each type of star has unique properties and evolutionary paths.",
     "category": "Astrophysics",
     "difficulty": "Beginner",
     "status": "Established",
-    "relatedTopics": ["stars"],
-    "articles": [
+    "quote": "Somewhere, something incredible is waiting to be known. - Carl Sagan",
+    "keywords": ["stellar classification", "main sequence", "red giants", "white dwarfs", "neutron stars", "supergiants", "spectral types"],
+    "coreConcepts": [
       {
-        "title": "How Do We Classify Stars? An Introduction to Stellar Types",
-        "description": "Learn about the classification system of stars, from O-type stars to M-type stars, and understand how astronomers use temperature and luminosity to categorize them."
+        "name": "Stellar Classification",
+        "description": "Stars are classified by their spectral type and luminosity into categories such as O, B, A, F, G, K, and M, ranging from hottest (O) to coolest (M)."
       },
       {
-        "title": "The O-M Classification: Understanding Stellar Spectral Types",
-        "description": "Dive into the spectral classification of stars, explaining the unique characteristics of each class, including O, B, A, F, G, K, and M."
+        "name": "Main Sequence Stars",
+        "description": "The most common type, these stars are in the stable phase of hydrogen fusion. The Sun is a main sequence G-type star."
       },
       {
-        "title": "White Dwarfs, Neutron Stars, and Black Holes: The End of a Star’s Life",
-        "description": "Explore the remnants of stars after their deaths, including white dwarfs, neutron stars, and black holes, and how these objects shape our understanding of stellar evolution."
+        "name": "Giant and Supergiant Stars",
+        "description": "These evolved stars have expanded in size and shine brightly. Supergiants like Betelgeuse are massive and short-lived."
       },
       {
-        "title": "The Hertzsprung-Russell Diagram: A Stellar Roadmap",
-        "description": "Discover the Hertzsprung-Russell diagram and how it maps the relationship between the luminosity, temperature, and size of stars across different types."
+        "name": "White Dwarfs",
+        "description": "Remnants of low-mass stars that have exhausted their nuclear fuel and collapsed into dense, Earth-sized objects."
       },
       {
-        "title": "From Birth to Death: How Stars Evolve Based on Their Type",
-        "description": "Follow the journey of stars from their birth in nebulae to their explosive deaths as supernovae or quiet fades into white dwarfs, neutron stars, or black holes."
+        "name": "Neutron Stars and Pulsars",
+        "description": "These ultra-dense remnants of supernovae spin rapidly and emit beams of radiation, observable as pulsars."
+      },
+      {
+        "name": "Variable Stars",
+        "description": "Stars whose brightness fluctuates due to intrinsic or extrinsic properties, used to study cosmic distances."
       }
-    ]
-  },  
+    ],
+    "notableExamples": [
+      {
+        "name": "The Sun",
+        "type": "G-type main sequence star",
+        "description": "A stable, middle-aged star providing energy to the solar system."
+      },
+      {
+        "name": "Betelgeuse",
+        "type": "Red Supergiant",
+        "description": "A bright, large star nearing the end of its life."
+      },
+      {
+        "name": "Sirius B",
+        "type": "White Dwarf",
+        "description": "The faint companion to Sirius A, extremely dense and small."
+      },
+      {
+        "name": "PSR B1919+21",
+        "type": "Pulsar",
+        "description": "The first discovered pulsar, emitting regular radio pulses."
+      }
+    ],
+    "applications": [
+      "Used in stellar evolution modeling and galactic structure studies.",
+      "Spectral classification aids in understanding temperature, size, and composition.",
+      "Helps in identifying potentially habitable star systems."
+    ],
+    "resources": {
+      "learnMore": "https://en.wikipedia.org/wiki/Stellar_classification",
+      "video": "https://www.youtube.com/watch?v=PM9CQDlQI0A",
+      "nasa": "https://science.nasa.gov/astrophysics/focus-areas/how-do-stars-form-and-evolve/"
+    },
+    "relatedTopics": ["stars"]
+  },
   {
     "id": "types-of-planets",
     "name": "Types of Planets",
     "description": "Discover the diverse categories and properties of planets in our universe.",
-    "content": "Planets are classified based on their composition, size, and orbital characteristics. The main types of planets include rocky planets, gas giants, and ice giants. Exoplanets exhibit a wide range of properties, from hot Jupiters to super-Earths.",
     "category": "Astronomy",
     "difficulty": "Beginner",
     "status": "Observed",
-    "relatedTopics": ["exoplanets"],
-    "articles": [
+    "quote": "Somewhere, something incredible is waiting to be known. - Carl Sagan",
+    "keywords": ["planet types", "terrestrial", "gas giants", "ice giants", "dwarf planets", "exoplanets", "planetary classification"],
+    "coreConcepts": [
       {
-        "title": "The Three Main Types of Planets: Rocky, Gas, and Ice",
-        "description": "Learn about the different types of planets found in our solar system and beyond, including rocky planets, gas giants, and ice giants, and how they differ in composition and structure."
+        "name": "Terrestrial Planets",
+        "description": "Rocky planets with solid surfaces, like Mercury, Venus, Earth, and Mars. These are smaller and denser than gas giants."
       },
       {
-        "title": "Rocky Planets vs. Gas Giants: What’s the Difference?",
-        "description": "Dive into the characteristics that define rocky planets like Earth and Venus, and compare them to gas giants like Jupiter and Saturn."
+        "name": "Gas Giants",
+        "description": "Large planets composed mostly of hydrogen and helium, like Jupiter and Saturn. They have thick atmospheres and many moons."
       },
       {
-        "title": "Exoplanets: Discovering New Types of Planets in Distant Systems",
-        "description": "Explore the wide variety of exoplanets found orbiting stars outside our solar system, from the scorching hot Jupiters to the Earth-like super-Earths."
+        "name": "Ice Giants",
+        "description": "Planets like Uranus and Neptune with a composition rich in water, ammonia, and methane ices, beneath their atmospheres."
       },
       {
-        "title": "Hot Jupiters: The Strange Worlds of Close-Orbiting Gas Giants",
-        "description": "Uncover the mysteries of hot Jupiters—gas giants that orbit extremely close to their stars and experience extreme temperatures and intense radiation."
+        "name": "Dwarf Planets",
+        "description": "Celestial bodies that orbit the Sun and are spherical but haven’t cleared their orbital path. Examples include Pluto and Eris."
       },
       {
-        "title": "Super-Earths: Planets Bigger Than Earth but Smaller Than Neptune",
-        "description": "Learn about super-Earths, a type of exoplanet that’s larger than Earth but smaller than Neptune, and why they are of great interest to scientists studying habitability."
+        "name": "Exoplanets",
+        "description": "Planets that orbit stars beyond our solar system. They come in various types, from hot Jupiters to super-Earths."
+      },
+      {
+        "name": "Habitable Planets",
+        "description": "Planets that may have conditions suitable for life, often located in the 'habitable zone' of their star."
       }
-    ]
-  }  
+    ],
+    "notableExamples": [
+      {
+        "name": "Earth",
+        "type": "Terrestrial Planet",
+        "description": "The only known planet to support life, with liquid water and a breathable atmosphere."
+      },
+      {
+        "name": "Jupiter",
+        "type": "Gas Giant",
+        "description": "The largest planet in the Solar System with a powerful magnetic field and many moons."
+      },
+      {
+        "name": "Neptune",
+        "type": "Ice Giant",
+        "description": "The farthest known planet in the solar system with strong winds and a blue hue due to methane."
+      },
+      {
+        "name": "Kepler-22b",
+        "type": "Exoplanet",
+        "description": "A potentially habitable exoplanet discovered by NASA's Kepler mission."
+      }
+    ],
+    "applications": [
+      "Understanding planetary formation and diversity across the universe.",
+      "Identifying habitable worlds for future exploration.",
+      "Refining models of solar system evolution."
+    ],
+    "resources": {
+      "learnMore": "https://solarsystem.nasa.gov/planets/overview/",
+      "video": "https://www.youtube.com/watch?v=Qd6nLM2QlWw",
+      "esa": "https://www.esa.int/Science_Exploration/Space_Science/Exoplanets"
+    },
+    "relatedTopics": ["exoplanets"]
+  }
 ]
+    
+    
+
+    
+
+
+
+
+    
+
+    
